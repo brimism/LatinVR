@@ -144,7 +144,13 @@ MonoBehaviour:
   currHead: 0
   graph:
   - text: GIVE ME THE JUG
-    condition: 0
+    edges:
+    - condition: give jug
+      toNode: 1
+  - text: GOOD JOB
+    edges: []
+  - text: GOOD JOB
+    edges: []
 --- !u!4 &117898783
 Transform:
   m_ObjectHideFlags: 0
@@ -821,15 +827,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69c7d388f6497c14c9c0a2829d1f5859, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  giveJug: {fileID: 8300000, guid: 9cd4d4f8125a6b544ae9acb0f05a3d0e, type: 3}
-  goodJob: {fileID: 8300000, guid: 609ea971b1ee34a4b89db1ab5f61cf5d, type: 3}
 --- !u!82 &1239817956
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1239817950}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9cd4d4f8125a6b544ae9acb0f05a3d0e, type: 3}

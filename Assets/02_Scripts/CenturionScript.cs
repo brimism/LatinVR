@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CenturionScript : MonoBehaviour {
-	public AudioClip giveJug;
-	public AudioClip goodJob;
+	// public AudioClip giveJug;
+	// public AudioClip goodJob;
 
 
 	private GameManagerScript gm;
-	private AudioSource aus;
+	// private AudioSource aus;
 
 	void Start () {
-		aus = GetComponent<AudioSource>();
 		gm = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
+		// aus = GetComponent<AudioSource>();
 	}
 
 	void Update () {
