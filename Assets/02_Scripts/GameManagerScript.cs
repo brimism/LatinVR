@@ -6,6 +6,7 @@ public class GameManagerScript : MonoBehaviour {
 
 	public bool giveJug = false;
 	public int currHead = 0;
+	public TextScript textBubble;
 
 	[System.Serializable]
 	public class Edge{
@@ -23,7 +24,7 @@ public class GameManagerScript : MonoBehaviour {
 	Dictionary<string, bool> boolDict = new Dictionary<string, bool>();
 
 	public void Start(){
-		UpdateDict();
+		Reevaluate();
 	}
 
 	public void UpdateDict(){
@@ -39,7 +40,7 @@ public class GameManagerScript : MonoBehaviour {
 				break;
 			}
 		}
-		Debug.Log(graph[currHead].text);
+		textBubble.ChangeText(graph[currHead].text);
 	}
 
 	void Update () {
