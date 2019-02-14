@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: f15c336556dd74f40aaca655f7767970, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.9965351, g: 0.87119263, b: 0.7254977, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -769,13 +769,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: {fileID: 250865435}
+  player: {fileID: 530808323}
 --- !u!4 &215965117
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 215965115}
-  m_LocalRotation: {x: -0, y: -0.53610146, z: -0, w: 0.8441536}
+  m_LocalRotation: {x: 0, y: -0.53729963, z: 0, w: 0.8433914}
   m_LocalPosition: {x: 0.013, y: 0.421, z: 0.199}
   m_LocalScale: {x: 0.12108031, y: 0.060540155, z: 0.12108031}
   m_Children:
@@ -783,7 +784,7 @@ Transform:
   - {fileID: 250865434}
   m_Father: {fileID: 1239817954}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -64.837006, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -65, z: 0}
 --- !u!1001 &215989603
 Prefab:
   m_ObjectHideFlags: 0
@@ -1379,6 +1380,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4119596741741680, guid: 12370ddcc6985ba4abe57fc5b64502f8,
     type: 2}
   m_PrefabInternal: {fileID: 281821910}
+--- !u!4 &530808323 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4001700908730654, guid: bda613e5f5f51134c8bf1b600ad7b7c9,
+    type: 2}
+  m_PrefabInternal: {fileID: 2098807795}
 --- !u!1 &558176822
 GameObject:
   m_ObjectHideFlags: 0
@@ -5210,10 +5216,10 @@ Transform:
   - {fileID: 1462478256}
   - {fileID: 681467510}
   - {fileID: 1527372178}
+  - {fileID: 1808105483}
   - {fileID: 105333416}
   - {fileID: 1321315136}
   - {fileID: 1332183150}
-  - {fileID: 1808105483}
   - {fileID: 2094278887}
   - {fileID: 649973375}
   - {fileID: 2010041644}

@@ -5,6 +5,7 @@ using TMPro;
 
 public class TextScript : MonoBehaviour {
 	public TextMeshPro tmp;
+	public Transform player;
 	// Use this for initialization
 	void Start () {
 	}
@@ -15,6 +16,7 @@ public class TextScript : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-
+		transform.LookAt(player);
+		transform.RotateAround(transform.position, Vector3.up, -155f);
 	}
 }
