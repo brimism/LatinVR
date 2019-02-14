@@ -1,0 +1,217 @@
+fileFormatVersion: 2
+guid: dbbc2463a5ed68e4b9e9a2e825c3ea0c
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: "Deckfl\xE4che_1"
+    100004: "Deckfl\xE4che_1_2"
+    100006: "Deckfl\xE4che_1_3"
+    100008: "Deckfl\xE4che_1_4"
+    100010: "Deckfl\xE4che_1_5"
+    100012: "Deckfl\xE4che_1_6"
+    100014: "Deckfl\xE4che_1_7"
+    100016: "Deckfl\xE4che_2"
+    100018: "Deckfl\xE4che_2_2"
+    100020: "Deckfl\xE4che_2_3"
+    100022: "Deckfl\xE4che_2_4"
+    100024: "Deckfl\xE4che_2_5"
+    100026: "Deckfl\xE4che_2_6"
+    100028: "Deckfl\xE4che_2_7"
+    100030: Lathe_NURBS_Seats
+    100032: Lathe_NURBS_Seats_2
+    100034: Lathe_NURBS_Seats_2_2
+    100036: Lathe_NURBS_Seats_3
+    100038: Lathe_NURBS_Stairs
+    100040: Lathe_NURBS_Stairs_2
+    100042: Lathe_NURBS_Stairs_2_2
+    100044: Lathe_NURBS_Stairs_3
+    100046: Lathe_NURBS_Stairs_3_2
+    100048: Lathe_NURBS_Stairs_4
+    100050: Lathe_NURBS_Stairs_4_2
+    100052: Spline_Object_Seats
+    100054: Spline_Object_Setas
+    100056: Spline_Object_Setas_2
+    100058: Spline_Object_Stairs
+    100060: Spline_Object_Stairs_2
+    100062: Spline_Object_Stairs_3
+    100064: Spline_Object_Stairs_4
+    400000: //RootNode
+    400002: "Deckfl\xE4che_1"
+    400004: "Deckfl\xE4che_1_2"
+    400006: "Deckfl\xE4che_1_3"
+    400008: "Deckfl\xE4che_1_4"
+    400010: "Deckfl\xE4che_1_5"
+    400012: "Deckfl\xE4che_1_6"
+    400014: "Deckfl\xE4che_1_7"
+    400016: "Deckfl\xE4che_2"
+    400018: "Deckfl\xE4che_2_2"
+    400020: "Deckfl\xE4che_2_3"
+    400022: "Deckfl\xE4che_2_4"
+    400024: "Deckfl\xE4che_2_5"
+    400026: "Deckfl\xE4che_2_6"
+    400028: "Deckfl\xE4che_2_7"
+    400030: Lathe_NURBS_Seats
+    400032: Lathe_NURBS_Seats_2
+    400034: Lathe_NURBS_Seats_2_2
+    400036: Lathe_NURBS_Seats_3
+    400038: Lathe_NURBS_Stairs
+    400040: Lathe_NURBS_Stairs_2
+    400042: Lathe_NURBS_Stairs_2_2
+    400044: Lathe_NURBS_Stairs_3
+    400046: Lathe_NURBS_Stairs_3_2
+    400048: Lathe_NURBS_Stairs_4
+    400050: Lathe_NURBS_Stairs_4_2
+    400052: Spline_Object_Seats
+    400054: Spline_Object_Setas
+    400056: Spline_Object_Setas_2
+    400058: Spline_Object_Stairs
+    400060: Spline_Object_Stairs_2
+    400062: Spline_Object_Stairs_3
+    400064: Spline_Object_Stairs_4
+    2100000: No Name
+    2300000: "Deckfl\xE4che_1"
+    2300002: "Deckfl\xE4che_1_2"
+    2300004: "Deckfl\xE4che_1_3"
+    2300006: "Deckfl\xE4che_1_4"
+    2300008: "Deckfl\xE4che_1_5"
+    2300010: "Deckfl\xE4che_1_6"
+    2300012: "Deckfl\xE4che_1_7"
+    2300014: "Deckfl\xE4che_2"
+    2300016: "Deckfl\xE4che_2_2"
+    2300018: "Deckfl\xE4che_2_3"
+    2300020: "Deckfl\xE4che_2_4"
+    2300022: "Deckfl\xE4che_2_5"
+    2300024: "Deckfl\xE4che_2_6"
+    2300026: "Deckfl\xE4che_2_7"
+    2300028: Lathe_NURBS_Seats
+    2300030: Lathe_NURBS_Seats_2
+    2300032: Lathe_NURBS_Seats_2_2
+    2300034: Lathe_NURBS_Stairs
+    2300036: Lathe_NURBS_Stairs_2
+    2300038: Lathe_NURBS_Stairs_3_2
+    2300040: Lathe_NURBS_Stairs_4_2
+    3300000: "Deckfl\xE4che_1"
+    3300002: "Deckfl\xE4che_1_2"
+    3300004: "Deckfl\xE4che_1_3"
+    3300006: "Deckfl\xE4che_1_4"
+    3300008: "Deckfl\xE4che_1_5"
+    3300010: "Deckfl\xE4che_1_6"
+    3300012: "Deckfl\xE4che_1_7"
+    3300014: "Deckfl\xE4che_2"
+    3300016: "Deckfl\xE4che_2_2"
+    3300018: "Deckfl\xE4che_2_3"
+    3300020: "Deckfl\xE4che_2_4"
+    3300022: "Deckfl\xE4che_2_5"
+    3300024: "Deckfl\xE4che_2_6"
+    3300026: "Deckfl\xE4che_2_7"
+    3300028: Lathe_NURBS_Seats
+    3300030: Lathe_NURBS_Seats_2
+    3300032: Lathe_NURBS_Seats_2_2
+    3300034: Lathe_NURBS_Stairs
+    3300036: Lathe_NURBS_Stairs_2
+    3300038: Lathe_NURBS_Stairs_3_2
+    3300040: Lathe_NURBS_Stairs_4_2
+    4300000: Lathe_NURBS_Stairs
+    4300002: "Deckfl\xE4che_1"
+    4300004: "Deckfl\xE4che_2"
+    4300006: Lathe_NURBS_Stairs_2
+    4300008: "Deckfl\xE4che_1_2"
+    4300010: "Deckfl\xE4che_2_2"
+    4300012: Lathe_NURBS_Stairs_3_2
+    4300014: "Deckfl\xE4che_1_3"
+    4300016: "Deckfl\xE4che_2_3"
+    4300018: Lathe_NURBS_Stairs_4_2
+    4300020: "Deckfl\xE4che_1_4"
+    4300022: "Deckfl\xE4che_2_4"
+    4300024: Lathe_NURBS_Seats
+    4300026: "Deckfl\xE4che_1_5"
+    4300028: "Deckfl\xE4che_2_5"
+    4300030: Lathe_NURBS_Seats_2
+    4300032: "Deckfl\xE4che_1_6"
+    4300034: "Deckfl\xE4che_2_6"
+    4300036: Lathe_NURBS_Seats_2_2
+    4300038: "Deckfl\xE4che_1_7"
+    4300040: "Deckfl\xE4che_2_7"
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
