@@ -19,6 +19,8 @@ public class CenturionScript : MonoBehaviour {
 
 	}
 
+	
+
 	public void OnTriggerEnter(Collider c){
 		if(c.gameObject.name == "Jug"){
 			gm.giveJug = true;

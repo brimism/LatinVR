@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameManagerScript : MonoBehaviour {
 
 	public bool giveJug = false;
+	public bool pointToBox = false;
 	public int currHead = 0;
 	public TextScript textBubble;
 
@@ -29,6 +30,7 @@ public class GameManagerScript : MonoBehaviour {
 
 	public void UpdateDict(){
 		boolDict["give jug"] = giveJug;
+		boolDict["point to box"] = pointToBox;
 	}
 
 	public void Reevaluate(){
