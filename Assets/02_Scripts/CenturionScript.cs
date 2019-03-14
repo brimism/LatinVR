@@ -19,12 +19,13 @@ public class CenturionScript : MonoBehaviour {
 
 	}
 
-	
+
 
 	public void OnTriggerEnter(Collider c){
 		if(c.gameObject.name == "Jug"){
 			gm.giveJug = true;
 			gm.Reevaluate();
+			Destroy(c.gameObject);
 			// aus.clip = goodJob;
 			// aus.Play();
 		}else if(c.transform.root.tag != "Player"){

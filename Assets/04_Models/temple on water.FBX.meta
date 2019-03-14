@@ -1,0 +1,974 @@
+fileFormatVersion: 2
+guid: 994a64972cc30bd40bac24d5cfecf759
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: _forest_template_Curved Plane
+    100002: _forest_template_Four Planes
+    100004: _forest_template_High Animated Plane
+    100006: _forest_template_Low Animated Plane
+    100008: _forest_template_Medium Animated Plane
+    100010: _forest_template_One Plane
+    100012: _forest_template_Three Planes
+    100014: _forest_template_Two Planes
+    100016: Bip001
+    100018: Bip001 Footsteps
+    100020: Bip001 Head
+    100022: Bip001 HeadNub
+    100024: Bip001 L Calf
+    100026: Bip001 L Clavicle
+    100028: Bip001 L Finger0
+    100030: Bip001 L Finger0Nub
+    100032: Bip001 L Foot
+    100034: Bip001 L Forearm
+    100036: Bip001 L Hand
+    100038: Bip001 L Thigh
+    100040: Bip001 L Toe0
+    100042: Bip001 L Toe01
+    100044: Bip001 L Toe02
+    100046: Bip001 L Toe0Nub
+    100048: Bip001 L UpperArm
+    100050: Bip001 Neck
+    100052: Bip001 Pelvis
+    100054: Bip001 R Calf
+    100056: Bip001 R Clavicle
+    100058: Bip001 R Finger0
+    100060: Bip001 R Finger0Nub
+    100062: Bip001 R Foot
+    100064: Bip001 R Forearm
+    100066: Bip001 R Hand
+    100068: Bip001 R Thigh
+    100070: Bip001 R Toe0
+    100072: Bip001 R Toe01
+    100074: Bip001 R Toe02
+    100076: Bip001 R Toe0Nub
+    100078: Bip001 R UpperArm
+    100080: Bip001 Spine
+    100082: Bip001 Spine1
+    100084: Bip001 Spine2
+    100086: Bip001 Spine3
+    100088: Bip002
+    100090: Bip002 Footsteps
+    100092: Bip002 Head
+    100094: Bip002 HeadNub
+    100096: Bip002 L Calf
+    100098: Bip002 L Clavicle
+    100100: Bip002 L Finger0
+    100102: Bip002 L Finger0Nub
+    100104: Bip002 L Foot
+    100106: Bip002 L Forearm
+    100108: Bip002 L Hand
+    100110: Bip002 L Thigh
+    100112: Bip002 L Toe0
+    100114: Bip002 L Toe01
+    100116: Bip002 L Toe02
+    100118: Bip002 L Toe0Nub
+    100120: Bip002 L UpperArm
+    100122: Bip002 Neck
+    100124: Bip002 Pelvis
+    100126: Bip002 R Calf
+    100128: Bip002 R Clavicle
+    100130: Bip002 R Finger0
+    100132: Bip002 R Finger0Nub
+    100134: Bip002 R Foot
+    100136: Bip002 R Forearm
+    100138: Bip002 R Hand
+    100140: Bip002 R Thigh
+    100142: Bip002 R Toe0
+    100144: Bip002 R Toe01
+    100146: Bip002 R Toe02
+    100148: Bip002 R Toe0Nub
+    100150: Bip002 R UpperArm
+    100152: Bip002 Spine
+    100154: Bip002 Spine1
+    100156: Bip002 Spine2
+    100158: Bip002 Spine3
+    100160: Box049
+    100162: Box050
+    100164: Box051
+    100166: Box052
+    100168: Box053
+    100170: Box054
+    100172: Box057
+    100174: Box058
+    100176: Box083
+    100178: Box084
+    100180: Box086
+    100182: Box087
+    100184: Box088
+    100186: Box089
+    100188: Box090
+    100190: Box091
+    100192: Box092
+    100194: Box093
+    100196: Box094
+    100198: Box095
+    100200: Box096
+    100202: Box097
+    100204: Box098
+    100206: Box099
+    100208: Box100
+    100210: Box101
+    100212: Box104
+    100214: Box105
+    100216: Box106
+    100218: Box107
+    100220: Box108
+    100222: Box109
+    100224: Box110
+    100226: Box111
+    100228: Box112
+    100230: Box113
+    100232: Box114
+    100234: Box115
+    100236: Box116
+    100238: Box117
+    100240: Box118
+    100242: Box119
+    100244: Box120
+    100246: Box121
+    100248: Box122
+    100250: Box123
+    100252: Box124
+    100254: Box125
+    100256: Box126
+    100258: Box127
+    100260: Box128
+    100262: Box129
+    100264: Box130
+    100266: Box131
+    100268: Box132
+    100270: Box133
+    100272: Box134
+    100274: Box135
+    100276: Box136
+    100278: Box137
+    100280: Box138
+    100282: Box139
+    100284: Box140
+    100286: Box141
+    100288: Box142
+    100290: Box143
+    100292: Box144
+    100294: Box145
+    100296: Box146
+    100298: Box147
+    100300: Box148
+    100302: Box149
+    100304: Box150
+    100306: Camera001
+    100308: Camera001.Target
+    100310: Compass001
+    100312: Cylinder026
+    100314: Cylinder039
+    100316: Cylinder040
+    100318: Cylinder041
+    100320: Cylinder042
+    100322: Cylinder043
+    100324: Cylinder044
+    100326: Cylinder045
+    100328: Cylinder046
+    100330: Cylinder047
+    100332: Cylinder048
+    100334: Cylinder056
+    100336: Cylinder063
+    100338: Cylinder067
+    100340: Cylinder068
+    100342: Cylinder069
+    100344: Cylinder070
+    100346: Cylinder071
+    100348: Cylinder072
+    100350: Cylinder073
+    100352: Cylinder074
+    100354: Cylinder075
+    100356: Cylinder076
+    100358: Cylinder077
+    100360: Cylinder078
+    100362: Cylinder079
+    100364: Cylinder080
+    100366: Cylinder081
+    100368: Cylinder082
+    100370: Cylinder083
+    100372: Cylinder084
+    100374: Cylinder085
+    100376: Cylinder086
+    100378: Cylinder087
+    100380: Cylinder088
+    100382: Cylinder089
+    100384: Cylinder090
+    100386: Daylight001
+    100388: F3-Monumen
+    100390: kolona mat002
+    100392: kolona mat004
+    100394: kolona mat005
+    100396: kolona mat006
+    100398: kolona mat007
+    100400: kolona mat008
+    100402: kolona mat009
+    100404: kolona mat010
+    100406: kolona mat011
+    100408: kolona mat012
+    100410: kolona mat013
+    100412: kolona mat014
+    100414: kolona mat015
+    100416: kolona mat016
+    100418: kolona mat017
+    100420: kolona mat018
+    100422: kolona mat019
+    100424: kolona mat020
+    100426: kolona mat021
+    100428: kolona mat022
+    100430: kolona mat023
+    100432: kolona mat024
+    100434: kolona mat025
+    100436: kolona mat026
+    100438: kolona mesa
+    100440: kolona mesa001
+    100442: kolona mesa002
+    100444: kolona mesa003
+    100446: kolona mesa004
+    100448: kolona mesa005
+    100450: kolona mesa006
+    100452: kolona mesa007
+    100454: L-Ext001
+    100456: L-Ext002
+    100458: Line001
+    100460: Line002
+    100462: Line003
+    100464: mprosta
+    100466: Plane002
+    100468: Plane003
+    100470: Plane004
+    100472: Plane006
+    100474: Plane007
+    100476: Sky002
+    100478: Sun001
+    100480: //RootNode
+    400000: _forest_template_Curved Plane
+    400002: _forest_template_Four Planes
+    400004: _forest_template_High Animated Plane
+    400006: _forest_template_Low Animated Plane
+    400008: _forest_template_Medium Animated Plane
+    400010: _forest_template_One Plane
+    400012: _forest_template_Three Planes
+    400014: _forest_template_Two Planes
+    400016: Bip001
+    400018: Bip001 Footsteps
+    400020: Bip001 Head
+    400022: Bip001 HeadNub
+    400024: Bip001 L Calf
+    400026: Bip001 L Clavicle
+    400028: Bip001 L Finger0
+    400030: Bip001 L Finger0Nub
+    400032: Bip001 L Foot
+    400034: Bip001 L Forearm
+    400036: Bip001 L Hand
+    400038: Bip001 L Thigh
+    400040: Bip001 L Toe0
+    400042: Bip001 L Toe01
+    400044: Bip001 L Toe02
+    400046: Bip001 L Toe0Nub
+    400048: Bip001 L UpperArm
+    400050: Bip001 Neck
+    400052: Bip001 Pelvis
+    400054: Bip001 R Calf
+    400056: Bip001 R Clavicle
+    400058: Bip001 R Finger0
+    400060: Bip001 R Finger0Nub
+    400062: Bip001 R Foot
+    400064: Bip001 R Forearm
+    400066: Bip001 R Hand
+    400068: Bip001 R Thigh
+    400070: Bip001 R Toe0
+    400072: Bip001 R Toe01
+    400074: Bip001 R Toe02
+    400076: Bip001 R Toe0Nub
+    400078: Bip001 R UpperArm
+    400080: Bip001 Spine
+    400082: Bip001 Spine1
+    400084: Bip001 Spine2
+    400086: Bip001 Spine3
+    400088: Bip002
+    400090: Bip002 Footsteps
+    400092: Bip002 Head
+    400094: Bip002 HeadNub
+    400096: Bip002 L Calf
+    400098: Bip002 L Clavicle
+    400100: Bip002 L Finger0
+    400102: Bip002 L Finger0Nub
+    400104: Bip002 L Foot
+    400106: Bip002 L Forearm
+    400108: Bip002 L Hand
+    400110: Bip002 L Thigh
+    400112: Bip002 L Toe0
+    400114: Bip002 L Toe01
+    400116: Bip002 L Toe02
+    400118: Bip002 L Toe0Nub
+    400120: Bip002 L UpperArm
+    400122: Bip002 Neck
+    400124: Bip002 Pelvis
+    400126: Bip002 R Calf
+    400128: Bip002 R Clavicle
+    400130: Bip002 R Finger0
+    400132: Bip002 R Finger0Nub
+    400134: Bip002 R Foot
+    400136: Bip002 R Forearm
+    400138: Bip002 R Hand
+    400140: Bip002 R Thigh
+    400142: Bip002 R Toe0
+    400144: Bip002 R Toe01
+    400146: Bip002 R Toe02
+    400148: Bip002 R Toe0Nub
+    400150: Bip002 R UpperArm
+    400152: Bip002 Spine
+    400154: Bip002 Spine1
+    400156: Bip002 Spine2
+    400158: Bip002 Spine3
+    400160: Box049
+    400162: Box050
+    400164: Box051
+    400166: Box052
+    400168: Box053
+    400170: Box054
+    400172: Box057
+    400174: Box058
+    400176: Box083
+    400178: Box084
+    400180: Box086
+    400182: Box087
+    400184: Box088
+    400186: Box089
+    400188: Box090
+    400190: Box091
+    400192: Box092
+    400194: Box093
+    400196: Box094
+    400198: Box095
+    400200: Box096
+    400202: Box097
+    400204: Box098
+    400206: Box099
+    400208: Box100
+    400210: Box101
+    400212: Box104
+    400214: Box105
+    400216: Box106
+    400218: Box107
+    400220: Box108
+    400222: Box109
+    400224: Box110
+    400226: Box111
+    400228: Box112
+    400230: Box113
+    400232: Box114
+    400234: Box115
+    400236: Box116
+    400238: Box117
+    400240: Box118
+    400242: Box119
+    400244: Box120
+    400246: Box121
+    400248: Box122
+    400250: Box123
+    400252: Box124
+    400254: Box125
+    400256: Box126
+    400258: Box127
+    400260: Box128
+    400262: Box129
+    400264: Box130
+    400266: Box131
+    400268: Box132
+    400270: Box133
+    400272: Box134
+    400274: Box135
+    400276: Box136
+    400278: Box137
+    400280: Box138
+    400282: Box139
+    400284: Box140
+    400286: Box141
+    400288: Box142
+    400290: Box143
+    400292: Box144
+    400294: Box145
+    400296: Box146
+    400298: Box147
+    400300: Box148
+    400302: Box149
+    400304: Box150
+    400306: Camera001
+    400308: Camera001.Target
+    400310: Compass001
+    400312: Cylinder026
+    400314: Cylinder039
+    400316: Cylinder040
+    400318: Cylinder041
+    400320: Cylinder042
+    400322: Cylinder043
+    400324: Cylinder044
+    400326: Cylinder045
+    400328: Cylinder046
+    400330: Cylinder047
+    400332: Cylinder048
+    400334: Cylinder056
+    400336: Cylinder063
+    400338: Cylinder067
+    400340: Cylinder068
+    400342: Cylinder069
+    400344: Cylinder070
+    400346: Cylinder071
+    400348: Cylinder072
+    400350: Cylinder073
+    400352: Cylinder074
+    400354: Cylinder075
+    400356: Cylinder076
+    400358: Cylinder077
+    400360: Cylinder078
+    400362: Cylinder079
+    400364: Cylinder080
+    400366: Cylinder081
+    400368: Cylinder082
+    400370: Cylinder083
+    400372: Cylinder084
+    400374: Cylinder085
+    400376: Cylinder086
+    400378: Cylinder087
+    400380: Cylinder088
+    400382: Cylinder089
+    400384: Cylinder090
+    400386: Daylight001
+    400388: F3-Monumen
+    400390: kolona mat002
+    400392: kolona mat004
+    400394: kolona mat005
+    400396: kolona mat006
+    400398: kolona mat007
+    400400: kolona mat008
+    400402: kolona mat009
+    400404: kolona mat010
+    400406: kolona mat011
+    400408: kolona mat012
+    400410: kolona mat013
+    400412: kolona mat014
+    400414: kolona mat015
+    400416: kolona mat016
+    400418: kolona mat017
+    400420: kolona mat018
+    400422: kolona mat019
+    400424: kolona mat020
+    400426: kolona mat021
+    400428: kolona mat022
+    400430: kolona mat023
+    400432: kolona mat024
+    400434: kolona mat025
+    400436: kolona mat026
+    400438: kolona mesa
+    400440: kolona mesa001
+    400442: kolona mesa002
+    400444: kolona mesa003
+    400446: kolona mesa004
+    400448: kolona mesa005
+    400450: kolona mesa006
+    400452: kolona mesa007
+    400454: L-Ext001
+    400456: L-Ext002
+    400458: Line001
+    400460: Line002
+    400462: Line003
+    400464: mprosta
+    400466: Plane002
+    400468: Plane003
+    400470: Plane004
+    400472: Plane006
+    400474: Plane007
+    400476: Sky002
+    400478: Sun001
+    400480: //RootNode
+    2000000: Camera001
+    2100000: No Name
+    2100002: 05 - Default
+    2100004: 07 - Default
+    2100006: 06 - Default
+    2100008: 'Material #39'
+    2100010: 08 - Default
+    2100012: 13 - Default
+    2100014: 15 - Default
+    2100016: 22 - Default
+    2300000: _forest_template_Curved Plane
+    2300002: _forest_template_Four Planes
+    2300004: _forest_template_High Animated Plane
+    2300006: _forest_template_Low Animated Plane
+    2300008: _forest_template_Medium Animated Plane
+    2300010: _forest_template_One Plane
+    2300012: _forest_template_Three Planes
+    2300014: _forest_template_Two Planes
+    2300016: Box049
+    2300018: Box050
+    2300020: Box051
+    2300022: Box052
+    2300024: Box053
+    2300026: Box054
+    2300028: Box057
+    2300030: Box058
+    2300032: Box083
+    2300034: Box084
+    2300036: Box086
+    2300038: Box087
+    2300040: Box088
+    2300042: Box089
+    2300044: Box090
+    2300046: Box091
+    2300048: Box092
+    2300050: Box093
+    2300052: Box094
+    2300054: Box095
+    2300056: Box096
+    2300058: Box097
+    2300060: Box098
+    2300062: Box099
+    2300064: Box100
+    2300066: Box101
+    2300068: Box104
+    2300070: Box105
+    2300072: Box106
+    2300074: Box107
+    2300076: Box108
+    2300078: Box109
+    2300080: Box110
+    2300082: Box111
+    2300084: Box112
+    2300086: Box113
+    2300088: Box114
+    2300090: Box115
+    2300092: Box116
+    2300094: Box117
+    2300096: Box118
+    2300098: Box119
+    2300100: Box120
+    2300102: Box121
+    2300104: Box122
+    2300106: Box123
+    2300108: Box124
+    2300110: Box125
+    2300112: Box126
+    2300114: Box127
+    2300116: Box128
+    2300118: Box129
+    2300120: Box130
+    2300122: Box131
+    2300124: Box132
+    2300126: Box133
+    2300128: Box134
+    2300130: Box135
+    2300132: Box136
+    2300134: Box137
+    2300136: Box138
+    2300138: Box139
+    2300140: Box140
+    2300142: Box141
+    2300144: Box142
+    2300146: Box143
+    2300148: Box144
+    2300150: Box145
+    2300152: Box146
+    2300154: Box147
+    2300156: Box148
+    2300158: Box149
+    2300160: Box150
+    2300162: Cylinder026
+    2300164: Cylinder039
+    2300166: Cylinder040
+    2300168: Cylinder041
+    2300170: Cylinder042
+    2300172: Cylinder043
+    2300174: Cylinder044
+    2300176: Cylinder045
+    2300178: Cylinder046
+    2300180: Cylinder047
+    2300182: Cylinder048
+    2300184: Cylinder056
+    2300186: Cylinder063
+    2300188: Cylinder067
+    2300190: Cylinder068
+    2300192: Cylinder069
+    2300194: Cylinder070
+    2300196: Cylinder071
+    2300198: Cylinder072
+    2300200: Cylinder073
+    2300202: Cylinder074
+    2300204: Cylinder075
+    2300206: Cylinder076
+    2300208: Cylinder077
+    2300210: Cylinder078
+    2300212: Cylinder079
+    2300214: Cylinder080
+    2300216: Cylinder081
+    2300218: Cylinder082
+    2300220: Cylinder083
+    2300222: Cylinder084
+    2300224: Cylinder085
+    2300226: Cylinder086
+    2300228: Cylinder087
+    2300230: Cylinder088
+    2300232: Cylinder089
+    2300234: Cylinder090
+    2300236: F3-Monumen
+    2300238: L-Ext001
+    2300240: L-Ext002
+    2300242: Line001
+    2300244: Line002
+    2300246: Line003
+    2300248: mprosta
+    2300250: Plane002
+    2300252: Plane003
+    2300254: Plane004
+    2300256: Plane006
+    2300258: Plane007
+    3300000: _forest_template_Curved Plane
+    3300002: _forest_template_Four Planes
+    3300004: _forest_template_High Animated Plane
+    3300006: _forest_template_Low Animated Plane
+    3300008: _forest_template_Medium Animated Plane
+    3300010: _forest_template_One Plane
+    3300012: _forest_template_Three Planes
+    3300014: _forest_template_Two Planes
+    3300016: Box049
+    3300018: Box050
+    3300020: Box051
+    3300022: Box052
+    3300024: Box053
+    3300026: Box054
+    3300028: Box057
+    3300030: Box058
+    3300032: Box083
+    3300034: Box084
+    3300036: Box086
+    3300038: Box087
+    3300040: Box088
+    3300042: Box089
+    3300044: Box090
+    3300046: Box091
+    3300048: Box092
+    3300050: Box093
+    3300052: Box094
+    3300054: Box095
+    3300056: Box096
+    3300058: Box097
+    3300060: Box098
+    3300062: Box099
+    3300064: Box100
+    3300066: Box101
+    3300068: Box104
+    3300070: Box105
+    3300072: Box106
+    3300074: Box107
+    3300076: Box108
+    3300078: Box109
+    3300080: Box110
+    3300082: Box111
+    3300084: Box112
+    3300086: Box113
+    3300088: Box114
+    3300090: Box115
+    3300092: Box116
+    3300094: Box117
+    3300096: Box118
+    3300098: Box119
+    3300100: Box120
+    3300102: Box121
+    3300104: Box122
+    3300106: Box123
+    3300108: Box124
+    3300110: Box125
+    3300112: Box126
+    3300114: Box127
+    3300116: Box128
+    3300118: Box129
+    3300120: Box130
+    3300122: Box131
+    3300124: Box132
+    3300126: Box133
+    3300128: Box134
+    3300130: Box135
+    3300132: Box136
+    3300134: Box137
+    3300136: Box138
+    3300138: Box139
+    3300140: Box140
+    3300142: Box141
+    3300144: Box142
+    3300146: Box143
+    3300148: Box144
+    3300150: Box145
+    3300152: Box146
+    3300154: Box147
+    3300156: Box148
+    3300158: Box149
+    3300160: Box150
+    3300162: Cylinder026
+    3300164: Cylinder039
+    3300166: Cylinder040
+    3300168: Cylinder041
+    3300170: Cylinder042
+    3300172: Cylinder043
+    3300174: Cylinder044
+    3300176: Cylinder045
+    3300178: Cylinder046
+    3300180: Cylinder047
+    3300182: Cylinder048
+    3300184: Cylinder056
+    3300186: Cylinder063
+    3300188: Cylinder067
+    3300190: Cylinder068
+    3300192: Cylinder069
+    3300194: Cylinder070
+    3300196: Cylinder071
+    3300198: Cylinder072
+    3300200: Cylinder073
+    3300202: Cylinder074
+    3300204: Cylinder075
+    3300206: Cylinder076
+    3300208: Cylinder077
+    3300210: Cylinder078
+    3300212: Cylinder079
+    3300214: Cylinder080
+    3300216: Cylinder081
+    3300218: Cylinder082
+    3300220: Cylinder083
+    3300222: Cylinder084
+    3300224: Cylinder085
+    3300226: Cylinder086
+    3300228: Cylinder087
+    3300230: Cylinder088
+    3300232: Cylinder089
+    3300234: Cylinder090
+    3300236: F3-Monumen
+    3300238: L-Ext001
+    3300240: L-Ext002
+    3300242: Line001
+    3300244: Line002
+    3300246: Line003
+    3300248: mprosta
+    3300250: Plane002
+    3300252: Plane003
+    3300254: Plane004
+    3300256: Plane006
+    3300258: Plane007
+    4300000: Box049
+    4300002: Box050
+    4300004: Box051
+    4300006: Box052
+    4300008: Box053
+    4300010: L-Ext001
+    4300012: L-Ext002
+    4300014: Box054
+    4300016: Box057
+    4300018: Cylinder026
+    4300020: Box058
+    4300022: Line001
+    4300024: Line002
+    4300026: Box083
+    4300028: F3-Monumen
+    4300030: mprosta
+    4300032: Box084
+    4300034: Box087
+    4300036: Cylinder039
+    4300038: Box086
+    4300040: Cylinder040
+    4300042: Box088
+    4300044: Box089
+    4300046: Cylinder041
+    4300048: Box090
+    4300050: Box091
+    4300052: Box092
+    4300054: Box093
+    4300056: Cylinder042
+    4300058: Cylinder043
+    4300060: Box094
+    4300062: Box095
+    4300064: Box096
+    4300066: Box097
+    4300068: Cylinder044
+    4300070: Cylinder045
+    4300072: Box098
+    4300074: Box099
+    4300076: Box100
+    4300078: Box101
+    4300080: Cylinder046
+    4300082: Cylinder047
+    4300084: Cylinder048
+    4300086: Line003
+    4300088: Plane002
+    4300090: Plane003
+    4300092: Plane004
+    4300094: _forest_template_One Plane
+    4300096: _forest_template_Two Planes
+    4300098: _forest_template_Three Planes
+    4300100: _forest_template_Four Planes
+    4300102: _forest_template_Curved Plane
+    4300104: _forest_template_Low Animated Plane
+    4300106: _forest_template_Medium Animated Plane
+    4300108: _forest_template_High Animated Plane
+    4300110: Cylinder056
+    4300112: Plane006
+    4300114: Cylinder063
+    4300116: Cylinder067
+    4300118: Box104
+    4300120: Box105
+    4300122: Cylinder068
+    4300124: Box106
+    4300126: Box107
+    4300128: Box108
+    4300130: Cylinder069
+    4300132: Box109
+    4300134: Box110
+    4300136: Cylinder070
+    4300138: Box111
+    4300140: Box112
+    4300142: Cylinder071
+    4300144: Box113
+    4300146: Box114
+    4300148: Cylinder072
+    4300150: Box115
+    4300152: Box116
+    4300154: Cylinder073
+    4300156: Box117
+    4300158: Box118
+    4300160: Cylinder074
+    4300162: Box119
+    4300164: Box120
+    4300166: Cylinder075
+    4300168: Box121
+    4300170: Box122
+    4300172: Cylinder076
+    4300174: Box123
+    4300176: Box124
+    4300178: Cylinder077
+    4300180: Box125
+    4300182: Box126
+    4300184: Cylinder078
+    4300186: Box127
+    4300188: Cylinder079
+    4300190: Box128
+    4300192: Box129
+    4300194: Plane007
+    4300196: Box130
+    4300198: Cylinder080
+    4300200: Cylinder081
+    4300202: Box131
+    4300204: Box132
+    4300206: Cylinder082
+    4300208: Box133
+    4300210: Box134
+    4300212: Box135
+    4300214: Cylinder083
+    4300216: Box136
+    4300218: Cylinder084
+    4300220: Box137
+    4300222: Box138
+    4300224: Cylinder085
+    4300226: Box139
+    4300228: Box140
+    4300230: Cylinder086
+    4300232: Box141
+    4300234: Box142
+    4300236: Cylinder087
+    4300238: Box143
+    4300240: Box144
+    4300242: Cylinder088
+    4300244: Box145
+    4300246: Box146
+    4300248: Cylinder089
+    4300250: Box147
+    4300252: Box148
+    4300254: Cylinder090
+    4300256: Box149
+    4300258: Box150
+    7400000: Take 001
+    9500000: //RootNode
+    10800000: Sky002
+    10800002: Sun001
+    6000828045688606266: Camera001
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.0254
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

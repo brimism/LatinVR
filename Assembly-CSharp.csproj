@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="Assets\02_Scripts\CenturionScript.cs" />
     <Compile Include="Assets\02_Scripts\GameManagerScript.cs" />
+    <Compile Include="Assets\02_Scripts\PointingIndicator.cs" />
     <Compile Include="Assets\02_Scripts\PointTo.cs" />
     <Compile Include="Assets\02_Scripts\TextScript.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scenes\Scripts\TestScript.cs" />

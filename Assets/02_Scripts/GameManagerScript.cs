@@ -28,6 +28,10 @@ public class GameManagerScript : MonoBehaviour {
 		Reevaluate();
 	}
 
+	public void UpdateValue(string s, bool b){
+		boolDict[s] = b;
+	}
+
 	public void UpdateDict(){
 		boolDict["give jug"] = giveJug;
 		boolDict["point to box"] = pointToBox;
