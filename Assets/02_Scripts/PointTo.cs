@@ -17,8 +17,9 @@ namespace VRTK.Examples
 
 				void Start(){
 						gm = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
-            if(pointToTime>0f){
-
+            if(needsTimeIndicator){
+                pi = transform.Find("PointingIndicator").GetComponent<PointingIndicator>();
+                pi.gameObject.SetActive(false);
             }
 				}
 
@@ -40,12 +41,24 @@ namespace VRTK.Examples
             if(pointToPopup!=null){
               pointToPopup.SetActive(true);
             }
+            if(needsTimeIndicator){
+              pi.gameObject.SetActive(true);
+              pi.StartExpanding(pointToTime);
+            }
         }
 
         protected virtual void InteractableObjectUnused(object sender, InteractableObjectEventArgs e)
         {
 						pointing = false;
             gm.UpdateValue(boolName, false);
+            if(pointToPopup!=null){
+              pointToPopup.SetActive(true);
+            }
+            if(needsTimeIndicator){
+              pi.StopExpanding();
+              pi.gameObject.SetActive(false);
+            }
+
         }
 
         protected virtual void OnEnable()
