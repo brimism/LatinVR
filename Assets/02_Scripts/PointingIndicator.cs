@@ -18,7 +18,7 @@ public class PointingIndicator : MonoBehaviour {
 	void Update () {
 		if(expanding){
 			float f = Mathf.Clamp((Time.time-startTime)/expandTime, 0, 1);
-			disk.localScale = new Vector3(f*0.23f, f*0.23f, 1f);
+			disk.localScale = new Vector3(f*0.2f, f*0.2f, 1f);
 			transform.LookAt(player);
 		}
 	}

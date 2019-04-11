@@ -23,7 +23,8 @@ public class CenturionScript : MonoBehaviour {
 
 	public void OnTriggerEnter(Collider c){
 		if(c.gameObject.name == "Jug"){
-			gm.giveJug = true;
+			// gm.giveJug = true;
+			gm.UpdateValue("give jug", true);
 			gm.Reevaluate();
 			Destroy(c.gameObject);
 			// aus.clip = goodJob;

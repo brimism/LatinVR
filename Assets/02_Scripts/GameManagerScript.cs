@@ -6,6 +6,7 @@ public class GameManagerScript : MonoBehaviour {
 
 	public bool giveJug = false;
 	public bool pointToBox = false;
+	public bool pointToWheel = false;
 	public int currHead = 0;
 	public TextScript textBubble;
 
@@ -25,6 +26,7 @@ public class GameManagerScript : MonoBehaviour {
 	Dictionary<string, bool> boolDict = new Dictionary<string, bool>();
 
 	public void Start(){
+		UpdateDict();
 		Reevaluate();
 	}
 
@@ -35,10 +37,11 @@ public class GameManagerScript : MonoBehaviour {
 	public void UpdateDict(){
 		boolDict["give jug"] = giveJug;
 		boolDict["point to box"] = pointToBox;
+		boolDict["point to wheel"] = pointToWheel;
 	}
 
 	public void Reevaluate(){
-		UpdateDict();
+		// UpdateDict();
 		Node n = graph[currHead];
 		for(int i=0; i<n.edges.Count; i++){
 			if(boolDict[n.edges[i].condition.ToLower()]){

@@ -27,7 +27,6 @@ namespace VRTK.Examples
         {
 						if(pointing){
 								if(Time.time>startTime+pointToTime){
-									gm.pointToBox = true;
                   gm.UpdateValue(boolName, true);
 									gm.Reevaluate();
 								}
