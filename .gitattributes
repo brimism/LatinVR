@@ -3,3 +3,5 @@ Assets/04_Models/The_Doryphoros_SMK_KAS11.obj filter=lfs diff=lfs merge=lfs -tex
 Assets/04_Models/mercury.obj filter=lfs diff=lfs merge=lfs -text
 temple[[:space:]]on[[:space:]]water.fbx filter=lfs diff=lfs merge=lfs -text
 Roman[[:space:]]Forum.fbx filter=lfs diff=lfs merge=lfs -text
+*.fbx filter=lfs diff=lfs merge=lfs -text
+04_Models/Forvm.fbx filter=lfs diff=lfs merge=lfs -text

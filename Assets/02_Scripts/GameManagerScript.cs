@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameManagerScript : MonoBehaviour {
 
 	public bool giveJug = false;
-	public bool pointToBox = false;
+	public bool pointToTorch = false;
 	public bool pointToWheel = false;
 	public bool oneSecElapsed = false;
 	public int currHead = 0;
@@ -51,7 +51,7 @@ public class GameManagerScript : MonoBehaviour {
 
 	public void SetupDict(){
 		boolDict["give jug"] = giveJug;
-		boolDict["point to box"] = pointToBox;
+		boolDict["point to torch"] = pointToTorch;
 		boolDict["point to wheel"] = pointToWheel;
 		boolDict["1s"] = oneSecElapsed;
 	}
@@ -64,7 +64,9 @@ public class GameManagerScript : MonoBehaviour {
 				currHead = n.edges[i].toNode;
 				if(graph[currHead].isVocabMatchingParent){
 					if(graph[currHead].edges.Count>1){
-						graph[currHead].lastSelected = Random.Range(0, graph[currHead].edges.Count-2);
+						int r = Random.Range(0, graph[currHead].edges.Count-1);
+						Debug.Log(r);
+						graph[currHead].lastSelected = r;
 						currHead = graph[currHead].edges[graph[currHead].lastSelected].toNode;
 					}else{
 						currHead = graph[currHead].edges[0].toNode;
