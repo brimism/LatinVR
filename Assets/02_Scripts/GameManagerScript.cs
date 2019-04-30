@@ -8,8 +8,10 @@ public class GameManagerScript : MonoBehaviour {
 	public bool pointToTorch = false;
 	public bool pointToWheel = false;
 	public bool oneSecElapsed = false;
+	public bool threeSecElapsed = false;
 	public int currHead = 0;
-	public TextScript textBubble;
+	public List<TextScript> textBubbles;
+	public List<AudioSource> auses;
 
 	[System.Serializable]
 	public class Edge{
@@ -22,9 +24,14 @@ public class GameManagerScript : MonoBehaviour {
 		public bool isVocabMatchingParent = false;
 		public bool isVocabMatchingSuccess = false;
 		public bool isVocabMatchingFail = false;
+		public bool startTimer = false;
 		public int lastSelected;
 		public string text = "";
+		public int textBubbleNumber;
+		public List<GameObject> toEnable = new List<GameObject>();
+		public List<GameObject> toDisable = new List<GameObject>();
 		public AudioClip ac;
+		public int ausNumber;
 		public List<Edge> edges = new List<Edge>();
 	}
 
@@ -34,14 +41,17 @@ public class GameManagerScript : MonoBehaviour {
 	private Timer timer;
 
 	public void Start(){
-		aus = GetComponent<AudioSource>();
 		timer = GameObject.Find("Timer").GetComponent<Timer>();
 		SetupDict();
 		Reevaluate();
-		textBubble.ChangeText(graph[currHead].text);
+		textBubbles[graph[currHead].textBubbleNumber].ChangeText(graph[currHead].text);
 		if(graph[currHead].ac!=null){
-			aus.clip = graph[currHead].ac;
-			aus.Play();
+			auses[graph[currHead].ausNumber].clip = graph[currHead].ac;
+			auses[graph[currHead].ausNumber].Play();
+			Debug.Log("playing");
+		}
+		if(graph[currHead].startTimer){
+			timer.StartTimer();
 		}
 	}
 
@@ -54,6 +64,7 @@ public class GameManagerScript : MonoBehaviour {
 		boolDict["point to torch"] = pointToTorch;
 		boolDict["point to wheel"] = pointToWheel;
 		boolDict["1s"] = oneSecElapsed;
+		boolDict["3s"] = threeSecElapsed;
 	}
 
 	public void Reevaluate(){
@@ -79,17 +90,22 @@ public class GameManagerScript : MonoBehaviour {
 				}else if(graph[currHead].isVocabMatchingFail){
 					timer.StartTimer();
 				}
-				textBubble.ChangeText(graph[currHead].text);
+				if(graph[currHead].startTimer){
+					timer.StartTimer();
+				}
+				foreach(GameObject g in graph[currHead].toEnable){
+					g.SetActive(true);
+				}
+				foreach(GameObject g in graph[currHead].toDisable){
+					g.SetActive(false);
+				}
+				textBubbles[graph[currHead].textBubbleNumber].ChangeText(graph[currHead].text);
 				if(graph[currHead].ac!=null){
-					aus.clip = graph[currHead].ac;
-					aus.Play();
+					auses[graph[currHead].ausNumber].clip = graph[currHead].ac;
+					auses[graph[currHead].ausNumber].Play();
 				}
 				break;
 			}
 		}
-	}
-
-	void Update () {
-
 	}
 }
