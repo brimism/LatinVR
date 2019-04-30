@@ -731,7 +731,6 @@
     <None Include="Assets\Oculus\Avatar\Resources\Materials\AvatarMaterialStateShader.cginc" />
     <None Include="Assets\Oculus\Avatar\Resources\Materials\AvatarSurfaceShader.shader" />
     <None Include="Assets\Oculus\SampleFramework\Usage\DistanceGrab\Materials\ToyCubeWithOutline.shader" />
-    <None Include="Assets\SkySerie Freebie\Hdri setup.txt" />
     <None Include="Assets\05_Misc\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\05_Misc\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\05_Misc\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
