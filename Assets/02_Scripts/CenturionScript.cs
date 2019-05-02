@@ -22,13 +22,15 @@ public class CenturionScript : MonoBehaviour {
 
 
 	public void OnTriggerEnter(Collider c){
-		if(c.gameObject.name == "Jug"){
+		Debug.Log("collided");
+		Debug.Log(c.gameObject.tag);
+		if(c.gameObject.tag == "Bread"){
 			gm.UpdateValue("give bread", true);
 			gm.Reevaluate();
-		}else if(c.gameObject.name == "Vase"){
+		}else if(c.gameObject.tag == "Jug"){
 			gm.UpdateValue("give jug", true);
 			gm.Reevaluate();
-		}else if(c.gameObject.name == "Grapes"){
+		}else if(c.gameObject.tag == "Grapes"){
 			gm.UpdateValue("give grapes", true);
 			gm.Reevaluate();
 		}else if(c.transform.root.tag != "Player"){
