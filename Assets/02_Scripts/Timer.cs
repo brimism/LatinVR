@@ -8,7 +8,7 @@ public class Timer : MonoBehaviour {
 	private bool counting = false;
 	private GameManagerScript gm;
 	private bool past1s = false;
-	void Start(){
+	void Awake(){
 		gm = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
 	}
 	void Update () {

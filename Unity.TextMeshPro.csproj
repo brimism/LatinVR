@@ -5,16 +5,16 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{9118B019-1FEF-914B-7CA9-E544A3C6DF5C}</ProjectGuid>
+    <ProjectGuid>{07A21C90-D344-AE1A-8456-9910C203B41A}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <AssemblyName>Oculus.VR.Editor</AssemblyName>
+    <AssemblyName>Unity.TextMeshPro</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
+    <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
     <CompilerResponseFile></CompilerResponseFile>
-    <UnityProjectType>Editor:5</UnityProjectType>
+    <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2018.2.20f1</UnityVersion>
     <RootNamespace></RootNamespace>
@@ -147,9 +147,6 @@
     </Reference>
     <Reference Include="Managed/UnityEngine/UnityEngine.SharedInternalsModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2018.2.20f1\Editor\Data\Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
-    </Reference>
-    <Reference Include="Managed/UnityEngine/UnityEngine.SpatialTrackingModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.2.20f1\Editor\Data\Managed/UnityEngine/UnityEngine.SpatialTrackingModule.dll</HintPath>
     </Reference>
     <Reference Include="Managed/UnityEngine/UnityEngine.SpriteMaskModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2018.2.20f1\Editor\Data\Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
@@ -305,50 +302,79 @@
       <HintPath>C:/Users/Imaginarium Admin/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.2.20f1\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\mscorlib.dll</HintPath>
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.2.20f1\Editor\Data\MonoBleedingEdge\lib\mono\unity\mscorlib.dll</HintPath>
     </Reference>
     <Reference Include="System">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.2.20f1\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.dll</HintPath>
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.2.20f1\Editor\Data\MonoBleedingEdge\lib\mono\unity\System.dll</HintPath>
     </Reference>
     <Reference Include="System.Core">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.2.20f1\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Core.dll</HintPath>
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.2.20f1\Editor\Data\MonoBleedingEdge\lib\mono\unity\System.Core.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.2.20f1\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Runtime.Serialization.dll</HintPath>
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.2.20f1\Editor\Data\MonoBleedingEdge\lib\mono\unity\System.Runtime.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.2.20f1\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Xml.dll</HintPath>
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.2.20f1\Editor\Data\MonoBleedingEdge\lib\mono\unity\System.Xml.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.2.20f1\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Xml.Linq.dll</HintPath>
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.2.20f1\Editor\Data\MonoBleedingEdge\lib\mono\unity\System.Xml.Linq.dll</HintPath>
     </Reference>
     <Reference Include="UnityScript">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.2.20f1\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\UnityScript.dll</HintPath>
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.2.20f1\Editor\Data\MonoBleedingEdge\lib\mono\unity\UnityScript.dll</HintPath>
     </Reference>
     <Reference Include="UnityScript.Lang">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.2.20f1\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\UnityScript.Lang.dll</HintPath>
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.2.20f1\Editor\Data\MonoBleedingEdge\lib\mono\unity\UnityScript.Lang.dll</HintPath>
     </Reference>
     <Reference Include="Boo.Lang">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.2.20f1\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\Boo.Lang.dll</HintPath>
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.2.20f1\Editor\Data\MonoBleedingEdge\lib\mono\unity\Boo.Lang.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Oculus.VR.csproj">
-      <Project>{ABAA9E89-904E-F248-9658-14F9444302C5}</Project>
-      <Name>Oculus.VR</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Assets\Oculus\VR\Editor\OVRADBTool.cs" />
-    <Compile Include="Assets\Oculus\VR\Editor\OVRBuild.cs" />
-    <Compile Include="Assets\Oculus\VR\Editor\OVREngineConfigurationUpdater.cs" />
-    <Compile Include="Assets\Oculus\VR\Editor\OVRLayerAttributeEditor.cs" />
-    <Compile Include="Assets\Oculus\VR\Editor\OVRManifestPreprocessor.cs" />
-    <Compile Include="Assets\Oculus\VR\Editor\OVRPlatformTool.cs" />
-    <Compile Include="Assets\Oculus\VR\Editor\OVRPluginUpdater.cs" />
-    <Compile Include="Assets\Oculus\VR\Editor\OVRPluginUpdaterStub.cs" />
-    <Compile Include="Assets\Oculus\VR\Editor\OVRScreenshotWizard.cs" />
-    <Compile Include="Assets\Oculus\VR\Editor\OVRSystemProfilerPanel.cs" />
+    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Runtime\FastAction.cs" />
+    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Runtime\MaterialReferenceManager.cs" />
+    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Runtime\PackageResourceImporterWindow.cs" />
+    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Runtime\TextContainer.cs" />
+    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Runtime\TextMeshPro.cs" />
+    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Runtime\TextMeshProUGUI.cs" />
+    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Runtime\TMP_Asset.cs" />
+    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Runtime\TMP_ColorGradient.cs" />
+    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Runtime\TMP_Compatibility.cs" />
+    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Runtime\TMP_CoroutineTween.cs" />
+    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Runtime\TMP_DefaultControls.cs" />
+    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Runtime\TMP_Dropdown.cs" />
+    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Runtime\TMP_FontAsset.cs" />
+    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Runtime\TMP_InputField.cs" />
+    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Runtime\TMP_InputValidator.cs" />
+    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Runtime\TMP_LineInfo.cs" />
+    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Runtime\TMP_ListPool.cs" />
+    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Runtime\TMP_MaterialManager.cs" />
+    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Runtime\TMP_MeshInfo.cs" />
+    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Runtime\TMP_ObjectPool.cs" />
+    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Runtime\TMP_ScrollbarEventHandler.cs" />
+    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Runtime\TMP_SelectionCaret.cs" />
+    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Runtime\TMP_Settings.cs" />
+    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Runtime\TMP_Sprite.cs" />
+    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Runtime\TMP_SpriteAnimator.cs" />
+    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Runtime\TMP_SpriteAsset.cs" />
+    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Runtime\TMP_SpriteAssetImportFormats.cs" />
+    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Runtime\TMP_Style.cs" />
+    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Runtime\TMP_StyleSheet.cs" />
+    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Runtime\TMP_SubMesh.cs" />
+    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Runtime\TMP_SubMeshUI.cs" />
+    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Runtime\TMP_Text.cs" />
+    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Runtime\TMP_TextElement.cs" />
+    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Runtime\TMP_TextInfo.cs" />
+    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Runtime\TMP_TextUtilities.cs" />
+    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Runtime\TMP_UpdateManager.cs" />
+    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Runtime\TMP_UpdateRegistery.cs" />
+    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Runtime\TMP_XmlTagStack.cs" />
+    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Runtime\TMPro_EventManager.cs" />
+    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Runtime\TMPro_ExtensionMethods.cs" />
+    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Runtime\TMPro_FontUtilities.cs" />
+    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Runtime\TMPro_MeshUtilities.cs" />
+    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Runtime\TMPro_Private.cs" />
+    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Runtime\TMPro_ShaderUtilities.cs" />
+    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Runtime\TMPro_UGUI_Private.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\05_Misc\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />

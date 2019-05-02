@@ -15,7 +15,7 @@ namespace VRTK.Examples
 				private GameManagerScript gm;
         private PointingIndicator pi;
 
-				void Start(){
+				void Awake(){
 						gm = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
             if(needsTimeIndicator){
                 pi = transform.Find("PointingIndicator").GetComponent<PointingIndicator>();
@@ -27,6 +27,14 @@ namespace VRTK.Examples
         {
 						if(pointing){
 								if(Time.time>startTime+pointToTime){
+                  if(pointToPopup!=null){
+                    pointToPopup.SetActive(true);
+                  }
+                  if(needsTimeIndicator){
+                    pi.StopExpanding();
+                    pi.gameObject.SetActive(false);
+                  }
+                  pointing = false;
                   gm.UpdateValue(boolName, true);
 									gm.Reevaluate();
 								}

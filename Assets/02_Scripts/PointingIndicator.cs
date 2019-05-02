@@ -12,14 +12,14 @@ public class PointingIndicator : MonoBehaviour {
 	// Use this for initialization
 	void Awake () {
 		disk = transform.Find("Disk");
-		player = GameObject.Find("Player").transform;
+		player = GameObject.Find("CenterEyeAnchor").transform;
 	}
 
 	void Update () {
 		if(expanding){
 			float f = Mathf.Clamp((Time.time-startTime)/expandTime, 0, 1);
 			disk.localScale = new Vector3(f*0.2f, f*0.2f, 1f);
-			transform.LookAt(player);
+			transform.LookAt(new Vector3(player.position.x, transform.position.y, player.position.z));
 		}
 	}
 
