@@ -23,15 +23,15 @@ public class CenturionScript : MonoBehaviour {
 
 	public void OnTriggerEnter(Collider c){
 		if(c.gameObject.name == "Jug"){
-			// gm.giveJug = true;
+			gm.UpdateValue("give bread", true);
+			gm.Reevaluate();
+		}else if(c.gameObject.name == "Vase"){
 			gm.UpdateValue("give jug", true);
 			gm.Reevaluate();
-			Destroy(c.gameObject);
-			// aus.clip = goodJob;
-			// aus.Play();
+		}else if(c.gameObject.name == "Grapes"){
+			gm.UpdateValue("give grapes", true);
+			gm.Reevaluate();
 		}else if(c.transform.root.tag != "Player"){
-			// aus.clip = giveJug;
-			// aus.Play();
 		}
 	}
 }

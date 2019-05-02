@@ -721,7 +721,7 @@ MonoBehaviour:
     ausNumber: 1
     edges:
     - condition: take my money
-      toNode: 16
+      toNode: 17
   - isVocabMatchingParent: 0
     isVocabMatchingSuccess: 0
     isVocabMatchingFail: 0
@@ -738,7 +738,7 @@ MonoBehaviour:
     ausNumber: 1
     edges:
     - condition: take my money
-      toNode: 16
+      toNode: 18
   - isVocabMatchingParent: 0
     isVocabMatchingSuccess: 0
     isVocabMatchingFail: 0
@@ -748,13 +748,49 @@ MonoBehaviour:
     textBubbleNumber: 0
     text: 
     toEnable: []
-    toDisable: []
+    toDisable:
+    - {fileID: 1418608544}
     bools2Reset: []
     ac: {fileID: 8300000, guid: fa1ab4cdffbb26447bdc4673a2bed6bd, type: 3}
     ausNumber: 1
     edges:
     - condition: 3s
-      toNode: 17
+      toNode: 19
+  - isVocabMatchingParent: 0
+    isVocabMatchingSuccess: 0
+    isVocabMatchingFail: 0
+    startTimer: 1
+    lastSelected: 0
+    changeText: 0
+    textBubbleNumber: 0
+    text: 
+    toEnable:
+    - {fileID: 0}
+    toDisable:
+    - {fileID: 1418608544}
+    bools2Reset: []
+    ac: {fileID: 8300000, guid: fa1ab4cdffbb26447bdc4673a2bed6bd, type: 3}
+    ausNumber: 1
+    edges:
+    - condition: 3s
+      toNode: 20
+  - isVocabMatchingParent: 0
+    isVocabMatchingSuccess: 0
+    isVocabMatchingFail: 0
+    startTimer: 1
+    lastSelected: 0
+    changeText: 0
+    textBubbleNumber: 0
+    text: 
+    toEnable: []
+    toDisable:
+    - {fileID: 1418608544}
+    bools2Reset: []
+    ac: {fileID: 8300000, guid: fa1ab4cdffbb26447bdc4673a2bed6bd, type: 3}
+    ausNumber: 1
+    edges:
+    - condition: 3s
+      toNode: 21
   - isVocabMatchingParent: 0
     isVocabMatchingSuccess: 0
     isVocabMatchingFail: 0
@@ -762,14 +798,16 @@ MonoBehaviour:
     lastSelected: 0
     changeText: 1
     textBubbleNumber: 1
-    text: Oh, sorry. What can I do for you?
+    text: Thank you.
     toEnable:
     - {fileID: 0}
     toDisable: []
     bools2Reset: []
     ac: {fileID: 8300000, guid: fa1ab4cdffbb26447bdc4673a2bed6bd, type: 3}
     ausNumber: 1
-    edges: []
+    edges:
+    - condition: give bread
+      toNode: 0
   - isVocabMatchingParent: 0
     isVocabMatchingSuccess: 0
     isVocabMatchingFail: 0
@@ -777,13 +815,16 @@ MonoBehaviour:
     lastSelected: 0
     changeText: 1
     textBubbleNumber: 1
-    text: Oh, sorry. What can I do for you?
-    toEnable: []
+    text: Thank you.
+    toEnable:
+    - {fileID: 0}
     toDisable: []
     bools2Reset: []
     ac: {fileID: 8300000, guid: fa1ab4cdffbb26447bdc4673a2bed6bd, type: 3}
     ausNumber: 1
-    edges: []
+    edges:
+    - condition: give vase
+      toNode: 23
   - isVocabMatchingParent: 0
     isVocabMatchingSuccess: 0
     isVocabMatchingFail: 0
@@ -791,83 +832,65 @@ MonoBehaviour:
     lastSelected: 0
     changeText: 1
     textBubbleNumber: 1
-    text: Oh, sorry. What can I do for you?
-    toEnable: []
+    text: Thank you.
+    toEnable:
+    - {fileID: 0}
     toDisable: []
     bools2Reset: []
     ac: {fileID: 8300000, guid: fa1ab4cdffbb26447bdc4673a2bed6bd, type: 3}
     ausNumber: 1
-    edges: []
+    edges:
+    - condition: give grapes
+      toNode: 24
   - isVocabMatchingParent: 0
     isVocabMatchingSuccess: 0
     isVocabMatchingFail: 0
     startTimer: 0
     lastSelected: 0
     changeText: 1
-    textBubbleNumber: 1
-    text: Oh, sorry. What can I do for you?
+    textBubbleNumber: 0
+    text: Thank you for the bread!
     toEnable: []
-    toDisable: []
+    toDisable:
+    - {fileID: 0}
     bools2Reset: []
     ac: {fileID: 8300000, guid: fa1ab4cdffbb26447bdc4673a2bed6bd, type: 3}
-    ausNumber: 1
+    ausNumber: 0
     edges: []
   - isVocabMatchingParent: 0
     isVocabMatchingSuccess: 0
     isVocabMatchingFail: 0
-    startTimer: 0
+    startTimer: 1
+    lastSelected: 0
+    changeText: 1
+    textBubbleNumber: 0
+    text: This isn't bread! This is a vase!
+    toEnable: []
+    toDisable:
+    - {fileID: 0}
+    bools2Reset: []
+    ac: {fileID: 8300000, guid: fa1ab4cdffbb26447bdc4673a2bed6bd, type: 3}
+    ausNumber: 1
+    edges:
+    - condition: 3s
+      toNode: 0
+  - isVocabMatchingParent: 0
+    isVocabMatchingSuccess: 0
+    isVocabMatchingFail: 0
+    startTimer: 1
     lastSelected: 0
     changeText: 1
     textBubbleNumber: 1
     text: Oh, sorry. What can I do for you?
     toEnable: []
-    toDisable: []
+    toDisable:
+    - {fileID: 0}
     bools2Reset: []
     ac: {fileID: 8300000, guid: fa1ab4cdffbb26447bdc4673a2bed6bd, type: 3}
     ausNumber: 1
-    edges: []
-  - isVocabMatchingParent: 0
-    isVocabMatchingSuccess: 0
-    isVocabMatchingFail: 0
-    startTimer: 0
-    lastSelected: 0
-    changeText: 1
-    textBubbleNumber: 1
-    text: Oh, sorry. What can I do for you?
-    toEnable: []
-    toDisable: []
-    bools2Reset: []
-    ac: {fileID: 8300000, guid: fa1ab4cdffbb26447bdc4673a2bed6bd, type: 3}
-    ausNumber: 1
-    edges: []
-  - isVocabMatchingParent: 0
-    isVocabMatchingSuccess: 0
-    isVocabMatchingFail: 0
-    startTimer: 0
-    lastSelected: 0
-    changeText: 1
-    textBubbleNumber: 1
-    text: Oh, sorry. What can I do for you?
-    toEnable: []
-    toDisable: []
-    bools2Reset: []
-    ac: {fileID: 8300000, guid: fa1ab4cdffbb26447bdc4673a2bed6bd, type: 3}
-    ausNumber: 1
-    edges: []
-  - isVocabMatchingParent: 0
-    isVocabMatchingSuccess: 0
-    isVocabMatchingFail: 0
-    startTimer: 0
-    lastSelected: 0
-    changeText: 1
-    textBubbleNumber: 1
-    text: Oh, sorry. What can I do for you?
-    toEnable: []
-    toDisable: []
-    bools2Reset: []
-    ac: {fileID: 8300000, guid: fa1ab4cdffbb26447bdc4673a2bed6bd, type: 3}
-    ausNumber: 1
-    edges: []
+    edges:
+    - condition: 3s
+      toNode: 0
 --- !u!4 &117898783
 Transform:
   m_ObjectHideFlags: 0
@@ -3681,7 +3704,7 @@ BoxCollider:
   m_GameObject: {fileID: 1239817950}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -3858,8 +3881,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.195603, y: 0.08078945, z: 0.24759233}
-  m_Center: {x: -0.2922797, y: 0.259602, z: -0.9242287}
+  m_Size: {x: 0.54042226, y: 0.34043062, z: 0.24759239}
+  m_Center: {x: -0.3166525, y: 0.28917104, z: -0.9242371}
 --- !u!1001 &1243650962
 Prefab:
   m_ObjectHideFlags: 0
@@ -6318,7 +6341,7 @@ BoxCollider:
   m_GameObject: {fileID: 2071952812}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.195603, y: 0.08078945, z: 0.24759233}
   m_Center: {x: -0.2922797, y: 0.259602, z: -0.9242287}

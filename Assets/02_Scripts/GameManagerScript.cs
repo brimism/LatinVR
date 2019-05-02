@@ -71,6 +71,9 @@ public class GameManagerScript : MonoBehaviour {
 		boolDict["point to vase"] = false;
 		boolDict["point to grapes"] = false;
 		boolDict["take my money"] = false;
+		boolDict["give bread"] = false;
+		boolDict["give jug"] = false;
+		boolDict["give grapes"] = false;
 	}
 
 	public void UpdateValue(string s, bool b){
