@@ -68,7 +68,7 @@ public class GameManagerScript : MonoBehaviour {
 		boolDict["well enough"] = false;
 		boolDict["poorly"] = false;
 		boolDict["point to bread"] = false;
-		boolDict["point to vase"] = false;
+		boolDict["point to jug"] = false;
 		boolDict["point to grapes"] = false;
 		boolDict["take my money"] = false;
 		boolDict["give bread"] = false;

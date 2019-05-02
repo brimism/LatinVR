@@ -510,7 +510,10 @@ MonoBehaviour:
     - {fileID: 481760486}
     - {fileID: 616691548}
     toDisable: []
-    bools2Reset: []
+    bools2Reset:
+    - point to bread
+    - point to jug
+    - point to grapes
     ac: {fileID: 8300000, guid: fa1ab4cdffbb26447bdc4673a2bed6bd, type: 3}
     ausNumber: 1
     edges:
@@ -592,7 +595,7 @@ MonoBehaviour:
     edges:
     - condition: point to bread
       toNode: 10
-    - condition: point to vase
+    - condition: point to jug
       toNode: 11
     - condition: point to grapes
       toNode: 12
@@ -618,7 +621,7 @@ MonoBehaviour:
     edges:
     - condition: point to bread
       toNode: 10
-    - condition: point to vase
+    - condition: point to jug
       toNode: 11
     - condition: point to grapes
       toNode: 12
@@ -822,7 +825,7 @@ MonoBehaviour:
     ac: {fileID: 8300000, guid: fa1ab4cdffbb26447bdc4673a2bed6bd, type: 3}
     ausNumber: 1
     edges:
-    - condition: give vase
+    - condition: give jug
       toNode: 23
   - isVocabMatchingParent: 0
     isVocabMatchingSuccess: 0
@@ -879,8 +882,8 @@ MonoBehaviour:
     startTimer: 1
     lastSelected: 0
     changeText: 1
-    textBubbleNumber: 1
-    text: Oh, sorry. What can I do for you?
+    textBubbleNumber: 0
+    text: This isn't bread! This is a grape!
     toEnable: []
     toDisable:
     - {fileID: 1503088013}
@@ -5746,7 +5749,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   linkedObject: {fileID: 1685745430}
-  boolName: point to jar
+  boolName: point to jug
   pointToTime: 2
   needsTimeIndicator: 1
   pointToPopup: {fileID: 0}

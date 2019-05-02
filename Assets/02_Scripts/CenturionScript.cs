@@ -22,8 +22,6 @@ public class CenturionScript : MonoBehaviour {
 
 
 	public void OnTriggerEnter(Collider c){
-		Debug.Log("collided");
-		Debug.Log(c.gameObject.tag);
 		if(c.gameObject.tag == "Bread"){
 			gm.UpdateValue("give bread", true);
 			gm.Reevaluate();
