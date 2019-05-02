@@ -2200,30 +2200,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4001700908730654, guid: bda613e5f5f51134c8bf1b600ad7b7c9, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -88.727005
-      objectReference: {fileID: 0}
-    - target: {fileID: 114836858778564516, guid: bda613e5f5f51134c8bf1b600ad7b7c9,
-        type: 2}
-      propertyPath: activationButton
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114148451454935724, guid: bda613e5f5f51134c8bf1b600ad7b7c9,
-        type: 2}
-      propertyPath: activationButton
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114836858778564516, guid: bda613e5f5f51134c8bf1b600ad7b7c9,
-        type: 2}
-      propertyPath: selectionButton
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114148451454935724, guid: bda613e5f5f51134c8bf1b600ad7b7c9,
-        type: 2}
-      propertyPath: selectionButton
-      value: 3
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bda613e5f5f51134c8bf1b600ad7b7c9, type: 2}
   m_IsPrefabAsset: 0
@@ -4752,7 +4728,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4538631118193916, guid: bbcb4211d1c5f4944a39599eb8a4088c, type: 2}
       propertyPath: m_RootOrder
-      value: 21
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 33809315949321986, guid: bbcb4211d1c5f4944a39599eb8a4088c,
         type: 2}

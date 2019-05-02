@@ -13,6 +13,9 @@ TagManager:
   - Torso
   - Head
   - Teleportable
+  - Bread
+  - Jug
+  - Grapes
   layers:
   - Default
   - TransparentFX
