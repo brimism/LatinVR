@@ -180,7 +180,22 @@ ModelImporter:
     13700002: RomeSoldierBodyRig
     13700004: RomeSoldierHelmetRig
     2186277476908879412: ImportLogs
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RomeSoldierArmor
+    second: {fileID: 2100000, guid: 061b02ee9bd71da4589a16df189ff1e5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RomeSoldierBodyMain
+    second: {fileID: 2100000, guid: 87c2c8f5f26ddd343b1a7f2478ec6592, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RomeSoldierHelmet
+    second: {fileID: 2100000, guid: ae667ffb90524d84abf37f55073f60af, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

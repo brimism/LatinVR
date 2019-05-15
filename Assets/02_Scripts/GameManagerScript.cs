@@ -14,6 +14,7 @@ public class GameManagerScript : MonoBehaviour {
 	public int currHead = 0;
 	public List<TextScript> textBubbles;
 	public List<AudioSource> auses;
+	public List<Animator> animators;
 
 	[System.Serializable]
 	public class Edge{
@@ -36,6 +37,9 @@ public class GameManagerScript : MonoBehaviour {
 		public List<string> bools2Reset = new List<string>();
 		public AudioClip ac;
 		public int ausNumber;
+		public bool doAnimation = false;
+		public List<int> animNumbers;
+		public List<string> animTriggers;
 		public List<Edge> edges = new List<Edge>();
 	}
 
@@ -107,6 +111,11 @@ public class GameManagerScript : MonoBehaviour {
 				}
 				if(graph[currHead].startTimer){
 					timer.StartTimer();
+				}
+				if(graph[currHead].doAnimation){
+					for(int j = 0; j<graph[currHead].animNumbers.Count; j++){
+						animators[graph[currHead].animNumbers[j]].SetTrigger(graph[currHead].animTriggers[j]);
+					}
 				}
 				foreach(GameObject g in graph[currHead].toEnable){
 					g.SetActive(true);
