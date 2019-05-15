@@ -271,7 +271,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 833c8cc32093b9d4992337d3bfbdba86, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 833c8cc32093b9d4992337d3bfbdba86, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -439,9 +439,10 @@ MonoBehaviour:
     bools2Reset: []
     ac: {fileID: 8300000, guid: a4cce375839bf294f80c329ce6e2c03f, type: 3}
     ausNumber: 0
-    doAnimation: 0
-    animNumbers: 
-    animTriggers: []
+    doAnimation: 1
+    animNumbers: 00000000
+    animTriggers:
+    - Talk
     edges:
     - condition: 3s
       toNode: 1
@@ -463,9 +464,10 @@ MonoBehaviour:
     - hi quintus
     ac: {fileID: 8300000, guid: fa1ab4cdffbb26447bdc4673a2bed6bd, type: 3}
     ausNumber: 1
-    doAnimation: 0
-    animNumbers: 
-    animTriggers: []
+    doAnimation: 1
+    animNumbers: 01000000
+    animTriggers:
+    - Yell
     edges:
     - condition: hi quintus
       toNode: 2
@@ -531,9 +533,10 @@ MonoBehaviour:
     - point to grapes
     ac: {fileID: 8300000, guid: fa1ab4cdffbb26447bdc4673a2bed6bd, type: 3}
     ausNumber: 1
-    doAnimation: 0
-    animNumbers: 
-    animTriggers: []
+    doAnimation: 1
+    animNumbers: 01000000
+    animTriggers:
+    - Talk
     edges:
     - condition: well enough
       toNode: 6
@@ -552,9 +555,10 @@ MonoBehaviour:
     bools2Reset: []
     ac: {fileID: 8300000, guid: fa1ab4cdffbb26447bdc4673a2bed6bd, type: 3}
     ausNumber: 1
-    doAnimation: 0
-    animNumbers: 
-    animTriggers: []
+    doAnimation: 1
+    animNumbers: 01000000
+    animTriggers:
+    - Talk
     edges:
     - condition: 3s
       toNode: 1
@@ -984,7 +988,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &128003147
 GameObject:
@@ -2428,7 +2432,7 @@ Prefab:
     - target: {fileID: 9500000, guid: f61cf0e65f20c3b41a02a464b36fa9f3, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 68ac89f49d87e6741a8ef75964d469cb, type: 2}
+      objectReference: {fileID: 9100000, guid: 4239c86818269064d8e9f780620a16d0, type: 2}
     - target: {fileID: 13700000, guid: f61cf0e65f20c3b41a02a464b36fa9f3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -3339,7 +3343,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5845eafc48ca50f4296a0a7f49f6c2ee, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5845eafc48ca50f4296a0a7f49f6c2ee, type: 3}
@@ -3762,7 +3766,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c4673a006a25ca43aeed6523443f01a, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c4673a006a25ca43aeed6523443f01a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4145,7 +4149,7 @@ Transform:
   - {fileID: 215965117}
   - {fileID: 538067920}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 55.632004, z: 0}
 --- !u!114 &1239817955
 MonoBehaviour:
@@ -5554,7 +5558,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 704160e195578fe449bc19253042387d, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 704160e195578fe449bc19253042387d, type: 3}
       propertyPath: m_LocalScale.x

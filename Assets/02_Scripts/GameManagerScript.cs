@@ -59,6 +59,11 @@ public class GameManagerScript : MonoBehaviour {
 		if(graph[currHead].startTimer){
 			timer.StartTimer();
 		}
+		if(graph[currHead].doAnimation){
+			for(int j = 0; j<graph[currHead].animNumbers.Count; j++){
+				animators[graph[currHead].animNumbers[j]].SetTrigger(graph[currHead].animTriggers[j]);
+			}
+		}
 	}
 
 	public void SetupDict(){
