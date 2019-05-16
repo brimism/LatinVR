@@ -28,6 +28,7 @@ public class GameManagerScript : MonoBehaviour {
 		public bool isVocabMatchingSuccess = false;
 		public bool isVocabMatchingFail = false;
 		public bool startTimer = false;
+		public bool finishAudio = false;
 		public int lastSelected;
 		public bool changeText = true;
 		public int textBubbleNumber;
@@ -59,6 +60,9 @@ public class GameManagerScript : MonoBehaviour {
 		if(graph[currHead].startTimer){
 			timer.StartTimer();
 		}
+		if(graph[currHead].finishAudio){
+			timer.StartTimer(graph[currHead].ac.length);
+		}
 		if(graph[currHead].doAnimation){
 			for(int j = 0; j<graph[currHead].animNumbers.Count; j++){
 				animators[graph[currHead].animNumbers[j]].SetTrigger(graph[currHead].animTriggers[j]);
@@ -72,6 +76,7 @@ public class GameManagerScript : MonoBehaviour {
 		boolDict["point to wheel"] = false;
 		boolDict["1s"] = false;
 		boolDict["3s"] = false;
+		boolDict["audio finished"] = false;
 		boolDict["hi atticus"] = false;
 		boolDict["hi quintus"] = false;
 		boolDict["well enough"] = false;
@@ -110,12 +115,13 @@ public class GameManagerScript : MonoBehaviour {
 				if(graph[currHead].isVocabMatchingSuccess){
 					Node vmp = graph[graph[currHead].edges[0].toNode];
 					vmp.edges.RemoveAt(vmp.lastSelected);
-					timer.StartTimer();
 				}else if(graph[currHead].isVocabMatchingFail){
-					timer.StartTimer();
 				}
 				if(graph[currHead].startTimer){
 					timer.StartTimer();
+				}
+				if(graph[currHead].finishAudio){
+					timer.StartTimer(graph[currHead].ac.length);
 				}
 				if(graph[currHead].doAnimation){
 					for(int j = 0; j<graph[currHead].animNumbers.Count; j++){

@@ -422,6 +422,7 @@ MonoBehaviour:
   auses:
   - {fileID: 1239817956}
   - {fileID: 2071952814}
+  - {fileID: 916016598}
   animators:
   - {fileID: 853434460}
   - {fileID: 500535733}
@@ -429,31 +430,33 @@ MonoBehaviour:
   - isVocabMatchingParent: 0
     isVocabMatchingSuccess: 0
     isVocabMatchingFail: 0
-    startTimer: 1
+    startTimer: 0
+    finishAudio: 1
     lastSelected: 0
     changeText: 1
     textBubbleNumber: 0
-    text: I need bread!
+    text: Mihi opus panis!
     toEnable: []
     toDisable: []
     bools2Reset: []
-    ac: {fileID: 8300000, guid: a4cce375839bf294f80c329ce6e2c03f, type: 3}
+    ac: {fileID: 8300000, guid: 3f9f59197b5cda543875e6b3dae7b814, type: 3}
     ausNumber: 0
     doAnimation: 1
     animNumbers: 00000000
     animTriggers:
     - Talk
     edges:
-    - condition: 3s
+    - condition: audio finished
       toNode: 1
   - isVocabMatchingParent: 0
     isVocabMatchingSuccess: 0
     isVocabMatchingFail: 0
     startTimer: 0
+    finishAudio: 0
     lastSelected: 0
     changeText: 1
     textBubbleNumber: 1
-    text: Hey Titus! Hey!
+    text: Hydria, panem, vinitor uvae!
     toEnable:
     - {fileID: 22863526}
     - {fileID: 1369928561}
@@ -476,7 +479,8 @@ MonoBehaviour:
   - isVocabMatchingParent: 0
     isVocabMatchingSuccess: 0
     isVocabMatchingFail: 0
-    startTimer: 1
+    startTimer: 0
+    finishAudio: 1
     lastSelected: 0
     changeText: 0
     textBubbleNumber: 0
@@ -486,18 +490,19 @@ MonoBehaviour:
     - {fileID: 1369928561}
     - {fileID: 607957301}
     bools2Reset: []
-    ac: {fileID: 8300000, guid: fa1ab4cdffbb26447bdc4673a2bed6bd, type: 3}
-    ausNumber: 1
+    ac: {fileID: 8300000, guid: f88de0b116b45d2438abaed76c6daf52, type: 3}
+    ausNumber: 2
     doAnimation: 0
     animNumbers: 
     animTriggers: []
     edges:
-    - condition: 3s
+    - condition: audio finished
       toNode: 4
   - isVocabMatchingParent: 0
     isVocabMatchingSuccess: 0
     isVocabMatchingFail: 0
-    startTimer: 1
+    startTimer: 0
+    finishAudio: 1
     lastSelected: 0
     changeText: 0
     textBubbleNumber: 0
@@ -507,22 +512,23 @@ MonoBehaviour:
     - {fileID: 1369928561}
     - {fileID: 607957301}
     bools2Reset: []
-    ac: {fileID: 8300000, guid: fa1ab4cdffbb26447bdc4673a2bed6bd, type: 3}
-    ausNumber: 1
+    ac: {fileID: 8300000, guid: d831f47bdcd7d244f930b0b5184c2abd, type: 3}
+    ausNumber: 2
     doAnimation: 0
     animNumbers: 
     animTriggers: []
     edges:
-    - condition: 3s
+    - condition: audio finished
       toNode: 5
   - isVocabMatchingParent: 0
     isVocabMatchingSuccess: 0
     isVocabMatchingFail: 0
     startTimer: 0
+    finishAudio: 0
     lastSelected: 0
     changeText: 1
     textBubbleNumber: 1
-    text: Hi, Titus. How are you today?
+    text: Salve, Tite. Quid hodie agis?
     toEnable:
     - {fileID: 481760486}
     - {fileID: 616691548}
@@ -531,7 +537,10 @@ MonoBehaviour:
     - point to bread
     - point to jug
     - point to grapes
-    ac: {fileID: 8300000, guid: fa1ab4cdffbb26447bdc4673a2bed6bd, type: 3}
+    - well enough
+    - poorly
+    - take my money
+    ac: {fileID: 8300000, guid: 49ad3d5f27ad0d5458a06f8db91b7c23, type: 3}
     ausNumber: 1
     doAnimation: 1
     animNumbers: 01000000
@@ -545,27 +554,29 @@ MonoBehaviour:
   - isVocabMatchingParent: 0
     isVocabMatchingSuccess: 0
     isVocabMatchingFail: 0
-    startTimer: 1
+    startTimer: 0
+    finishAudio: 1
     lastSelected: 0
     changeText: 1
     textBubbleNumber: 1
-    text: Hah, my name's Quintus, you silly goose!
+    text: Quintum nomen.
     toEnable: []
     toDisable: []
     bools2Reset: []
-    ac: {fileID: 8300000, guid: fa1ab4cdffbb26447bdc4673a2bed6bd, type: 3}
+    ac: {fileID: 8300000, guid: d782ff30946da7348b44ddaaa1288f5b, type: 3}
     ausNumber: 1
     doAnimation: 1
     animNumbers: 01000000
     animTriggers:
     - Talk
     edges:
-    - condition: 3s
+    - condition: audio finished
       toNode: 1
   - isVocabMatchingParent: 0
     isVocabMatchingSuccess: 0
     isVocabMatchingFail: 0
-    startTimer: 1
+    startTimer: 0
+    finishAudio: 1
     lastSelected: 0
     changeText: 0
     textBubbleNumber: 0
@@ -575,18 +586,19 @@ MonoBehaviour:
     - {fileID: 481760486}
     - {fileID: 616691548}
     bools2Reset: []
-    ac: {fileID: 8300000, guid: fa1ab4cdffbb26447bdc4673a2bed6bd, type: 3}
-    ausNumber: 1
+    ac: {fileID: 8300000, guid: 7552f32a0e3141c4ca37c529408d578a, type: 3}
+    ausNumber: 2
     doAnimation: 0
     animNumbers: 
     animTriggers: []
     edges:
-    - condition: 3s
+    - condition: audio finished
       toNode: 8
   - isVocabMatchingParent: 0
     isVocabMatchingSuccess: 0
     isVocabMatchingFail: 0
-    startTimer: 1
+    startTimer: 0
+    finishAudio: 1
     lastSelected: 0
     changeText: 0
     textBubbleNumber: 0
@@ -596,22 +608,23 @@ MonoBehaviour:
     - {fileID: 481760486}
     - {fileID: 616691548}
     bools2Reset: []
-    ac: {fileID: 8300000, guid: fa1ab4cdffbb26447bdc4673a2bed6bd, type: 3}
-    ausNumber: 1
+    ac: {fileID: 8300000, guid: 7552f32a0e3141c4ca37c529408d578a, type: 3}
+    ausNumber: 2
     doAnimation: 0
     animNumbers: 
     animTriggers: []
     edges:
-    - condition: 3s
+    - condition: audio finished
       toNode: 9
   - isVocabMatchingParent: 0
     isVocabMatchingSuccess: 0
     isVocabMatchingFail: 0
     startTimer: 0
+    finishAudio: 0
     lastSelected: 0
     changeText: 1
     textBubbleNumber: 1
-    text: Good. What can I do for you?
+    text: Bene. Quid tibi facere possum?
     toEnable:
     - {fileID: 1424640572}
     - {fileID: 1685745428}
@@ -621,11 +634,12 @@ MonoBehaviour:
     - {fileID: 1277076828}
     - {fileID: 398117679}
     bools2Reset: []
-    ac: {fileID: 8300000, guid: fa1ab4cdffbb26447bdc4673a2bed6bd, type: 3}
+    ac: {fileID: 8300000, guid: c15f6f76a221adc4cb612788397e3cf1, type: 3}
     ausNumber: 1
-    doAnimation: 0
-    animNumbers: 
-    animTriggers: []
+    doAnimation: 1
+    animNumbers: 01000000
+    animTriggers:
+    - Talk
     edges:
     - condition: point to bread
       toNode: 10
@@ -637,10 +651,11 @@ MonoBehaviour:
     isVocabMatchingSuccess: 0
     isVocabMatchingFail: 0
     startTimer: 0
+    finishAudio: 0
     lastSelected: 0
     changeText: 1
     textBubbleNumber: 1
-    text: Oh, sorry. What can I do for you?
+    text: Oh, sorry. Quid tibi facere possum?
     toEnable:
     - {fileID: 1424640572}
     - {fileID: 1685745428}
@@ -650,11 +665,12 @@ MonoBehaviour:
     - {fileID: 1277076828}
     - {fileID: 398117679}
     bools2Reset: []
-    ac: {fileID: 8300000, guid: fa1ab4cdffbb26447bdc4673a2bed6bd, type: 3}
+    ac: {fileID: 8300000, guid: c15f6f76a221adc4cb612788397e3cf1, type: 3}
     ausNumber: 1
-    doAnimation: 0
-    animNumbers: 
-    animTriggers: []
+    doAnimation: 1
+    animNumbers: 01000000
+    animTriggers:
+    - Talk
     edges:
     - condition: point to bread
       toNode: 10
@@ -665,7 +681,8 @@ MonoBehaviour:
   - isVocabMatchingParent: 0
     isVocabMatchingSuccess: 0
     isVocabMatchingFail: 0
-    startTimer: 1
+    startTimer: 0
+    finishAudio: 1
     lastSelected: 0
     changeText: 0
     textBubbleNumber: 0
@@ -679,18 +696,19 @@ MonoBehaviour:
     - {fileID: 1685745428}
     - {fileID: 1251482407}
     bools2Reset: []
-    ac: {fileID: 8300000, guid: fa1ab4cdffbb26447bdc4673a2bed6bd, type: 3}
-    ausNumber: 1
+    ac: {fileID: 8300000, guid: 48b97e77f8da8fa4e9e1c8df16cd25cd, type: 3}
+    ausNumber: 2
     doAnimation: 0
     animNumbers: 
     animTriggers: []
     edges:
-    - condition: 3s
+    - condition: audio finished
       toNode: 13
   - isVocabMatchingParent: 0
     isVocabMatchingSuccess: 0
     isVocabMatchingFail: 0
-    startTimer: 1
+    startTimer: 0
+    finishAudio: 1
     lastSelected: 0
     changeText: 0
     textBubbleNumber: 0
@@ -704,18 +722,19 @@ MonoBehaviour:
     - {fileID: 1685745428}
     - {fileID: 1251482407}
     bools2Reset: []
-    ac: {fileID: 8300000, guid: fa1ab4cdffbb26447bdc4673a2bed6bd, type: 3}
-    ausNumber: 1
+    ac: {fileID: 8300000, guid: 48b97e77f8da8fa4e9e1c8df16cd25cd, type: 3}
+    ausNumber: 2
     doAnimation: 0
     animNumbers: 
     animTriggers: []
     edges:
-    - condition: 3s
+    - condition: audio finished
       toNode: 14
   - isVocabMatchingParent: 0
     isVocabMatchingSuccess: 0
     isVocabMatchingFail: 0
-    startTimer: 1
+    startTimer: 0
+    finishAudio: 1
     lastSelected: 0
     changeText: 0
     textBubbleNumber: 0
@@ -729,31 +748,33 @@ MonoBehaviour:
     - {fileID: 1685745428}
     - {fileID: 1251482407}
     bools2Reset: []
-    ac: {fileID: 8300000, guid: fa1ab4cdffbb26447bdc4673a2bed6bd, type: 3}
-    ausNumber: 1
+    ac: {fileID: 8300000, guid: 48b97e77f8da8fa4e9e1c8df16cd25cd, type: 3}
+    ausNumber: 2
     doAnimation: 0
     animNumbers: 
     animTriggers: []
     edges:
-    - condition: 3s
+    - condition: audio finished
       toNode: 15
   - isVocabMatchingParent: 0
     isVocabMatchingSuccess: 0
     isVocabMatchingFail: 0
     startTimer: 0
+    finishAudio: 0
     lastSelected: 0
     changeText: 1
     textBubbleNumber: 1
-    text: Here is the bread.
+    text: 'Hic est panis. '
     toEnable:
     - {fileID: 1418608544}
     toDisable: []
     bools2Reset: []
-    ac: {fileID: 8300000, guid: fa1ab4cdffbb26447bdc4673a2bed6bd, type: 3}
+    ac: {fileID: 8300000, guid: dd850234ba6614b4695de1cfe28ae686, type: 3}
     ausNumber: 1
-    doAnimation: 0
-    animNumbers: 
-    animTriggers: []
+    doAnimation: 1
+    animNumbers: 01000000
+    animTriggers:
+    - Talk
     edges:
     - condition: take my money
       toNode: 16
@@ -761,19 +782,21 @@ MonoBehaviour:
     isVocabMatchingSuccess: 0
     isVocabMatchingFail: 0
     startTimer: 0
+    finishAudio: 0
     lastSelected: 0
     changeText: 1
     textBubbleNumber: 1
-    text: Here is the vase.
+    text: Hic est hydria.
     toEnable:
     - {fileID: 1418608544}
     toDisable: []
     bools2Reset: []
-    ac: {fileID: 8300000, guid: fa1ab4cdffbb26447bdc4673a2bed6bd, type: 3}
+    ac: {fileID: 8300000, guid: dd850234ba6614b4695de1cfe28ae686, type: 3}
     ausNumber: 1
-    doAnimation: 0
-    animNumbers: 
-    animTriggers: []
+    doAnimation: 1
+    animNumbers: 01000000
+    animTriggers:
+    - Talk
     edges:
     - condition: take my money
       toNode: 17
@@ -781,26 +804,29 @@ MonoBehaviour:
     isVocabMatchingSuccess: 0
     isVocabMatchingFail: 0
     startTimer: 0
+    finishAudio: 0
     lastSelected: 0
     changeText: 1
     textBubbleNumber: 1
-    text: Here is the grape.
+    text: Hic est uva.
     toEnable:
     - {fileID: 1418608544}
     toDisable: []
     bools2Reset: []
-    ac: {fileID: 8300000, guid: fa1ab4cdffbb26447bdc4673a2bed6bd, type: 3}
+    ac: {fileID: 8300000, guid: dd850234ba6614b4695de1cfe28ae686, type: 3}
     ausNumber: 1
-    doAnimation: 0
-    animNumbers: 
-    animTriggers: []
+    doAnimation: 1
+    animNumbers: 01000000
+    animTriggers:
+    - Talk
     edges:
     - condition: take my money
       toNode: 18
   - isVocabMatchingParent: 0
     isVocabMatchingSuccess: 0
     isVocabMatchingFail: 0
-    startTimer: 1
+    startTimer: 0
+    finishAudio: 1
     lastSelected: 0
     changeText: 0
     textBubbleNumber: 0
@@ -809,18 +835,19 @@ MonoBehaviour:
     toDisable:
     - {fileID: 1418608544}
     bools2Reset: []
-    ac: {fileID: 8300000, guid: fa1ab4cdffbb26447bdc4673a2bed6bd, type: 3}
-    ausNumber: 1
+    ac: {fileID: 8300000, guid: 17ea6bf418990a04f8c04ee6723e3e92, type: 3}
+    ausNumber: 2
     doAnimation: 0
     animNumbers: 
     animTriggers: []
     edges:
-    - condition: 3s
+    - condition: audio finished
       toNode: 19
   - isVocabMatchingParent: 0
     isVocabMatchingSuccess: 0
     isVocabMatchingFail: 0
-    startTimer: 1
+    startTimer: 0
+    finishAudio: 1
     lastSelected: 0
     changeText: 0
     textBubbleNumber: 0
@@ -829,18 +856,19 @@ MonoBehaviour:
     toDisable:
     - {fileID: 1418608544}
     bools2Reset: []
-    ac: {fileID: 8300000, guid: fa1ab4cdffbb26447bdc4673a2bed6bd, type: 3}
-    ausNumber: 1
+    ac: {fileID: 8300000, guid: 17ea6bf418990a04f8c04ee6723e3e92, type: 3}
+    ausNumber: 2
     doAnimation: 0
     animNumbers: 
     animTriggers: []
     edges:
-    - condition: 3s
+    - condition: audio finished
       toNode: 20
   - isVocabMatchingParent: 0
     isVocabMatchingSuccess: 0
     isVocabMatchingFail: 0
-    startTimer: 1
+    startTimer: 0
+    finishAudio: 1
     lastSelected: 0
     changeText: 0
     textBubbleNumber: 0
@@ -849,31 +877,33 @@ MonoBehaviour:
     toDisable:
     - {fileID: 1418608544}
     bools2Reset: []
-    ac: {fileID: 8300000, guid: fa1ab4cdffbb26447bdc4673a2bed6bd, type: 3}
-    ausNumber: 1
+    ac: {fileID: 8300000, guid: 17ea6bf418990a04f8c04ee6723e3e92, type: 3}
+    ausNumber: 2
     doAnimation: 0
     animNumbers: 
     animTriggers: []
     edges:
-    - condition: 3s
+    - condition: audio finished
       toNode: 21
   - isVocabMatchingParent: 0
     isVocabMatchingSuccess: 0
     isVocabMatchingFail: 0
     startTimer: 0
+    finishAudio: 0
     lastSelected: 0
     changeText: 1
     textBubbleNumber: 1
-    text: Thank you.
+    text: 'Gratias tibi, Tite, ago! Vale. '
     toEnable:
     - {fileID: 1101744263}
     toDisable: []
     bools2Reset: []
-    ac: {fileID: 8300000, guid: fa1ab4cdffbb26447bdc4673a2bed6bd, type: 3}
+    ac: {fileID: 8300000, guid: 0557a1cd170bf1e498900018b654220a, type: 3}
     ausNumber: 1
-    doAnimation: 0
-    animNumbers: 
-    animTriggers: []
+    doAnimation: 1
+    animNumbers: 01000000
+    animTriggers:
+    - Talk
     edges:
     - condition: give bread
       toNode: 22
@@ -881,19 +911,21 @@ MonoBehaviour:
     isVocabMatchingSuccess: 0
     isVocabMatchingFail: 0
     startTimer: 0
+    finishAudio: 0
     lastSelected: 0
     changeText: 1
     textBubbleNumber: 1
-    text: Thank you.
+    text: Gratias tibi, Tite, ago! Vale.
     toEnable:
     - {fileID: 758184400}
     toDisable: []
     bools2Reset: []
-    ac: {fileID: 8300000, guid: fa1ab4cdffbb26447bdc4673a2bed6bd, type: 3}
+    ac: {fileID: 8300000, guid: 0557a1cd170bf1e498900018b654220a, type: 3}
     ausNumber: 1
-    doAnimation: 0
-    animNumbers: 
-    animTriggers: []
+    doAnimation: 1
+    animNumbers: 01000000
+    animTriggers:
+    - Talk
     edges:
     - condition: give jug
       toNode: 23
@@ -901,19 +933,21 @@ MonoBehaviour:
     isVocabMatchingSuccess: 0
     isVocabMatchingFail: 0
     startTimer: 0
+    finishAudio: 0
     lastSelected: 0
     changeText: 1
     textBubbleNumber: 1
-    text: Thank you.
+    text: 'Gratias tibi, Tite, ago! Vale. '
     toEnable:
     - {fileID: 1503088013}
     toDisable: []
     bools2Reset: []
-    ac: {fileID: 8300000, guid: fa1ab4cdffbb26447bdc4673a2bed6bd, type: 3}
+    ac: {fileID: 8300000, guid: 0557a1cd170bf1e498900018b654220a, type: 3}
     ausNumber: 1
-    doAnimation: 0
-    animNumbers: 
-    animTriggers: []
+    doAnimation: 1
+    animNumbers: 01000000
+    animTriggers:
+    - Talk
     edges:
     - condition: give grapes
       toNode: 24
@@ -921,61 +955,65 @@ MonoBehaviour:
     isVocabMatchingSuccess: 0
     isVocabMatchingFail: 0
     startTimer: 0
+    finishAudio: 0
     lastSelected: 0
     changeText: 1
     textBubbleNumber: 0
-    text: Thank you for the bread!
+    text: Gratias ago tibi ad panem!
     toEnable: []
     toDisable:
     - {fileID: 1101744263}
     bools2Reset: []
-    ac: {fileID: 8300000, guid: fa1ab4cdffbb26447bdc4673a2bed6bd, type: 3}
+    ac: {fileID: 8300000, guid: 1be78fbf3fc255640a5f9bd59e773d4e, type: 3}
     ausNumber: 0
-    doAnimation: 0
-    animNumbers: 
-    animTriggers: []
+    doAnimation: 1
+    animNumbers: 00000000
+    animTriggers:
+    - Clap
     edges: []
   - isVocabMatchingParent: 0
     isVocabMatchingSuccess: 0
     isVocabMatchingFail: 0
-    startTimer: 1
+    startTimer: 0
+    finishAudio: 1
     lastSelected: 0
     changeText: 1
     textBubbleNumber: 0
-    text: This isn't bread! This is a vase!
+    text: Hic est panis neque. Hoc hydria.
     toEnable: []
     toDisable:
     - {fileID: 758184400}
     bools2Reset: []
-    ac: {fileID: 8300000, guid: fa1ab4cdffbb26447bdc4673a2bed6bd, type: 3}
-    ausNumber: 1
+    ac: {fileID: 8300000, guid: 1be78fbf3fc255640a5f9bd59e773d4e, type: 3}
+    ausNumber: 0
     doAnimation: 1
     animNumbers: 00000000
     animTriggers:
     - No
     edges:
-    - condition: 3s
+    - condition: audio finished
       toNode: 0
   - isVocabMatchingParent: 0
     isVocabMatchingSuccess: 0
     isVocabMatchingFail: 0
-    startTimer: 1
+    startTimer: 0
+    finishAudio: 1
     lastSelected: 0
     changeText: 1
     textBubbleNumber: 0
-    text: This isn't bread! This is a grape!
+    text: Hic est panis neque. Hoc uva.
     toEnable: []
     toDisable:
     - {fileID: 1503088013}
     bools2Reset: []
-    ac: {fileID: 8300000, guid: fa1ab4cdffbb26447bdc4673a2bed6bd, type: 3}
-    ausNumber: 1
+    ac: {fileID: 8300000, guid: 1be78fbf3fc255640a5f9bd59e773d4e, type: 3}
+    ausNumber: 0
     doAnimation: 1
     animNumbers: 00000000
     animTriggers:
     - No
     edges:
-    - condition: 3s
+    - condition: audio finished
       toNode: 0
 --- !u!4 &117898783
 Transform:
@@ -2206,18 +2244,19 @@ Prefab:
     - target: {fileID: 114586757655113002, guid: bbcb4211d1c5f4944a39599eb8a4088c,
         type: 2}
       propertyPath: m_text
-      value: Well enough. Today there is a triumph and I am going there now. But I
-        am hungry.
+      value: 'Satis bene. Hodie est triumphus et ibi nunc venio. Sed esurio.
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 114586757655113002, guid: bbcb4211d1c5f4944a39599eb8a4088c,
         type: 2}
       propertyPath: m_fontSize
-      value: 10.9
+      value: 13.35
       objectReference: {fileID: 0}
     - target: {fileID: 114586757655113002, guid: bbcb4211d1c5f4944a39599eb8a4088c,
         type: 2}
       propertyPath: m_textInfo.characterCount
-      value: 80
+      value: 63
       objectReference: {fileID: 0}
     - target: {fileID: 114659065193178018, guid: bbcb4211d1c5f4944a39599eb8a4088c,
         type: 2}
@@ -2227,17 +2266,17 @@ Prefab:
     - target: {fileID: 114586757655113002, guid: bbcb4211d1c5f4944a39599eb8a4088c,
         type: 2}
       propertyPath: m_textInfo.spaceCount
-      value: 16
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 114586757655113002, guid: bbcb4211d1c5f4944a39599eb8a4088c,
         type: 2}
       propertyPath: m_textInfo.wordCount
-      value: 17
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 114586757655113002, guid: bbcb4211d1c5f4944a39599eb8a4088c,
         type: 2}
       propertyPath: m_textInfo.lineCount
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbcb4211d1c5f4944a39599eb8a4088c, type: 2}
@@ -2798,22 +2837,37 @@ Prefab:
     - target: {fileID: 114586757655113002, guid: bbcb4211d1c5f4944a39599eb8a4088c,
         type: 2}
       propertyPath: m_text
-      value: Hi, Atticus!
+      value: Salve, Atticum!
       objectReference: {fileID: 0}
     - target: {fileID: 114586757655113002, guid: bbcb4211d1c5f4944a39599eb8a4088c,
         type: 2}
       propertyPath: m_fontSize
-      value: 26.9
+      value: 22.05
       objectReference: {fileID: 0}
     - target: {fileID: 114586757655113002, guid: bbcb4211d1c5f4944a39599eb8a4088c,
         type: 2}
       propertyPath: m_textInfo.characterCount
-      value: 12
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 114659065193178018, guid: bbcb4211d1c5f4944a39599eb8a4088c,
         type: 2}
       propertyPath: boolName
       value: hi atticus
+      objectReference: {fileID: 0}
+    - target: {fileID: 114586757655113002, guid: bbcb4211d1c5f4944a39599eb8a4088c,
+        type: 2}
+      propertyPath: m_textInfo.spaceCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114586757655113002, guid: bbcb4211d1c5f4944a39599eb8a4088c,
+        type: 2}
+      propertyPath: m_textInfo.wordCount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114586757655113002, guid: bbcb4211d1c5f4944a39599eb8a4088c,
+        type: 2}
+      propertyPath: m_textInfo.lineCount
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbcb4211d1c5f4944a39599eb8a4088c, type: 2}
@@ -2893,28 +2947,27 @@ Prefab:
     - target: {fileID: 114586757655113002, guid: bbcb4211d1c5f4944a39599eb8a4088c,
         type: 2}
       propertyPath: m_text
-      value: Poorly. But, today there is a triumph and I am going there now. I am
-        hungry.
+      value: Non est bonum. Hodie est triumphus et ibi nunc venio. Sed esurio.
       objectReference: {fileID: 0}
     - target: {fileID: 114586757655113002, guid: bbcb4211d1c5f4944a39599eb8a4088c,
         type: 2}
       propertyPath: m_fontSize
-      value: 11.15
+      value: 12.15
       objectReference: {fileID: 0}
     - target: {fileID: 114586757655113002, guid: bbcb4211d1c5f4944a39599eb8a4088c,
         type: 2}
       propertyPath: m_textInfo.characterCount
-      value: 76
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 114586757655113002, guid: bbcb4211d1c5f4944a39599eb8a4088c,
         type: 2}
       propertyPath: m_textInfo.spaceCount
-      value: 15
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 114586757655113002, guid: bbcb4211d1c5f4944a39599eb8a4088c,
         type: 2}
       propertyPath: m_textInfo.wordCount
-      value: 16
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 114586757655113002, guid: bbcb4211d1c5f4944a39599eb8a4088c,
         type: 2}
@@ -3306,6 +3359,106 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4119596741741680, guid: 12370ddcc6985ba4abe57fc5b64502f8,
     type: 2}
   m_PrefabInternal: {fileID: 894483430}
+--- !u!1 &916016597 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1052005920744854, guid: bda613e5f5f51134c8bf1b600ad7b7c9,
+    type: 2}
+  m_PrefabInternal: {fileID: 499321526}
+--- !u!82 &916016598
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 916016597}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &931164695
 Prefab:
   m_ObjectHideFlags: 0
@@ -3698,6 +3851,52 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1773722782469804, guid: bda613e5f5f51134c8bf1b600ad7b7c9,
     type: 2}
   m_PrefabInternal: {fileID: 499321526}
+--- !u!1001 &1129827562
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4997633099537316, guid: 6b93f36a848f9c040b98d0c7a95acffe, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 14.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997633099537316, guid: 6b93f36a848f9c040b98d0c7a95acffe, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997633099537316, guid: 6b93f36a848f9c040b98d0c7a95acffe, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 58.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997633099537316, guid: 6b93f36a848f9c040b98d0c7a95acffe, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997633099537316, guid: 6b93f36a848f9c040b98d0c7a95acffe, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997633099537316, guid: 6b93f36a848f9c040b98d0c7a95acffe, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997633099537316, guid: 6b93f36a848f9c040b98d0c7a95acffe, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997633099537316, guid: 6b93f36a848f9c040b98d0c7a95acffe, type: 2}
+      propertyPath: m_RootOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1800151449578012, guid: 6b93f36a848f9c040b98d0c7a95acffe, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6b93f36a848f9c040b98d0c7a95acffe, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &1148898185
 GameObject:
   m_ObjectHideFlags: 0
@@ -4182,7 +4381,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 163.61
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -4809,7 +5008,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1345045554}
   m_LocalRotation: {x: -0, y: 0.876789, z: -0, w: -0.48087546}
-  m_LocalPosition: {x: -12.914, y: -1.412, z: -47.83}
+  m_LocalPosition: {x: -12.914, y: -1.4, z: -47.83}
   m_LocalScale: {x: 1.0000004, y: 1, z: 1.0000004}
   m_Children:
   - {fileID: 1040751984}
@@ -4907,6 +5106,36 @@ Prefab:
     - target: {fileID: 1656628032415330, guid: bbcb4211d1c5f4944a39599eb8a4088c, type: 2}
       propertyPath: m_Name
       value: TextBubbleOption (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114586757655113002, guid: bbcb4211d1c5f4944a39599eb8a4088c,
+        type: 2}
+      propertyPath: m_text
+      value: Salve, Quinte!
+      objectReference: {fileID: 0}
+    - target: {fileID: 114586757655113002, guid: bbcb4211d1c5f4944a39599eb8a4088c,
+        type: 2}
+      propertyPath: m_fontSize
+      value: 22.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 114586757655113002, guid: bbcb4211d1c5f4944a39599eb8a4088c,
+        type: 2}
+      propertyPath: m_textInfo.characterCount
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 114586757655113002, guid: bbcb4211d1c5f4944a39599eb8a4088c,
+        type: 2}
+      propertyPath: m_textInfo.spaceCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114586757655113002, guid: bbcb4211d1c5f4944a39599eb8a4088c,
+        type: 2}
+      propertyPath: m_textInfo.wordCount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114586757655113002, guid: bbcb4211d1c5f4944a39599eb8a4088c,
+        type: 2}
+      propertyPath: m_textInfo.lineCount
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbcb4211d1c5f4944a39599eb8a4088c, type: 2}
@@ -5168,32 +5397,34 @@ Prefab:
     - target: {fileID: 114586757655113002, guid: bbcb4211d1c5f4944a39599eb8a4088c,
         type: 2}
       propertyPath: m_text
-      value: Thank you. Here is your money!
+      value: 'Optime! Hic est tuam pecuniam. Gratias tibi ago.
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 114586757655113002, guid: bbcb4211d1c5f4944a39599eb8a4088c,
         type: 2}
       propertyPath: m_fontSize
-      value: 17.15
+      value: 14.6
       objectReference: {fileID: 0}
     - target: {fileID: 114586757655113002, guid: bbcb4211d1c5f4944a39599eb8a4088c,
         type: 2}
       propertyPath: m_textInfo.characterCount
-      value: 30
+      value: 49
       objectReference: {fileID: 0}
     - target: {fileID: 114586757655113002, guid: bbcb4211d1c5f4944a39599eb8a4088c,
         type: 2}
       propertyPath: m_textInfo.spaceCount
-      value: 5
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 114586757655113002, guid: bbcb4211d1c5f4944a39599eb8a4088c,
         type: 2}
       propertyPath: m_textInfo.wordCount
-      value: 6
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 114586757655113002, guid: bbcb4211d1c5f4944a39599eb8a4088c,
         type: 2}
       propertyPath: m_textInfo.lineCount
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114659065193178018, guid: bbcb4211d1c5f4944a39599eb8a4088c,
         type: 2}
@@ -6654,7 +6885,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2060845507}
   m_LocalRotation: {x: -0, y: 0.272694, z: -0, w: -0.9621008}
-  m_LocalPosition: {x: -11.41, y: -1.27, z: -42.642}
+  m_LocalPosition: {x: -11.41, y: -1.394, z: -42.642}
   m_LocalScale: {x: 0.9999999, y: 1, z: 0.9999999}
   m_Children:
   - {fileID: 527409332}
@@ -6743,7 +6974,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 163.61
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0

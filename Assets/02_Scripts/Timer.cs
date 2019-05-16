@@ -8,22 +8,32 @@ public class Timer : MonoBehaviour {
 	private bool counting = false;
 	private GameManagerScript gm;
 	private bool past1s = false;
+	private float toCount = -1f;
+	private float builtInAudioBuffer = 1f;
 	void Awake(){
 		gm = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
 	}
 	void Update () {
 		if(counting){
-			if(Time.time>startTime+1f && !past1s){
-				gm.UpdateValue("1s", true);
-				gm.Reevaluate();
-				gm.UpdateValue("1s", false);
-				past1s = true;
-			}
-			if(Time.time>startTime+3f){
-				counting = false;
-				gm.UpdateValue("3s", true);
-				gm.Reevaluate();
-				gm.UpdateValue("3s", false);
+			if(toCount>0){
+				if(Time.time>startTime+toCount){
+					gm.UpdateValue("audio finished", true);
+					gm.Reevaluate();
+					gm.UpdateValue("audio finished", false);
+				}
+			}else{
+				if(Time.time>startTime+1f && !past1s){
+					gm.UpdateValue("1s", true);
+					gm.Reevaluate();
+					gm.UpdateValue("1s", false);
+					past1s = true;
+				}
+				if(Time.time>startTime+3f){
+					counting = false;
+					gm.UpdateValue("3s", true);
+					gm.Reevaluate();
+					gm.UpdateValue("3s", false);
+				}
 			}
 		}
 	}
@@ -32,5 +42,12 @@ public class Timer : MonoBehaviour {
 		past1s = false;
 		counting = true;
 		startTime = Time.time;
+		toCount = -1f;
+	}
+	public void StartTimer(float t){
+		past1s = false;
+		counting = true;
+		startTime = Time.time;
+		toCount = t+builtInAudioBuffer;
 	}
 }
