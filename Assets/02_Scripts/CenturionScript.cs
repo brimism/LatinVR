@@ -22,6 +22,7 @@ public class CenturionScript : MonoBehaviour {
 
 
 	public void OnTriggerEnter(Collider c){
+        // Sets a flag to true if particular object is given
 		if(c.gameObject.tag == "Bread"){
 			gm.UpdateValue("give bread", true);
 			gm.Reevaluate();

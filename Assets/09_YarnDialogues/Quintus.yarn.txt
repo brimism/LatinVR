@@ -1,0 +1,91 @@
+title: Quintus.Start
+tags: 
+colorID: 0
+position: 388,170
+---
+Quintus: Come one. Come all!
+Quintus: Hydria, panem, vinitor uvae!
+<<if visited("Quintus.Start") is true>> 
+<<else>>
+-> Salve, Atticum.
+    Titus: Salve, Atticum.
+    Quintus: Quintum nomen.
+    Quintus: Jeez, I even have a name tag here and people still don't get it right.
+    Titus: Sorry about that.
+-> Salve, Quinte.
+<<endif>>
+Titus: Salve, Quinte.
+Quintus: Salve, Tite. Quid hodie agis?
+-> Satis Bene.
+    Titus: Satis Bene!
+    Titus: Hodie est triumphus et ibi nunc venio. Sed esurio.
+    Quintus: Bene. Quid tibi facere possum?
+-> Non est Bonum.
+    Titus: Non est Bonum...
+    Titus: Hodie est triumphus et ibi nunc venio. Sed esurio.
+    Quintus: Sorry to hear that, man
+    Quintus: Quid tibi facere possum, though?
+===
+title: Quintus.BuyPanis
+tags: 
+colorID: 0
+position: 210,462
+---
+<<if visited("Quintus.Start") is true>>
+Titus: Cupiditatem panis habeo. Da mihi panem, amabo te.
+Quintus: Ah, the panis!
+Quintus: Fantastic choice Quintus. That'll be $3.1415!
+Titus: I've only got $5.
+Quintus: Deal! Hic est panis.
+Titus: Optime! Hic est tua pecunia.
+Titus: Gratias tibi ago.
+Quintus: Gratias tibi, Tite, ago! Vale!
+<<set $player_has_panis to true>> 
+<<else>>
+Quintus: Hey! You wanna talk to me before you start taking my stuff?
+Quintus: Jeez. Kids these days.
+Titus: Heh heh.. sorry about that.
+<<endif>> 
+===
+title: Quintus.BuyVase
+tags: 
+colorID: 0
+position: 450,459
+---
+<<if visited("Quintus.Start") is true>>
+Titus: I have a desire for a vase. Give me the vase please.
+Quintus: I... uh... don't know why you said it like that. But sure!
+Quintus: That'll be $2.7182!
+Titus: I've only got $5.
+Quintus: Deal! Here's your vase.
+Titus: Optime! Hic est tua pecunia.
+Titus: Gratias tibi ago.
+Quintus: Gratias tibi, Tite, ago! Vale!
+<<set $player_has_vase to true>>
+<<else>>
+Quintus: Hey! You wanna talk to me before you start taking my stuff?
+Quintus: Jeez. Kids these days.
+Titus: Heh heh.. sorry about that.
+<<endif>> 
+===
+title: Quintus.BuyGrapes
+tags: 
+colorID: 0
+position: 681,461
+---
+<<if visited("Quintus.Start") is true>>
+Titus: I have a desire for grapes. Give me the grapes please.
+Quintus: I... uh... don't know why you said it like that. But sure!
+Quintus: That'll be $1!
+Titus: I've only got $5.
+Quintus: Deal! Here's your vase.
+Titus: Optime! Hic est tua pecunia.
+Titus: Gratias tibi ago.
+Quintus: Gratias tibi, Tite, ago! Vale!
+<<set $player_has_grapes to true>>
+<<else>>
+Quintus: Hey! You wanna talk to me before you start taking my stuff?
+Quintus: Jeez. Kids these days.
+Titus: Heh heh.. sorry about that.
+<<endif>> 
+===

@@ -99,10 +99,14 @@ public class GameManagerScript : MonoBehaviour {
 		Node n = graph[currHead];
 		for(int i=0; i<n.edges.Count; i++){
 			if(boolDict[n.edges[i].condition.ToLower()]){
+                // If a transition condition is met, transition to the correct state.
 				currHead = n.edges[i].toNode;
+                // Set specified transition conditions to false
 				foreach(string s in graph[currHead].bools2Reset){
 					UpdateValue(s, false);
 				}
+
+                // WTF IS HAPPENING HERE
 				if(graph[currHead].isVocabMatchingParent){
 					if(graph[currHead].edges.Count>1){
 						int r = Random.Range(0, graph[currHead].edges.Count-1);
@@ -117,6 +121,9 @@ public class GameManagerScript : MonoBehaviour {
 					vmp.edges.RemoveAt(vmp.lastSelected);
 				}else if(graph[currHead].isVocabMatchingFail){
 				}
+                // END WTF IS HAPPENING HERE
+
+                // Doing things already done in Start()
 				if(graph[currHead].startTimer){
 					timer.StartTimer();
 				}
@@ -128,19 +135,26 @@ public class GameManagerScript : MonoBehaviour {
 						animators[graph[currHead].animNumbers[j]].SetTrigger(graph[currHead].animTriggers[j]);
 					}
 				}
+                
+                // Enable and disable any objects that must be enabled or disabled according to the current state
 				foreach(GameObject g in graph[currHead].toEnable){
 					g.SetActive(true);
 				}
 				foreach(GameObject g in graph[currHead].toDisable){
 					g.SetActive(false);
 				}
+
+                // Change text in bubbles if necessary
 				if(graph[currHead].changeText){
 					textBubbles[graph[currHead].textBubbleNumber].ChangeText(graph[currHead].text);
 				}
+
+                // Play required audioclips
 				if(graph[currHead].ac!=null){
 					auses[graph[currHead].ausNumber].clip = graph[currHead].ac;
 					auses[graph[currHead].ausNumber].Play();
 				}
+
 				break;
 			}
 		}

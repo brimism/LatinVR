@@ -1,0 +1,42 @@
+[
+	{
+		"title": "Quintus.Start",
+		"tags": "",
+		"body": "Quintus: Come one. Come all!\nQuintus: Hydria, panem, vinitor uvae!\n<<if visited(\"Quintus.Start\") is true>> \n<<else>>\n-> Salve, Atticum.\n    Titus: Salve, Atticum.\n    Quintus: Quintum nomen.\n    Quintus: Jeez, I even have a name tag here and people still don't get it right.\n    Titus: Sorry about that.\n-> Salve, Quinte.\n<<endif>>\nTitus: Salve, Quinte.\nQuintus: Salve, Tite. Quid hodie agis?\n-> Satis Bene.\n    Titus: Satis Bene!\n    Titus: Hodie est triumphus et ibi nunc venio. Sed esurio.\n    Quintus: Bene. Quid tibi facere possum?\n-> Non est Bonum.\n    Titus: Non est Bonum...\n    Titus: Hodie est triumphus et ibi nunc venio. Sed esurio.\n    Quintus: Sorry to hear that, man\n    Quintus: Quid tibi facere possum, though?\n",
+		"position": {
+			"x": 388,
+			"y": 170
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Quintus.BuyPanis",
+		"tags": "",
+		"body": "<<if visited(\"Quintus.Start\") is true>>\nTitus: Cupiditatem panis habeo. Da mihi panem, amabo te.\nQuintus: Ah, the panis!\nQuintus: Fantastic choice Quintus. That'll be $3.1415!\nTitus: I've only got $5.\nQuintus: Deal! Hic est panis.\nTitus: Optime! Hic est tua pecunia.\nTitus: Gratias tibi ago.\nQuintus: Gratias tibi, Tite, ago! Vale!\n<<set $player_has_panis to true>> \n<<else>>\nQuintus: Hey! You wanna talk to me before you start taking my stuff?\nQuintus: Jeez. Kids these days.\nTitus: Heh heh.. sorry about that.\n<<endif>> ",
+		"position": {
+			"x": 210,
+			"y": 462
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Quintus.BuyVase",
+		"tags": "",
+		"body": "<<if visited(\"Quintus.Start\") is true>>\nTitus: I have a desire for a vase. Give me the vase please.\nQuintus: I... uh... don't know why you said it like that. But sure!\nQuintus: That'll be $2.7182!\nTitus: I've only got $5.\nQuintus: Deal! Here's your vase.\nTitus: Optime! Hic est tua pecunia.\nTitus: Gratias tibi ago.\nQuintus: Gratias tibi, Tite, ago! Vale!\n<<set $player_has_vase to true>>\n<<else>>\nQuintus: Hey! You wanna talk to me before you start taking my stuff?\nQuintus: Jeez. Kids these days.\nTitus: Heh heh.. sorry about that.\n<<endif>> ",
+		"position": {
+			"x": 450,
+			"y": 459
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Quintus.BuyGrapes",
+		"tags": "",
+		"body": "<<if visited(\"Quintus.Start\") is true>>\nTitus: I have a desire for grapes. Give me the grapes please.\nQuintus: I... uh... don't know why you said it like that. But sure!\nQuintus: That'll be $1!\nTitus: I've only got $5.\nQuintus: Deal! Here's your vase.\nTitus: Optime! Hic est tua pecunia.\nTitus: Gratias tibi ago.\nQuintus: Gratias tibi, Tite, ago! Vale!\n<<set $player_has_grapes to true>>\n<<else>>\nQuintus: Hey! You wanna talk to me before you start taking my stuff?\nQuintus: Jeez. Kids these days.\nTitus: Heh heh.. sorry about that.\n<<endif>> ",
+		"position": {
+			"x": 681,
+			"y": 461
+		},
+		"colorID": 0
+	}
+]
