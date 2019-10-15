@@ -62,9 +62,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\02_Scripts\CenturionScript.cs" />
+    <Compile Include="Assets\02_Scripts\ChapterSelect.cs" />
     <Compile Include="Assets\02_Scripts\GameManagerScript.cs" />
+    <Compile Include="Assets\02_Scripts\MainMenu.cs" />
     <Compile Include="Assets\02_Scripts\PointingIndicator.cs" />
     <Compile Include="Assets\02_Scripts\PointTo.cs" />
+    <Compile Include="Assets\02_Scripts\SentenceBuilder.cs" />
     <Compile Include="Assets\02_Scripts\TextScript.cs" />
     <Compile Include="Assets\02_Scripts\Timer.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scenes\Scripts\TestScript.cs" />
@@ -962,23 +965,23 @@
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
+    <Reference Include="Antlr4.Runtime.Standard">
+      <HintPath>C:/Users/ImaginariumAdmin/Documents/GitHub/LatinVR/Assets/YarnSpinner/Code/Antlr4.Runtime.Standard.dll</HintPath>
+    </Reference>
+    <Reference Include="CsvHelper">
+      <HintPath>C:/Users/ImaginariumAdmin/Documents/GitHub/LatinVR/Assets/YarnSpinner/Code/CsvHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>C:/Users/ImaginariumAdmin/Documents/GitHub/LatinVR/Assets/YarnSpinner/Code/Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="YarnSpinner">
+      <HintPath>C:/Users/ImaginariumAdmin/Documents/GitHub/LatinVR/Assets/YarnSpinner/Code/YarnSpinner.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.Analytics">
       <HintPath>C:/Users/ImaginariumAdmin/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.StandardEvents">
       <HintPath>C:/Users/ImaginariumAdmin/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
-    </Reference>
-    <Reference Include="YarnSpinner">
-      <HintPath>C:/Users/ImaginariumAdmin/Documents/GitHub/LatinVR/Assets/YarnSpinner/Code/YarnSpinner.dll</HintPath>
-    </Reference>
-    <Reference Include="CsvHelper">
-      <HintPath>C:/Users/ImaginariumAdmin/Documents/GitHub/LatinVR/Assets/YarnSpinner/Code/CsvHelper.dll</HintPath>
-    </Reference>
-    <Reference Include="Antlr4.Runtime.Standard">
-      <HintPath>C:/Users/ImaginariumAdmin/Documents/GitHub/LatinVR/Assets/YarnSpinner/Code/Antlr4.Runtime.Standard.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>C:/Users/ImaginariumAdmin/Documents/GitHub/LatinVR/Assets/YarnSpinner/Code/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>

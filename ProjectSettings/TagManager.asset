@@ -16,6 +16,7 @@ TagManager:
   - Bread
   - Jug
   - Grapes
+  - word
   layers:
   - Default
   - TransparentFX
