@@ -1,0 +1,52 @@
+title: Centurion.Start
+tags: 
+colorID: 0
+position: -140,764
+---
+<<if visited("Centurion.GiveBread") is true>>
+
+<<else>> 
+    <<if visited("Centurion.Start") is  true>> 
+
+    <<else>> 
+        Centurion: Salvē! Sum centurio! Quid tibi nomen est?
+        Titus: Sum Titus. Quid hodie agis?
+        Centurion: Satis bene. Vere esurio...
+    <<endif>> 
+        Centurion: mihi opus panis!
+    <<if $player_has_panis is true>>
+        Centurion: Ō! Quid nasus meus sentit?
+        Centurion: Estne ille...?
+        Centurion: PANIS????
+        Titus: Certe est panis, mi amice!
+        Centurion: Possumne panem habēre, amabo te?
+        [[Ita vero amice!|Centurion.GiveBread]]
+        [[Minime! Hic panis est meus.|Centurion.DontGiveBread ]] 
+    <<else>>
+
+    <<endif>> 
+<<endif>> 
+===
+title: Centurion.GiveBread
+tags: 
+colorID: 0
+position: -421,1206
+---
+Titus: Hīc id est! Cena bene!
+Centurion: Pani gratias tibi ago!
+Centurion: Quomodo tibi remunerationem dare umquam poteram?
+Centurion: In perpetuum amabo hunc panem!
+Titus: Satis bene? (under breath): Hic centurio est insanus.
+<<set $gave_centurion_panis to true>>
+<<getThatBread CenturionNPC>> 
+===
+title: Centurion.DontGiveBread
+tags: 
+colorID: 0
+position: 241,1214
+---
+Titus: Tibi panem non dabo. Panis cum me in perpetuum remanebit.
+Centurion: Quare????
+Centurion: Quare mihi hoc facis, Tite? 
+Centurion: Mihi carus non es. Bellus non es. Nunc fuge! 
+===
