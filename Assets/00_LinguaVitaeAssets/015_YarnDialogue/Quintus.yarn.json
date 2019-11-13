@@ -1,0 +1,42 @@
+[
+	{
+		"title": "Quintus.Start",
+		"tags": "",
+		"body": "Quintus: Venite! Venite, omnes!\nQuintus: Panis, vinum, et uvae! Et ullae!\n<<if visited(\"Quintus.Start\") is true>> \n<<else>>\n-> Salve, Attica.\n    Titus: Salve, Atticum.\n    Antonia: Nomen mihi est Antonia.\n    Antonia: Potesne non nomen meum in corpore meo vidēre? Nemo nomen meum bene umquam discit. Heu...\n    Titus: Mea culpa.\n-> Salve, Antonia.\n<<endif>>\nTitus: Salve, Antonia.\nAntonia: Salve, Tite. Quid hodie agis?\n-> Satis Bene.\n    Titus: Satis Bene!\n    Titus: Hodie est triumphus et ibi nunc venio. Sed esurio.\n    Antonia: Bene. Quid tibi facere possum?\n-> Non bene.\n    Titus: Non bene...\n    Titus: Hodie est triumphus et ibi nunc venio. Sed esurio.\n    Antonia: Heu. Tibi male sentio.\n    Antonia: Sed quid tibi facere possum?\n",
+		"position": {
+			"x": -114,
+			"y": 179
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Quintus.BuyPanis",
+		"tags": "",
+		"body": "<<if visited(\"Quintus.Start\") is true>>\nTitus: Cupiditatem panis habeo. Da mihi panem, amabo te.\nAntonia: Ō, panis!\nAntonia: Optime! Id est uno denario.\nTitus: Quinque denarios ($5) solos habeō. \nAntonia: Id capiam! Hīc est panis.\nTitus: Optime? Haec est tua pecunia.\nTitus: Gratias tibi ago.\nAntonia: Gratias tibi, Tite, ago! Vale!\n<<set $player_has_panis to true>> \n<<else>>\nAntonia: Eho! Debēsne non mihi dicere quoniam cum meis bonis erras?\nAntonia: Mehercle! Hoc tempore pueri! \nTitus: Heh heh.. Mea culpa.\n<<endif>> \n",
+		"position": {
+			"x": -377,
+			"y": 457
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Quintus.BuyVase",
+		"tags": "",
+		"body": "<<if visited(\"Quintus.Start\") is true>>\nTitus: Cupiditatem ullae habeo. Ullam mihi da, amabo te.\nAntonia: Me terrēs. Quare cupiditatem ullae habēs? Sed pecuniam amo. (to Titus): Certe! Id est duobus denariis.\nTitus: Quinque denarios solos habeō, non duo.\nAntonia: Id capiam! Haec est tibi ulla.\nTitus: Bene? Haec est tua pecunia.\nTitus: Gratias tibi ago.\nAntonia: Gratias tibi, Tite, ago! Vale!\n<<set $player_has_vase to true>>\n<<else>>\nAntonia: Eho! Debēsne non mihi dicere quoniam cum meis bonis erras?\nAntonia: Mehercle! Hoc tempore pueri! \nTitus: Heh heh.. Mea culpa.\n<<endif>> \n",
+		"position": {
+			"x": -112,
+			"y": 455
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Quintus.BuyGrapes",
+		"tags": "",
+		"body": "<<if visited(\"Quintus.Start\") is true>>\nTitus: Cupiditatem uvarum habeo. Uvas mihi da, amabo te.\nAntonia: Me terrēs. Quare cupiditatem uvarum habēs? Sed pecuniam amo. Certe! Id est duobus denariis.\nTitus: Quinque denarios solos habeō, non duo.\nAntonia: Id capiam! Hae sunt tibi uvae.\nTitus: Bene? Haec est tua pecunia.\nTitus: Gratias tibi ago.\nAntonia: Gratias tibi, Tite, ago! Vale!\n<<set $player_has_grapes to true>>\n<<else>>\nAntonia: Eho! Debēsne non mihi dicere quoniam cum meis bonis erras?\nAntonia: Mehercle! Hoc tempore pueri! \nTitus: Heh heh.. Mea culpa.\n<<endif>> \n",
+		"position": {
+			"x": 149,
+			"y": 450
+		},
+		"colorID": 0
+	}
+]

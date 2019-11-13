@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{2853CA0A-5503-EF05-E891-0BD736A753C9}</ProjectGuid>
+    <ProjectGuid>{81C6E7DB-BBFB-0F0E-652D-52D868D299D6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -66,67 +66,67 @@
     <Compile Include="Assets\YarnSpinner\Code\Editor\YarnSpinnerEditorWindow.cs" />
     <Compile Include="Assets\YarnSpinner\Code\Editor\YarnSpinnerTests.cs" />
     <Reference Include="UnityEditor.TestRunner">
-      <HintPath>D:/mkhadadeh/linguaVitae/Lingua Vitae/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+      <HintPath>C:/Users/ImaginariumAdmin/Documents/GitHub/LatinVR/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
-      <HintPath>D:/mkhadadeh/linguaVitae/Lingua Vitae/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+      <HintPath>C:/Users/ImaginariumAdmin/Documents/GitHub/LatinVR/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>D:/mkhadadeh/linguaVitae/Lingua Vitae/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/ImaginariumAdmin/Documents/GitHub/LatinVR/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>D:/mkhadadeh/linguaVitae/Lingua Vitae/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/ImaginariumAdmin/Documents/GitHub/LatinVR/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor">
-      <HintPath>D:/mkhadadeh/linguaVitae/Lingua Vitae/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+      <HintPath>C:/Users/ImaginariumAdmin/Documents/GitHub/LatinVR/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
-      <HintPath>D:/mkhadadeh/linguaVitae/Lingua Vitae/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+      <HintPath>C:/Users/ImaginariumAdmin/Documents/GitHub/LatinVR/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualEffectGraph.Runtime">
-      <HintPath>D:/mkhadadeh/linguaVitae/Lingua Vitae/Library/ScriptAssemblies/Unity.VisualEffectGraph.Runtime.dll</HintPath>
+      <HintPath>C:/Users/ImaginariumAdmin/Documents/GitHub/LatinVR/Library/ScriptAssemblies/Unity.VisualEffectGraph.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/mkhadadeh/linguaVitae/Lingua Vitae/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/ImaginariumAdmin/Documents/GitHub/LatinVR/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>D:/mkhadadeh/linguaVitae/Lingua Vitae/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/ImaginariumAdmin/Documents/GitHub/LatinVR/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>D:/mkhadadeh/linguaVitae/Lingua Vitae/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/ImaginariumAdmin/Documents/GitHub/LatinVR/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/mkhadadeh/linguaVitae/Lingua Vitae/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/ImaginariumAdmin/Documents/GitHub/LatinVR/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.HighDefinition.Runtime">
-      <HintPath>D:/mkhadadeh/linguaVitae/Lingua Vitae/Library/ScriptAssemblies/Unity.RenderPipelines.HighDefinition.Runtime.dll</HintPath>
+      <HintPath>C:/Users/ImaginariumAdmin/Documents/GitHub/LatinVR/Library/ScriptAssemblies/Unity.RenderPipelines.HighDefinition.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>D:/mkhadadeh/linguaVitae/Lingua Vitae/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/ImaginariumAdmin/Documents/GitHub/LatinVR/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-      <HintPath>D:/mkhadadeh/linguaVitae/Lingua Vitae/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+      <HintPath>C:/Users/ImaginariumAdmin/Documents/GitHub/LatinVR/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>D:/mkhadadeh/linguaVitae/Lingua Vitae/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>C:/Users/ImaginariumAdmin/Documents/GitHub/LatinVR/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualEffectGraph.Editor">
-      <HintPath>D:/mkhadadeh/linguaVitae/Lingua Vitae/Library/ScriptAssemblies/Unity.VisualEffectGraph.Editor.dll</HintPath>
+      <HintPath>C:/Users/ImaginariumAdmin/Documents/GitHub/LatinVR/Library/ScriptAssemblies/Unity.VisualEffectGraph.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
-      <HintPath>D:/mkhadadeh/linguaVitae/Lingua Vitae/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+      <HintPath>C:/Users/ImaginariumAdmin/Documents/GitHub/LatinVR/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.HighDefinition.Editor">
-      <HintPath>D:/mkhadadeh/linguaVitae/Lingua Vitae/Library/ScriptAssemblies/Unity.RenderPipelines.HighDefinition.Editor.dll</HintPath>
+      <HintPath>C:/Users/ImaginariumAdmin/Documents/GitHub/LatinVR/Library/ScriptAssemblies/Unity.RenderPipelines.HighDefinition.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-      <HintPath>D:/mkhadadeh/linguaVitae/Lingua Vitae/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+      <HintPath>C:/Users/ImaginariumAdmin/Documents/GitHub/LatinVR/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/mkhadadeh/linguaVitae/Lingua Vitae/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/ImaginariumAdmin/Documents/GitHub/LatinVR/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>D:/mkhadadeh/linguaVitae/Lingua Vitae/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/ImaginariumAdmin/Documents/GitHub/LatinVR/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -321,22 +321,22 @@
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="Antlr4.Runtime.Standard">
-      <HintPath>D:/mkhadadeh/linguaVitae/Lingua Vitae/Assets/YarnSpinner/Code/Antlr4.Runtime.Standard.dll</HintPath>
+      <HintPath>C:/Users/ImaginariumAdmin/Documents/GitHub/LatinVR/Assets/YarnSpinner/Code/Antlr4.Runtime.Standard.dll</HintPath>
     </Reference>
     <Reference Include="CsvHelper">
-      <HintPath>D:/mkhadadeh/linguaVitae/Lingua Vitae/Assets/YarnSpinner/Code/CsvHelper.dll</HintPath>
+      <HintPath>C:/Users/ImaginariumAdmin/Documents/GitHub/LatinVR/Assets/YarnSpinner/Code/CsvHelper.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>D:/mkhadadeh/linguaVitae/Lingua Vitae/Assets/YarnSpinner/Code/Newtonsoft.Json.dll</HintPath>
+      <HintPath>C:/Users/ImaginariumAdmin/Documents/GitHub/LatinVR/Assets/YarnSpinner/Code/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="YarnSpinner">
-      <HintPath>D:/mkhadadeh/linguaVitae/Lingua Vitae/Assets/YarnSpinner/Code/YarnSpinner.dll</HintPath>
+      <HintPath>C:/Users/ImaginariumAdmin/Documents/GitHub/LatinVR/Assets/YarnSpinner/Code/YarnSpinner.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.NRefactory">
-      <HintPath>D:/mkhadadeh/linguaVitae/Lingua Vitae/Library/PackageCache/com.unity.render-pipelines.high-definition@6.9.0-preview/Editor/Core/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
+      <HintPath>C:/Users/ImaginariumAdmin/Documents/GitHub/LatinVR/Library/PackageCache/com.unity.render-pipelines.high-definition@6.9.0-preview/Editor/Core/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>D:/mkhadadeh/linguaVitae/Lingua Vitae/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
+      <HintPath>C:/Users/ImaginariumAdmin/Documents/GitHub/LatinVR/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.9f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -695,7 +695,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{7C1BFCA6-1BA6-62D8-E5B6-7CBC7BD643E8}</Project>
+      <Project>{5593F0D9-11B0-B47F-BB7F-441B73A78888}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
   </ItemGroup>

@@ -8,12 +8,12 @@ public class Scene_Hands : Hand_scr
     public GameObject player;
     public float playerTalkRadius;
     public ButtonInteraction activeButton;
-    
 
     RaycastHit hit;
-    bool isTalking = false;
     bool triggerReleased = true;
-    GameObject activeCanvas;
+    GameObject dialogueRunner;
+
+    Yarn.Unity.DialogueRunner currentDialogue = null;
 
     // Update is called once per frame
     void Update()
@@ -23,7 +23,7 @@ public class Scene_Hands : Hand_scr
 
         FireRay();
 
-        if (isTalking)
+        if (currentDialogue != null) // If you are currently talking, you will be unable to teleport or engage in another conversation.
         {
             if (CheckTag("Button"))
             {
@@ -52,14 +52,20 @@ public class Scene_Hands : Hand_scr
                     ClickButton();
                     
                 }
+                /*
                 else if (CheckTag("Teleporter")) //if its a tp then go there and end the conversation
                 {
                     triggerReleased = false;
-                    activeCanvas.SetActive(false);
+                    //activeCanvas.SetActive(false);
                     isTalking = false;
                     Teleport();
                 }
-                
+                */
+
+            }
+            if(currentDialogue.isDialogueRunning == false) // Set currentDialogue to null if dialogue is over so player can teleport and talk again.
+            {
+                currentDialogue = null;
             }
         }
         else
@@ -95,9 +101,9 @@ public class Scene_Hands : Hand_scr
     {
         if (playerTalkRadius >= Vector3.Distance(player.transform.position, hit.transform.position)) //if the npc is close enough
         {
-            activeCanvas = hit.collider.transform.GetChild(0).gameObject; //grab their canvas
-            activeCanvas.SetActive(true); //activate it
-            isTalking = true;
+            dialogueRunner = hit.collider.transform.GetChild(1).gameObject; //grab their dialogueRunner
+            dialogueRunner.GetComponent<Yarn.Unity.DialogueRunner>().StartDialogue(); //start dialogue
+            currentDialogue = dialogueRunner.GetComponent<Yarn.Unity.DialogueRunner>(); //keep track of current dialogue to know when dialogue is over
         }
         else
         {
