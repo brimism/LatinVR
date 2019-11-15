@@ -63,9 +63,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\ButtonInteraction.cs" />
+    <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\DialogueTrigger.cs" />
+    <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\getBread.cs" />
+    <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\gotTheBread.cs" />
     <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\Hand_scr.cs" />
     <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\HMD_scr.cs" />
     <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\MainMenu.cs" />
+    <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\NPCAudioPlayer.cs" />
     <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\Pointer.cs" />
     <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\Scene_Hands.cs" />
     <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\SentenceBuilder.cs" />

@@ -8,6 +8,10 @@ TagManager:
   - Button
   - NPC
   - Teleporter
+  - Vase
+  - Grapes
+  - Panis
+  - DialogueTrigger
   layers:
   - Default
   - TransparentFX

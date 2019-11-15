@@ -1,7 +1,7 @@
 title: Centurion.Start
 tags: 
 colorID: 0
-position: -140,764
+position: -147,792
 ---
 <<if visited("Centurion.GiveBread") is true>>
 
@@ -9,16 +9,25 @@ position: -140,764
     <<if visited("Centurion.Start") is  true>> 
 
     <<else>> 
+        <<playSound Centurion imACenturion>>
         Centurion: Salvē! Sum centurio! Quid tibi nomen est?
+        <<playSound CameraRig imTitus>>
         Titus: Sum Titus. Quid hodie agis?
+        <<playSound Centurion imHungry>>
         Centurion: Satis bene. Vere esurio...
     <<endif>> 
-        Centurion: mihi opus panis!
+        <<playSound Centurion iWantPanis>>
+        Centurion: Mihi opus panis!
     <<if $player_has_panis is true>>
+        <<playSound Centurion whatsThatIsmell>>
         Centurion: Ō! Quid nasus meus sentit?
+        <<playSound Centurion isThat>>
         Centurion: Estne ille...?
+        <<playSound Centurion isThatPanis>>
         Centurion: PANIS????
+        <<playSound CameraRig itsThePanis>>
         Titus: Certe est panis, mi amice!
+        <<playSound Centurion canIHaveIt>>
         Centurion: Possumne panem habēre, amabo te?
         [[Ita vero amice!|Centurion.GiveBread]]
         [[Minime! Hic panis est meus.|Centurion.DontGiveBread ]] 
@@ -30,23 +39,32 @@ position: -140,764
 title: Centurion.GiveBread
 tags: 
 colorID: 0
-position: -421,1206
+position: -430,1235
 ---
+<<playSound CameraRig hereYouGo>>
 Titus: Hīc id est! Cena bene!
+<<playSound Centurion thanksForThePanis>>
 Centurion: Pani gratias tibi ago!
+<<playSound Centurion howCouldIRepay>>
 Centurion: Quomodo tibi remunerationem dare umquam poteram?
+<<playSound Centurion iWillRememberThisDay>>
 Centurion: In perpetuum amabo hunc panem!
+<<playSound CameraRig insaneCenturion>>
 Titus: Satis bene? (under breath): Hic centurio est insanus.
 <<set $gave_centurion_panis to true>>
-<<getThatBread CenturionNPC>> 
+<<gotThePanis Centurion>> 
 ===
 title: Centurion.DontGiveBread
 tags: 
 colorID: 0
-position: 241,1214
+position: 234,1242
 ---
+<<playSound CameraRig nopeMine>>
 Titus: Tibi panem non dabo. Panis cum me in perpetuum remanebit.
+<<playSound Centurion why>>
 Centurion: Quare????
+<<playSound Centurion whyUDoDis>>
 Centurion: Quare mihi hoc facis, Tite? 
+<<playSound Centurion youMonster>>
 Centurion: Mihi carus non es. Bellus non es. Nunc fuge! 
 ===

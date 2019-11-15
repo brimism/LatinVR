@@ -81,6 +81,10 @@ public class Scene_Hands : Hand_scr
                 {
                     Teleport();
                 }
+                else if (CheckTag("DialogueTrigger"))
+                {
+                    hit.transform.gameObject.GetComponent<DialogueTrigger>().TriggerDialogue();
+                }
             }
         }
 

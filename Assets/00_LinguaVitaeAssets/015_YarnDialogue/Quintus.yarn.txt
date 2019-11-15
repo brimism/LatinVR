@@ -1,89 +1,144 @@
 title: Quintus.Start
 tags: 
 colorID: 0
-position: -114,179
+position: -277,192
 ---
-Quintus: Venite! Venite, omnes!
-Quintus: Panis, vinum, et uvae! Et ullae!
+<<playSound Shopkeeper comeOneComeAll>> 
+Antonia: Venite! Venite, omnes!
+<<playSound Shopkeeper breadGrapeVase>> 
+Antonia: Panis, vinum, et uvae! Et ullae!
 <<if visited("Quintus.Start") is true>> 
 <<else>>
 -> Salve, Attica.
-    Titus: Salve, Atticum.
+    <<playSound CameraRig hiAttica>> 
+    Titus: Salve, Attica.
+    <<playSound Shopkeeper myNameIsAntonia>> 
     Antonia: Nomen mihi est Antonia.
+    <<playSound Shopkeeper seriouslyNameTag>> 
     Antonia: Potesne non nomen meum in corpore meo vidēre? Nemo nomen meum bene umquam discit. Heu...
+    <<playSound CameraRig sorry>> 
     Titus: Mea culpa.
 -> Salve, Antonia.
 <<endif>>
+<<playSound CameraRig hiAntonia>> 
 Titus: Salve, Antonia.
+<<playSound Shopkeeper hiTitus>> 
 Antonia: Salve, Tite. Quid hodie agis?
 -> Satis Bene.
+    <<playSound CameraRig imWell>> 
     Titus: Satis Bene!
+    <<playSound CameraRig hodieEstTriumphus>> 
     Titus: Hodie est triumphus et ibi nunc venio. Sed esurio.
+    <<playSound Shopkeeper thatsGood>> 
     Antonia: Bene. Quid tibi facere possum?
 -> Non bene.
+    <<playSound CameraRig notWell>> 
     Titus: Non bene...
+    <<playSound CameraRig hodieEstTriumphus>> 
     Titus: Hodie est triumphus et ibi nunc venio. Sed esurio.
+    <<playSound Shopkeeper imSorry>> 
     Antonia: Heu. Tibi male sentio.
+    <<playSound Shopkeeper whatWouldYouLike>> 
     Antonia: Sed quid tibi facere possum?
 ===
 title: Quintus.BuyPanis
 tags: 
 colorID: 0
-position: -377,457
+position: -541,468
 ---
 <<if visited("Quintus.Start") is true>>
+<<playSound CameraRig panisPls>> 
 Titus: Cupiditatem panis habeo. Da mihi panem, amabo te.
+<<playSound Shopkeeper ohThePanis>> 
 Antonia: Ō, panis!
+<<playSound Shopkeeper oneDollar>> 
 Antonia: Optime! Id est uno denario.
+<<playSound CameraRig iHaveFive>> 
 Titus: Quinque denarios ($5) solos habeō. 
+<<playSound Shopkeeper heresThePanis>> 
 Antonia: Id capiam! Hīc est panis.
+<<playSound CameraRig heresTheMoney>> 
 Titus: Optime? Haec est tua pecunia.
+<<playSound CameraRig thanks>> 
 Titus: Gratias tibi ago.
+<<playSound Shopkeeper thanksShop>> 
 Antonia: Gratias tibi, Tite, ago! Vale!
-<<set $player_has_panis to true>> 
+<<set $player_has_panis to true>>
+<<getPanis CameraRig true>>
+<<getVase CameraRig false>>
+<<getGrapes CameraRig false>> 
 <<else>>
+<<playSound Shopkeeper dontTouchMyStuff>> 
 Antonia: Eho! Debēsne non mihi dicere quoniam cum meis bonis erras?
+<<playSound Shopkeeper mehercle>> 
 Antonia: Mehercle! Hoc tempore pueri! 
+<<playSound CameraRig hehehSoz>> 
 Titus: Heh heh.. Mea culpa.
 <<endif>> 
 ===
 title: Quintus.BuyVase
 tags: 
 colorID: 0
-position: -112,455
+position: -274,466
 ---
 <<if visited("Quintus.Start") is true>>
+<<playSound CameraRig vasePls>> 
 Titus: Cupiditatem ullae habeo. Ullam mihi da, amabo te.
+<<playSound Shopkeeper theVase>> 
 Antonia: Me terrēs. Quare cupiditatem ullae habēs? Sed pecuniam amo. (to Titus): Certe! Id est duobus denariis.
+<<playSound CameraRig iOnlyHaveFive>> 
 Titus: Quinque denarios solos habeō, non duo.
+<<playSound Shopkeeper sure>> 
 Antonia: Id capiam! Haec est tibi ulla.
+<<playSound CameraRig heresTheMoney>> 
 Titus: Bene? Haec est tua pecunia.
+<<playSound CameraRig thanks>> 
 Titus: Gratias tibi ago.
+<<playSound Shopkeeper thanksShop>> 
 Antonia: Gratias tibi, Tite, ago! Vale!
 <<set $player_has_vase to true>>
+<<getPanis CameraRig false>>
+<<getVase CameraRig true>> 
+<<getGrapes CameraRig false>> 
 <<else>>
+<<playSound Shopkeeper dontTouchMyStuff>> 
 Antonia: Eho! Debēsne non mihi dicere quoniam cum meis bonis erras?
+<<playSound Shopkeeper mehercle>> 
 Antonia: Mehercle! Hoc tempore pueri! 
+<<playSound CameraRig hehehSoz>> 
 Titus: Heh heh.. Mea culpa.
 <<endif>> 
 ===
 title: Quintus.BuyGrapes
 tags: 
 colorID: 0
-position: 149,450
+position: -24,464
 ---
 <<if visited("Quintus.Start") is true>>
+<<playSound CameraRig grapesPls>> 
 Titus: Cupiditatem uvarum habeo. Uvas mihi da, amabo te.
+<<playSound CameraRig okGrapes>> 
 Antonia: Me terrēs. Quare cupiditatem uvarum habēs? Sed pecuniam amo. Certe! Id est duobus denariis.
+<<playSound CameraRig iOnlyHaveFive>> 
 Titus: Quinque denarios solos habeō, non duo.
+<<playSound Shopkeeper sure>>
 Antonia: Id capiam! Hae sunt tibi uvae.
+<<playSound CameraRig heresTheMoney>> 
 Titus: Bene? Haec est tua pecunia.
+<<playSound CameraRig thanks>> 
 Titus: Gratias tibi ago.
+<<playSound Shopkeeper thanksShop>> 
 Antonia: Gratias tibi, Tite, ago! Vale!
 <<set $player_has_grapes to true>>
+<<getPanis CameraRig false>>
+<<getVase CameraRig false>> 
+<<getGrapes CameraRig true>> 
 <<else>>
+<<playSound Shopkeeper dontTouchMyStuff>> 
 Antonia: Eho! Debēsne non mihi dicere quoniam cum meis bonis erras?
+<<playSound Shopkeeper mehercle>>
 Antonia: Mehercle! Hoc tempore pueri! 
+<<playSound CameraRig hehehSoz>> 
 Titus: Heh heh.. Mea culpa.
 <<endif>> 
 ===
