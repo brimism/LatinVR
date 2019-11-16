@@ -47,6 +47,7 @@ public class Scene_Hands : Hand_scr
 
             if (triggerReleased && pressed)
             {
+                triggerReleased = false;
                 if (CheckTag("Button")) //if its a button, click it
                 {
                     ClickButton();
@@ -55,7 +56,6 @@ public class Scene_Hands : Hand_scr
                 /*
                 else if (CheckTag("Teleporter")) //if its a tp then go there and end the conversation
                 {
-                    triggerReleased = false;
                     //activeCanvas.SetActive(false);
                     isTalking = false;
                     Teleport();
