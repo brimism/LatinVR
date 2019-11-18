@@ -60,7 +60,7 @@ colorID: 0
 position: 234,1242
 ---
 <<playSound CameraRig nopeMine>>
-Titus: Tibi panem non dabo. Panis cum me in perpetuum remanebit.
+Titus: Tibi panem non dabo. Panis mecum in perpetuum remanebit.
 <<playSound Centurion why>>
 Centurion: Quare????
 <<playSound Centurion whyUDoDis>>
