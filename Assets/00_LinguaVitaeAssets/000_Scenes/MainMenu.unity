@@ -316,7 +316,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 79d10567cbf1bd14a88cad6a1b5f4262, type: 2}
+  - {fileID: 2100000, guid: 5b91ba4d0277ddd47bb16bbc0e5f58ec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -555,7 +555,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 79d10567cbf1bd14a88cad6a1b5f4262, type: 2}
+  - {fileID: 2100000, guid: 5b91ba4d0277ddd47bb16bbc0e5f58ec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9053,7 +9053,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 5b91ba4d0277ddd47bb16bbc0e5f58ec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9194,7 +9194,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0, w: 0}
   hand_obj: {fileID: 8756235103882634389}
-  active_button: {fileID: 0}
   pointer_sphere: {fileID: 114040466}
 --- !u!114 &8756235103930586565
 MonoBehaviour:
@@ -9314,7 +9313,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 5b91ba4d0277ddd47bb16bbc0e5f58ec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9501,7 +9500,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0, w: 0}
   hand_obj: {fileID: 8756235104352006612}
-  active_button: {fileID: 0}
   pointer_sphere: {fileID: 17967914}
 --- !u!114 &8756235104583305509
 MonoBehaviour:

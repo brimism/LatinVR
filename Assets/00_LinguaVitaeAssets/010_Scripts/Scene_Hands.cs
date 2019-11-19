@@ -12,6 +12,7 @@ public class Scene_Hands : Hand_scr
     RaycastHit hit;
     bool triggerReleased = true;
     GameObject dialogueRunner;
+    ObjectSelect activeObject;
 
     Yarn.Unity.DialogueRunner currentDialogue = null;
 
@@ -25,6 +26,8 @@ public class Scene_Hands : Hand_scr
 
         if (currentDialogue != null) // If you are currently talking, you will be unable to teleport or engage in another conversation.
         {
+            
+            
             if (CheckTag("Button"))
             {
                 if (activeButton == null)
@@ -85,6 +88,25 @@ public class Scene_Hands : Hand_scr
                 {
                     hit.transform.gameObject.GetComponent<DialogueTrigger>().TriggerDialogue();
                 }
+            }
+        }
+        if (CheckTag("DialogueTrigger"))
+        {
+            if (activeObject == null)
+            {
+                ActivateObject();
+            }
+            else
+            {
+                DeactivateObject();
+                ActivateObject();
+            }
+        }
+        else
+        {
+            if (activeObject != null) //if not pointing at a button, turn off any active buttons
+            {
+                DeactivateObject();
             }
         }
 
@@ -152,6 +174,18 @@ public class Scene_Hands : Hand_scr
     {
         activeButton.onRelease();//update button state
         activeButton = null; //stop pointing at this button
+    }
+
+    void ActivateObject()
+    {
+        activeObject = hit.transform.gameObject.GetComponent<ObjectSelect>();
+        hit.collider.gameObject.GetComponent<ObjectSelect>().hovered = true;
+    }
+
+    void DeactivateObject()
+    {
+        activeObject.hovered = false;
+        activeObject = null;
     }
 
 }
