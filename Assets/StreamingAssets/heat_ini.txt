@@ -1,0 +1,1 @@
+{"saveOnQuit":false,"saveNow":false,"visualizeCurrentNow":true,"visualizePreviousOnOpen":false,"resetAllHeatMaps":false,"revertAllMaterials":false,"scale":0.009999999776482582}

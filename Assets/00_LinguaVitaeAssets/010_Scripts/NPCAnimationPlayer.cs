@@ -19,13 +19,18 @@ public class NPCAnimationPlayer : MonoBehaviour
             }
             if (Input.GetKeyDown("1"))
             { //this one's wonky
-                PlayAnimation("headshake");
+                PlayAnimation("Annoyed Head Shake");
                 Debug.Log("1 pressed");
             }
             if (Input.GetKeyDown("2"))
             {
-                PlayAnimation("Standing Yell");
+                PlayAnimation("Crazy Gesture");
                 Debug.Log("2 pressed");
+            }
+            if (Input.GetKeyDown("6") && Input.GetKeyDown("9"))
+            {
+                PlayAnimation("Backflip");
+                Debug.Log("nice");
             }
         } else if(this.gameObject.name == "Centurion")
         {
@@ -44,6 +49,7 @@ public class NPCAnimationPlayer : MonoBehaviour
                 PlayAnimation("HeadShake");
                 Debug.Log("2 pressed");
             }
+            
         }
         
     }

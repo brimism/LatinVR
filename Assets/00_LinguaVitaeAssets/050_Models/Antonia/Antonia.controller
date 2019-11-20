@@ -29,7 +29,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Crazy Gesture
+  m_Name: CrazyGesture
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -79,7 +79,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Taking Item
+  m_Name: TakingItem
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -107,7 +107,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Thoughtful Head Nod
+  m_Name: ThoughtfulHeadNod
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -167,7 +167,7 @@ AnimatorStateTransition:
   m_TransitionDuration: 0.7465105
   m_TransitionOffset: 0
   m_ExitTime: 0.9104187
-  m_HasExitTime: 0
+  m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
@@ -256,7 +256,7 @@ AnimatorStateTransition:
   m_TransitionDuration: 0.8960805
   m_TransitionOffset: 0
   m_ExitTime: 0.8924703
-  m_HasExitTime: 0
+  m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
@@ -306,7 +306,7 @@ AnimatorStateTransition:
   m_TransitionDuration: 0.77287865
   m_TransitionOffset: 0
   m_ExitTime: 0.9072545
-  m_HasExitTime: 0
+  m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
@@ -350,7 +350,7 @@ AnimatorStateTransition:
   m_TransitionDuration: 0.25
   m_TransitionOffset: 0
   m_ExitTime: 0.97
-  m_HasExitTime: 0
+  m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
@@ -362,7 +362,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shaking Head No
+  m_Name: ShakingHeadNo
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -403,7 +403,7 @@ AnimatorStateTransition:
   m_TransitionDuration: 2.218917
   m_TransitionOffset: 0
   m_ExitTime: 0.7337297
-  m_HasExitTime: 0
+  m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
@@ -419,7 +419,7 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: -4875575575426698026}
-    m_Position: {x: 40, y: 250, z: 0}
+    m_Position: {x: 60, y: 230, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -5002479415749690597}
     m_Position: {x: 760, y: 410, z: 0}
@@ -449,7 +449,7 @@ AnimatorStateMachine:
     m_Position: {x: -180, y: 600, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -221909005490664231}
-    m_Position: {x: -510, y: 370, z: 0}
+    m_Position: {x: -480, y: 420, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -6521942886176530274}
     m_Position: {x: -510, y: 320, z: 0}
@@ -483,7 +483,7 @@ AnimatorStateTransition:
   m_TransitionDuration: 0.69407225
   m_TransitionOffset: 0
   m_ExitTime: 0.91671133
-  m_HasExitTime: 0
+  m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
@@ -517,7 +517,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Talking(1)
+  m_Name: Talking1
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -589,7 +589,7 @@ AnimatorStateTransition:
   m_TransitionDuration: 0.67577124
   m_TransitionOffset: 0
   m_ExitTime: 0.9189074
-  m_HasExitTime: 0
+  m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
@@ -623,7 +623,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Head Nod Yes
+  m_Name: HeadNodYes
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -749,7 +749,7 @@ AnimatorStateTransition:
   m_TransitionDuration: 0.9047656
   m_TransitionOffset: 0
   m_ExitTime: 0.89142805
-  m_HasExitTime: 0
+  m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
@@ -771,7 +771,7 @@ AnimatorStateTransition:
   m_TransitionDuration: 0.88865805
   m_TransitionOffset: 0
   m_ExitTime: 0.893361
-  m_HasExitTime: 0
+  m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
@@ -805,7 +805,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Thoughtful Head Shake
+  m_Name: ThoughtfulHeadShake
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -833,7 +833,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Annoyed Head Shake
+  m_Name: AnnoyedHeadShake
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -861,7 +861,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Sarcastic Head Nod
+  m_Name: SarcasticHeadNod
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -943,7 +943,7 @@ AnimatorStateTransition:
   m_TransitionDuration: 0.99164534
   m_TransitionOffset: 0
   m_ExitTime: 0.8810025
-  m_HasExitTime: 0
+  m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
@@ -955,7 +955,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shaking It Off
+  m_Name: ShakingItOff
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -993,7 +993,7 @@ AnimatorStateTransition:
   m_TransitionDuration: 0.6774521
   m_TransitionOffset: 0
   m_ExitTime: 0.9187057
-  m_HasExitTime: 0
+  m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1

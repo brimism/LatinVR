@@ -2,7 +2,7 @@
 	{
 		"title": "Centurion.Start",
 		"tags": "",
-		"body": "<<if visited(\"Centurion.GiveBread\") is true>>\n\n<<else>> \n    <<if visited(\"Centurion.Start\") is  true>> \n\n    <<else>> \n        <<playSound Centurion imACenturion>>\n        Centurion: Salvē! Sum centurio! Quid tibi nomen est?\n        <<playSound CameraRig imTitus>>\n        Titus: Sum Titus. Quid hodie agis?\n        <<playSound Centurion imHungry>>\n        Centurion: Satis bene. Vere esurio...\n    <<endif>> \n        <<playSound Centurion iWantPanis>>\n        Centurion: Mihi opus panis!\n    <<if $player_has_panis is true>>\n        <<playSound Centurion whatsThatIsmell>>\n        Centurion: Ō! Quid nasus meus sentit?\n        <<playSound Centurion isThat>>\n        Centurion: Estne ille...?\n        <<playSound Centurion isThatPanis>>\n        Centurion: PANIS????\n        <<playSound CameraRig itsThePanis>>\n        Titus: Certe est panis, mi amice!\n        <<playSound Centurion canIHaveIt>>\n        Centurion: Possumne panem habēre, amabo te?\n        [[Ita vero amice!|Centurion.GiveBread]]\n        [[Minime! Hic panis est meus.|Centurion.DontGiveBread ]] \n    <<else>>\n\n    <<endif>> \n<<endif>> \n",
+		"body": "<<if visited(\"Centurion.GiveBread\") is true>>\n\n<<else>> \n    <<if visited(\"Centurion.Start\") is  true>> \n\n    <<else>> \n        <<playSound Centurion Centurion/Centurion_001r02>>\n        <<playAnimation Centurion Talk>> \n        Centurion: Salvē! Sum centurio! Quid tibi nomen est?\n        <<playSound CameraRig Titus/Titus-C_001r04>>\n        Titus: Nomen mihi est Titus. Quid hodie agis?\n        <<playSound Centurion Centurion/Centurion_002r01p1>>\n        <<playAnimation Centurion Talk>> \n        Centurion: Satis bene. Vere esurio...\n    <<endif>> \n        <<playSound Centurion Centurion/Centurion_002r01p2>>\n        <<playAnimation Centurion Clap>> \n        Centurion: Mihi opus panis!\n    <<if $player_has_panis is true>>\n        <<playSound Centurion Centurion/Centurion_003r01p1>>\n        <<playAnimation Centurion Talk>> \n        Centurion: Ō! Quid nasus meus sentit?\n        <<playSound Centurion Centurion/Centurion_003r01p2>>\n        <<playAnimation Centurion Talk>> \n        Centurion: Estne ille...?\n        <<playSound Centurion Centurion/Centurion_003r01p3>>\n        <<playAnimation Centurion Clap>> \n        Centurion: PANIS????\n        <<playSound CameraRig Titus/Titus-C_002r02>>\n        Titus: Certe est panis, mi amice!\n        <<playSound Centurion Centurion/Centurion_004r01>>\n        <<playAnimation Centurion Talk>> \n        Centurion: Possumne panem habēre, amabo te?\n        [[Ita vero amice!|Centurion.GiveBread]]\n        [[Minime! Hic panis est meus.|Centurion.DontGiveBread ]] \n    <<else>>\n\n    <<endif>> \n<<endif>> \n",
 		"position": {
 			"x": -147,
 			"y": 792
@@ -12,7 +12,7 @@
 	{
 		"title": "Centurion.GiveBread",
 		"tags": "",
-		"body": "<<playSound CameraRig hereYouGo>>\nTitus: Hīc id est! Cena bene!\n<<playSound Centurion thanksForThePanis>>\nCenturion: Pani gratias tibi ago!\n<<playSound Centurion howCouldIRepay>>\nCenturion: Quomodo tibi remunerationem dare umquam poteram?\n<<playSound Centurion iWillRememberThisDay>>\nCenturion: In perpetuum amabo hunc panem!\n<<playSound CameraRig insaneCenturion>>\nTitus: Satis bene? (under breath): Hic centurio est insanus.\n<<set $gave_centurion_panis to true>>\n<<gotThePanis Centurion>> ",
+		"body": "<<playSound CameraRig Titus/Titus-C_005r01>>\nTitus: Hīc is est! Cena bene!\n<<playSound Centurion Centurion/Centurion_005r03p1>>\n<<playAnimation Centurion Clap>> \nCenturion: Pani gratias tibi ago!\n<<playSound Centurion Centurion/Centurion_005r03p2>>\n<<playAnimation Centurion Talk>> \nCenturion: Quomodo tibi remunerationem dare umquam poteram?\n<<playSound Centurion Centurion/Centurion_005r03p3>>\n<<playAnimation Centurion Talk>> \nCenturion: In perpetuum amabo hunc panem!\n<<playSound CameraRig Titus/Titus-C_006r02>>\nTitus: Satis bene? (under breath): Hic centurio est insanus.\n<<set $gave_centurion_panis to true>>\n<<gotThePanis Centurion>> \n",
 		"position": {
 			"x": -430,
 			"y": 1235
@@ -22,10 +22,10 @@
 	{
 		"title": "Centurion.DontGiveBread",
 		"tags": "",
-		"body": "<<playSound CameraRig nopeMine>>\r\nTitus: Tibi panem non dabo. Panis mecum in perpetuum remanebit.\r\n<<playSound Centurion why>>\r\nCenturion: Quare????\r\n<<playSound Centurion whyUDoDis>>\r\nCenturion: Quare mihi hoc facis, Tite? \r\n<<playSound Centurion youMonster>>\r\nCenturion: Mihi carus non es. Bellus non es. Nunc fuge! \r\n",
+		"body": "<<playSound CameraRig Titus/Titus-C_007r04>>\nTitus: Tibi panem non dabo. Panis mecum in perpetuum remanebit.\n<<playSound Centurion Centurion/Centurion_006r05p1>>\n<<playAnimation Centurion Talk>> \nCenturion: Quare????\n<<playSound Centurion Centurion/Centurion_006r05p2>>\n<<playAnimation Centurion Talk>> \nCenturion: Quare mihi hoc facis, Tite? \n<<playSound Centurion Centurion/Centurion_006r05p3>>\n<<playAnimation Centurion HeadShake>> \nCenturion: Mihi carus non es. Bellus non es. Nunc fuge! \n",
 		"position": {
 			"x": 234,
-			"y": 1242
+			"y": 1243
 		},
 		"colorID": 0
 	}

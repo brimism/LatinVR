@@ -4,18 +4,21 @@ using UnityEngine;
 
 public class NPCAudioPlayer : MonoBehaviour
 {
-    [Yarn.Unity.YarnCommand("playSound")]
+    
     AudioSource _audio;
-    AudioClip _clip;
+    public AudioClip _clip;
     void Start(){
         _audio = this.GetComponent<AudioSource>();
     }
-    // void Update(){
-    //     if(Input.GetKeyDown("space")){
-    //         PlaySound("Hi Quintus");
-    //         Debug.Log("space pressed");
-    //     }
-    // }
+    /*
+    void Update(){
+       if(Input.GetKeyDown("space")){
+            PlaySound("Hi Quintus");
+           Debug.Log("space pressed");
+        }
+     }
+     */
+    [Yarn.Unity.YarnCommand("playSound")]
     public void PlaySound(string audioFile)
     {
         //Play audio file with this string name
