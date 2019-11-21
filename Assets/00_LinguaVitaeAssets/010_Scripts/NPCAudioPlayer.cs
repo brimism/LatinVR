@@ -6,9 +6,9 @@ public class NPCAudioPlayer : MonoBehaviour
 {
     
     AudioSource _audio;
-    public AudioClip _clip;
+    AudioClip _clip;
     void Start(){
-        _audio = this.GetComponent<AudioSource>();
+        _audio = (AudioSource)FindObjectOfType(typeof(AudioSource));
     }
     /*
     void Update(){
@@ -26,5 +26,10 @@ public class NPCAudioPlayer : MonoBehaviour
         _clip = (AudioClip) Resources.Load("Sounds/"+audioFile);
         _audio.Stop();
         _audio.PlayOneShot(_clip);
+    }
+    [Yarn.Unity.YarnCommand("stopSound")]
+    public void StopSound()
+    {
+        _audio.Stop();
     }
 }

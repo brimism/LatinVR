@@ -92,7 +92,7 @@ namespace Yarn.Unity {
 
                 // Filter the list to only include .json files
                 var path = AssetDatabase.GUIDToAssetPath(guid);
-                if (path.EndsWith(".json")) {
+                if (path.EndsWith(".yarn.json")) {
                     var asset = AssetDatabase.LoadAssetAtPath<TextAsset>(path);
 
                     var newResult = new CheckerResult(asset);

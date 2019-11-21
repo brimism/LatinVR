@@ -5,12 +5,14 @@ position: -277,190
 ---
 <<playSound Shopkeeper Antonia/Antonia_001r03p1>> 
 <<playAnimation Shopkeeper Talking1>> 
+<<obliterate ExclamationMarkKaren>> 
 Antonia: Venite! Venite, omnes!
 <<playSound Shopkeeper Antonia/Antonia_001r03p2>> 
 <<playAnimation Shopkeeper Talking1>> 
 Antonia: Panis, vinum, et uvae! Et ullae!
 <<if visited("Quintus.Start") is true>> 
 <<else>>
+<<set $player_saw_antonia to true>>
 -> Salve, Attica.
     <<playSound CameraRig Titus/Titus-A_001r03>> 
     Titus: Salve, Attica.
@@ -48,11 +50,13 @@ Antonia: Salve, Tite. Quid hodie agis?
     <<playSound Shopkeeper Antonia/Antonia_006r02p2>> 
     <<playAnimation Shopkeeper Talking1>> 
     Antonia: Sed quid tibi facere possum?
+<<stopSound Shopkeeper>> 
+Titus: (to self) I should buy something.
 ===
 title: Quintus.BuyPanis
 tags: 
 colorID: 0
-position: -542,468
+position: -544,471
 ---
 <<if visited("Quintus.Start") is true>>
 <<playSound CameraRig Titus/Titus-A_006r01>> 
@@ -79,6 +83,12 @@ Antonia: Gratias tibi, Tite, ago! Vale!
 <<getPanis CameraRig true>>
 <<getVase CameraRig false>>
 <<getGrapes CameraRig false>> 
+<<stopSound Shopkeeper>> 
+<< if $player_saw_centurion is  true >>
+Titus: (to self) Would the Centurion want this?
+<< else>>
+Titus: (to self) What will I do with this?
+<< endif>> 
 <<else>>
 <<playSound Shopkeeper Antonia/Antonia_010r01p1>> 
 <<playAnimation Shopkeeper ShakingHeadNo>> 
@@ -88,12 +98,14 @@ Antonia: Eho! Debēsne non mihi dicere quoniam cum meis bonis erras?
 Antonia: Mehercle! Hoc tempore pueri! 
 <<playSound CameraRig Titus/Titus-A_009r01>> 
 Titus: Heh heh.. Mea culpa.
+<<stopSound Shopkeeper>>
+Titus: (to self) Maybe I should talk to the shopkeeper first.
 <<endif>> 
 ===
 title: Quintus.BuyVase
 tags: 
 colorID: 0
-position: -273,466
+position: -279,472
 ---
 <<if visited("Quintus.Start") is true>>
 <<playSound CameraRig Titus/Titus-A_010r03>> 
@@ -113,10 +125,16 @@ Titus: Gratias tibi ago.
 <<playSound Shopkeeper Antonia/Antonia_009r03>> 
 <<playAnimation Shopkeeper Talking1>> 
 Antonia: Gratias tibi, Tite, ago! Vale!
-<<set $player_has_vase to true>>
+<<set $player_has_panis to false>>
 <<getPanis CameraRig false>>
 <<getVase CameraRig true>> 
 <<getGrapes CameraRig false>> 
+<<stopSound Shopkeeper>> 
+<< if $player_saw_centurion is  true >>
+Titus: (to self) Would the Centurion want this?
+<< else>>
+Titus: (to self) What will I do with this?
+<< endif>> 
 <<else>>
 <<playSound Shopkeeper Antonia/Antonia_010r01p1>> 
 <<playAnimation Shopkeeper ShakingHeadNo>> 
@@ -126,12 +144,14 @@ Antonia: Eho! Debēsne non mihi dicere quoniam cum meis bonis erras?
 Antonia: Mehercle! Hoc tempore pueri! 
 <<playSound CameraRig Titus/Titus-A_009r01>> 
 Titus: Heh heh.. Mea culpa.
+<<stopSound Shopkeeper>>
+Titus: (to self) Maybe I should talk to the shopkeeper first.
 <<endif>> 
 ===
 title: Quintus.BuyGrapes
 tags: 
 colorID: 0
-position: -18,463
+position: -19,462
 ---
 <<if visited("Quintus.Start") is true>>
 <<playSound CameraRig Titus/Titus-A_013r01>> 
@@ -151,10 +171,16 @@ Titus: Gratias tibi ago.
 <<playSound Shopkeeper Antonia/Antonia_009r03>> 
 <<playAnimation Shopkeeper Talking1>> 
 Antonia: Gratias tibi, Tite, ago! Vale!
-<<set $player_has_grapes to true>>
+<<set $player_has_panis to false>>
 <<getPanis CameraRig false>>
 <<getVase CameraRig false>> 
 <<getGrapes CameraRig true>> 
+<<stopSound Shopkeeper>> 
+<< if $player_saw_centurion is  true >>
+Titus: (to self) Would the Centurion want this?
+<< else>>
+Titus: (to self) What will I do with this?
+<< endif>> 
 <<else>>
 <<playSound Shopkeeper Antonia/Antonia_010r01p1>> 
 <<playAnimation Shopkeeper ShakingHeadNo>> 
@@ -164,5 +190,7 @@ Antonia: Eho! Debēsne non mihi dicere quoniam cum meis bonis erras?
 Antonia: Mehercle! Hoc tempore pueri! 
 <<playSound CameraRig Titus/Titus-A_009r01>> 
 Titus: Heh heh.. Mea culpa.
+<<stopSound Shopkeeper>>
+Titus: (to self) Maybe I should talk to the shopkeeper first.
 <<endif>> 
 ===

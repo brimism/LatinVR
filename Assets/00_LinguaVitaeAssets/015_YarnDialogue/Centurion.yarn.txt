@@ -9,6 +9,8 @@ position: -147,792
     <<if visited("Centurion.Start") is  true>> 
 
     <<else>> 
+        <<obliterate ExclamationMarkCenturion>> 
+        << set $player_saw_centurion to true >>
         <<playSound Centurion Centurion/Centurion_001r02>>
         <<playAnimation Centurion Talk>> 
         Centurion: Salvē! Sum centurio! Quid tibi nomen est?
@@ -39,9 +41,15 @@ position: -147,792
         [[Ita vero amice!|Centurion.GiveBread]]
         [[Minime! Hic panis est meus.|Centurion.DontGiveBread ]] 
     <<else>>
-
+        <<stopSound Centurion>> 
+        << if $player_saw_antonia is true >>
+        Titus: (To self): Maybe I need to get a specific item from the shop.
+        << else>>
+        Titus: (To self): I should go find a shop.
+        << endif>> 
     <<endif>> 
 <<endif>> 
+<<stopSound Centurion>> 
 ===
 title: Centurion.GiveBread
 tags: 
@@ -61,7 +69,7 @@ Centurion: Quomodo tibi remunerationem dare umquam poteram?
 Centurion: In perpetuum amabo hunc panem!
 <<playSound CameraRig Titus/Titus-C_006r02>>
 Titus: Satis bene? (under breath): Hic centurio est insanus.
-<<set $gave_centurion_panis to true>>
+<<stopSound Centurion>> 
 <<gotThePanis Centurion>> 
 ===
 title: Centurion.DontGiveBread
@@ -80,4 +88,5 @@ Centurion: Quare mihi hoc facis, Tite?
 <<playSound Centurion Centurion/Centurion_006r05p3>>
 <<playAnimation Centurion HeadShake>> 
 Centurion: Mihi carus non es. Bellus non es. Nunc fuge! 
+<<stopSound Centurion>> 
 ===

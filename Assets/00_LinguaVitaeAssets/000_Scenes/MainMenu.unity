@@ -4169,7 +4169,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 76
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 1
     m_MaxSize: 120
@@ -4179,8 +4179,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Level description goes here\nSomewhere over the rainbow\ni walk this empty
-    street \nsomebody once told me\nthe world was gonna roll me"
+  m_Text: "Welcome to Lingua Vitae \r\nUse the Trigger Button to Interact"
 --- !u!222 &757096813
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4620,7 +4619,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 7552f32a0e3141c4ca37c529408d578a, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 9907c6794e0ce7b44a1fe4b6ba1f4e5b, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -8209,7 +8208,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2004421865
 RectTransform:
   m_ObjectHideFlags: 0

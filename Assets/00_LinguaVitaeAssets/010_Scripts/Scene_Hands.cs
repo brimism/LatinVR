@@ -12,7 +12,9 @@ public class Scene_Hands : Hand_scr
     RaycastHit hit;
     bool triggerReleased = true;
     GameObject dialogueRunner;
-    ObjectSelect activeObject;
+    public ObjectSelect activeObject;
+    public NPCSelect activeNPC;
+    GameObject activeTeleporter = null;
 
     Yarn.Unity.DialogueRunner currentDialogue = null;
 
@@ -86,7 +88,11 @@ public class Scene_Hands : Hand_scr
                 }
                 else if (CheckTag("DialogueTrigger"))
                 {
-                    hit.transform.gameObject.GetComponent<DialogueTrigger>().TriggerDialogue();
+                    if (playerTalkRadius >= Vector3.Distance(player.transform.position, hit.transform.position))
+                    { //if the item is close enough
+                        hit.transform.gameObject.GetComponent<DialogueTrigger>().TriggerDialogue();
+                        currentDialogue = hit.transform.gameObject.GetComponent<DialogueTrigger>().runnerToTrigger;
+                    }
                 }
             }
         }
@@ -110,6 +116,41 @@ public class Scene_Hands : Hand_scr
             }
         }
 
+        if (CheckTag("NPC"))
+        {
+            if (activeNPC == null)
+            {
+                ActivateNPC();
+            }
+            else
+            {
+                DeactivateNPC();
+                ActivateNPC();
+            }
+        }
+        else
+        {
+            if (activeNPC != null) //if not pointing at a button, turn off any active buttons
+            {
+                DeactivateNPC();
+            }
+        }
+
+        if (CheckTag("Teleporter"))
+        {
+            hit.transform.gameObject.GetComponent<TeleporterSpin>().spin = true;
+            activeTeleporter = hit.transform.gameObject;
+        }
+        else
+        {
+            if(activeTeleporter != null)
+            {
+                activeTeleporter.GetComponent<TeleporterSpin>().spin = false;
+                activeTeleporter = null;
+            }
+        }
+
+
         if (!pressed)
         {
             triggerReleased = true; // if the player released the trigger, update the variable (fire once functionality)
@@ -120,7 +161,7 @@ public class Scene_Hands : Hand_scr
 
     void Teleport()
     {
-        player.transform.position = new Vector3(hit.collider.transform.position.x, player.transform.position.y, hit.collider.transform.position.z); //keeps player height the same
+        player.transform.position = new Vector3(hit.collider.transform.position.x, hit.collider.transform.position.y + 3.5f, hit.collider.transform.position.z); //keeps player height the same
     }
 
     void TalkToNPC()
@@ -142,6 +183,7 @@ public class Scene_Hands : Hand_scr
         if (Physics.Raycast(hand_obj.transform.position, hand_obj.transform.forward, out hit, 2000.0F)) //perform raycast
         {
             pointer_sphere.transform.position = hit.point; //if hit something move a target sphere
+
         }
         else
         {
@@ -186,6 +228,18 @@ public class Scene_Hands : Hand_scr
     {
         activeObject.hovered = false;
         activeObject = null;
+    }
+
+    void ActivateNPC()
+    {
+        activeNPC = hit.transform.gameObject.GetComponent<NPCSelect>();
+        hit.collider.gameObject.GetComponent<NPCSelect>().hovered = true;
+    }
+
+    void DeactivateNPC()
+    {
+        activeNPC.hovered = false;
+        activeNPC = null;
     }
 
 }
