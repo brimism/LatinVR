@@ -1,0 +1,196 @@
+title: Quintus.Start
+tags: 
+colorID: 0
+position: -277,190
+---
+<<playSound Shopkeeper Antonia/Antonia_001r03p1>> 
+<<playAnimation Shopkeeper Talking1>> 
+<<obliterate ExclamationMarkKaren>> 
+Antonia: Venite! Venite, omnes!
+<<playSound Shopkeeper Antonia/Antonia_001r03p2>> 
+<<playAnimation Shopkeeper Talking1>> 
+Antonia: Panis, vinum, et uvae! Et ullae!
+<<if visited("Quintus.Start") is true>> 
+<<else>>
+<<set $player_saw_antonia to true>>
+-> Salve, Attica.
+    <<playSound CameraRig Titus/Titus-A_001r03>> 
+    Titus: Salve, Attica.
+    <<playSound Shopkeeper Antonia/Antonia_002r02>>
+    <<playAnimation Shopkeeper AnnoyedHeadShake>> 
+    Antonia: Nomen mihi est Antonia.
+    <<playSound Shopkeeper Antonia/Antonia_003r03>> 
+    <<playAnimation Shopkeeper AnnoyedHeadShake>> 
+    Antonia: Potesne non nomen meum in corpore meo vidēre? Nemo nomen meum bene umquam discit. Heu...
+    <<playSound CameraRig Titus/Titus-A_002r03>> 
+    Titus: Mea culpa.
+-> Salve, Antonia.
+<<endif>>
+<<playSound CameraRig Titus/Titus-A_003r01>> 
+Titus: Salve, Antonia.
+<<playSound Shopkeeper Antonia/Antonia_004r03>> 
+<<playAnimation Shopkeeper HeadNodYes>> 
+Antonia: Salve, Tite. Quid hodie agis?
+-> Satis Bene.
+    <<playSound CameraRig Titus/Titus-A_004r06p1>> 
+    Titus: Satis Bene!
+    <<playSound CameraRig Titus/Titus-A_004r06p2>> 
+    Titus: Hodie est triumphus et ibi nunc venio. Sed esurio.
+    <<playSound Shopkeeper Antonia/Antonia_005r04>> 
+    <<playAnimation Shopkeeper ThoughtfulHeadNod>> 
+    Antonia: Bene. Quid tibi facere possum?
+-> Non bene.
+    <<playSound CameraRig Titus/Titus-A_005r01p1>> 
+    Titus: Non bene...
+    <<playSound CameraRig Titus/Titus-A_005r01p2>> 
+    Titus: Hodie est triumphus et ibi nunc venio. Sed esurio.
+    <<playSound Shopkeeper Antonia/Antonia_006r02p1>> 
+    <<playAnimation Shopkeeper ThoughtfulHeadShake>> 
+    Antonia: Heu. Tibi male sentio.
+    <<playSound Shopkeeper Antonia/Antonia_006r02p2>> 
+    <<playAnimation Shopkeeper Talking1>> 
+    Antonia: Sed quid tibi facere possum?
+<<stopSound Shopkeeper>> 
+Titus: (to self) I should buy something.
+===
+title: Quintus.BuyPanis
+tags: 
+colorID: 0
+position: -544,471
+---
+<<if visited("Quintus.Start") is true>>
+<<playSound CameraRig Titus/Titus-A_006r01>> 
+Titus: Cupiditatem panis habeo. Da mihi panem, amabo te.
+<<playSound Shopkeeper Antonia/Antonia_007r02p1>> 
+<<playAnimation Shopkeeper HeadNodYes>> 
+Antonia: Ō, panis!
+<<playSound Shopkeeper Antonia/Antonia_007r02p2>> 
+<<playAnimation Shopkeeper HeadNodYes>> 
+Antonia: Optime! Id dabo uno denario ($1).
+<<playSound CameraRig Titus/Titus-A_007r02>> 
+Titus: Quinque denarios ($5) solos habeō. 
+<<playSound Shopkeeper Antonia/Antonia_008r02>> 
+<<playAnimation Shopkeeper SarcasticHeadNod>> 
+Antonia: Id capiam! Hīc est panis.
+<<playSound CameraRig Titus/Titus-A_008r02p1>> 
+Titus: Optime? Haec est tua pecunia.
+<<playSound CameraRig Titus/Titus-A_008r02p2>> 
+Titus: Gratias tibi ago.
+<<playSound Shopkeeper Antonia/Antonia_009r03>> 
+<<playAnimation Shopkeeper Talking1>> 
+Antonia: Gratias tibi, Tite, ago! Vale!
+<<set $player_has_panis to true>>
+<<getPanis CameraRig true>>
+<<getVase CameraRig false>>
+<<getGrapes CameraRig false>> 
+<<stopSound Shopkeeper>> 
+<< if $player_saw_centurion is  true >>
+Titus: (to self) Would the Centurion want this?
+<< else>>
+Titus: (to self) What will I do with this?
+<< endif>> 
+<<else>>
+<<playSound Shopkeeper Antonia/Antonia_010r01p1>> 
+<<playAnimation Shopkeeper ShakingHeadNo>> 
+Antonia: Eho! Debēsne non mihi dicere quoniam cum meis bonis erras?
+<<playSound Shopkeeper Antonia/Antonia_010r01p2>> 
+<<playAnimation Shopkeeper CrazyGesture>> 
+Antonia: Mehercle! Hoc tempore pueri! 
+<<playSound CameraRig Titus/Titus-A_009r01>> 
+Titus: Heh heh.. Mea culpa.
+<<stopSound Shopkeeper>>
+Titus: (to self) Maybe I should talk to the shopkeeper first.
+<<endif>> 
+===
+title: Quintus.BuyVase
+tags: 
+colorID: 0
+position: -279,472
+---
+<<if visited("Quintus.Start") is true>>
+<<playSound CameraRig Titus/Titus-A_010r03>> 
+Titus: Cupiditatem ullae habeo. Ullam mihi da, amabo te.
+<<playSound Shopkeeper Antonia/Antonia_011r04>> 
+<<playAnimation Shopkeeper ThoughtfulHeadNod>> 
+Antonia: (under breath) Me terrēs. Quare cupiditatem ullae habēs? Sed pecuniam amo. (to Titus): Certe! Id est duobus denariis.
+<<playSound CameraRig Titus/Titus-A_011r01>> 
+Titus: Quinque denarios ($5) solos habeō, non duo.
+<<playSound Shopkeeper Antonia/Antonia_012r01>> 
+<<playAnimation Shopkeeper SarcasticHeadNod>> 
+Antonia: Id capiam! Haec est tibi ulla.
+<<playSound CameraRig Titus/Titus-A_012r01p1>> 
+Titus: Bene? Haec est tua pecunia.
+<<playSound CameraRig Titus/Titus-A_012r01p2>> 
+Titus: Gratias tibi ago.
+<<playSound Shopkeeper Antonia/Antonia_009r03>> 
+<<playAnimation Shopkeeper Talking1>> 
+Antonia: Gratias tibi, Tite, ago! Vale!
+<<set $player_has_panis to false>>
+<<getPanis CameraRig false>>
+<<getVase CameraRig true>> 
+<<getGrapes CameraRig false>> 
+<<stopSound Shopkeeper>> 
+<< if $player_saw_centurion is  true >>
+Titus: (to self) Would the Centurion want this?
+<< else>>
+Titus: (to self) What will I do with this?
+<< endif>> 
+<<else>>
+<<playSound Shopkeeper Antonia/Antonia_010r01p1>> 
+<<playAnimation Shopkeeper ShakingHeadNo>> 
+Antonia: Eho! Debēsne non mihi dicere quoniam cum meis bonis erras?
+<<playSound Shopkeeper Antonia/Antonia_010r01p2>> 
+<<playAnimation Shopkeeper CrazyGesture>> 
+Antonia: Mehercle! Hoc tempore pueri! 
+<<playSound CameraRig Titus/Titus-A_009r01>> 
+Titus: Heh heh.. Mea culpa.
+<<stopSound Shopkeeper>>
+Titus: (to self) Maybe I should talk to the shopkeeper first.
+<<endif>> 
+===
+title: Quintus.BuyGrapes
+tags: 
+colorID: 0
+position: -19,462
+---
+<<if visited("Quintus.Start") is true>>
+<<playSound CameraRig Titus/Titus-A_013r01>> 
+Titus: Cupiditatem uvarum habeo. Uvas mihi da, amabo te.
+<<playSound Shopkeeper Antonia/Antonia_013r01>> 
+<<playAnimation Shopkeeper ThoughtfulHeadNod>> 
+Antonia: (under breath) Me terrēs. Quare cupiditatem uvarum habēs? Sed pecuniam amo. Certe! Id est duobus denariis.
+<<playSound CameraRig Titus/Titus-A_011r01>> 
+Titus: Quinque denarios ($5) solos habeō, non duo.
+<<playSound Shopkeeper Antonia/Antonia_014r03>>
+<<playAnimation Shopkeeper SarcasticHeadNod>> 
+Antonia: Id capiam! Hae sunt tibi uvae.
+<<playSound CameraRig Titus/Titus-A_012r01p1>> 
+Titus: Bene? Haec est tua pecunia.
+<<playSound CameraRig Titus/Titus-A_012r01p2>> 
+Titus: Gratias tibi ago.
+<<playSound Shopkeeper Antonia/Antonia_009r03>> 
+<<playAnimation Shopkeeper Talking1>> 
+Antonia: Gratias tibi, Tite, ago! Vale!
+<<set $player_has_panis to false>>
+<<getPanis CameraRig false>>
+<<getVase CameraRig false>> 
+<<getGrapes CameraRig true>> 
+<<stopSound Shopkeeper>> 
+<< if $player_saw_centurion is  true >>
+Titus: (to self) Would the Centurion want this?
+<< else>>
+Titus: (to self) What will I do with this?
+<< endif>> 
+<<else>>
+<<playSound Shopkeeper Antonia/Antonia_010r01p1>> 
+<<playAnimation Shopkeeper ShakingHeadNo>> 
+Antonia: Eho! Debēsne non mihi dicere quoniam cum meis bonis erras?
+<<playSound Shopkeeper Antonia/Antonia_010r01p2>>
+<<playAnimation Shopkeeper CrazyGesture>> 
+Antonia: Mehercle! Hoc tempore pueri! 
+<<playSound CameraRig Titus/Titus-A_009r01>> 
+Titus: Heh heh.. Mea culpa.
+<<stopSound Shopkeeper>>
+Titus: (to self) Maybe I should talk to the shopkeeper first.
+<<endif>> 
+===

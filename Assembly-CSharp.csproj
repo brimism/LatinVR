@@ -91,6 +91,7 @@
     <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\VRDialogueUI.cs" />
     <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\XRCS\Command.cs" />
     <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\XRCS\VRCommand.cs" />
+    <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\XRCS\XRCommandWizard.cs" />
     <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\XRCS\XRProcessor.cs" />
     <Compile Include="Assets\8K Skybox Pack Free\Example Scenes\Script\RotateCamera.cs" />
     <Compile Include="Assets\Resources\Shaders\shaders\DrawSplat.cs" />
@@ -106,7 +107,7 @@
     <Compile Include="Assets\YarnSpinner\Examples\DemoScripts\NPC.cs" />
     <Compile Include="Assets\YarnSpinner\Examples\DemoScripts\PlayerCharacter.cs" />
     <Compile Include="Assets\YarnSpinner\Examples\DemoScripts\SpriteSwitcher.cs" />
-    <None Include="Assets\00_LinguaVitaeAssets\015_YarnDialogue\Quintus.yarn.txt" />
+    <None Include="Assets\00_LinguaVitaeAssets\015_YarnDialogue\Quintus.yarn.yarn.txt" />
     <None Include="Assets\YarnSpinner\Examples\DemoAssets\Space\Ship.yarn.txt" />
     <None Include="Assets\YarnSpinner\Examples\DemoAssets\SimpleExampleScript.yarn.txt" />
     <None Include="Assets\Resources\Shaders\DrawHeat.shader" />
@@ -114,9 +115,9 @@
     <None Include="Assets\8K Skybox Pack Free\ReadMe.txt" />
     <None Include="Assets\QS\Documentation\Readme.txt" />
     <None Include="Assets\YarnSpinner\README.txt" />
+    <None Include="Assets\00_LinguaVitaeAssets\015_YarnDialogue\Centurion.yarn.yarn.txt" />
     <None Include="Assets\StreamingAssets\heat_ini.txt" />
     <None Include="Assets\Resources\Shaders\VisHeat.shader" />
-    <None Include="Assets\00_LinguaVitaeAssets\015_YarnDialogue\Centurion.yarn.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/ImaginariumAdmin/Documents/GitHub/LatinVR/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

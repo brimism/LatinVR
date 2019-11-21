@@ -1,8 +1,10 @@
-﻿using System.Collections;
+﻿#if UNITY_EDITOR
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR;
 using UnityEditor;
+
 
 
 public class XRCommandWizard : ScriptableWizard
@@ -86,3 +88,4 @@ public class XRCommandWizard : ScriptableWizard
 
 
 
+#endif

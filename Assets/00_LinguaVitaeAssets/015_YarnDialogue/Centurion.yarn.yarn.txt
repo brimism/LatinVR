@@ -1,0 +1,92 @@
+title: Centurion.Start
+tags: 
+colorID: 0
+position: -147,792
+---
+<<if visited("Centurion.GiveBread") is true>>
+
+<<else>> 
+    <<if visited("Centurion.Start") is  true>> 
+
+    <<else>> 
+        <<obliterate ExclamationMarkCenturion>> 
+        << set $player_saw_centurion to true >>
+        <<playSound Centurion Centurion/Centurion_001r02>>
+        <<playAnimation Centurion Talk>> 
+        Centurion: Salvē! Sum centurio! Quid tibi nomen est?
+        <<playSound CameraRig Titus/Titus-C_001r04>>
+        Titus: Nomen mihi est Titus. Quid hodie agis?
+        <<playSound Centurion Centurion/Centurion_002r01p1>>
+        <<playAnimation Centurion Talk>> 
+        Centurion: Satis bene. Vere esurio...
+    <<endif>> 
+        <<playSound Centurion Centurion/Centurion_002r01p2>>
+        <<playAnimation Centurion Clap>> 
+        Centurion: Mihi opus panis!
+    <<if $player_has_panis is true>>
+        <<playSound Centurion Centurion/Centurion_003r01p1>>
+        <<playAnimation Centurion Talk>> 
+        Centurion: Ō! Quid nasus meus sentit?
+        <<playSound Centurion Centurion/Centurion_003r01p2>>
+        <<playAnimation Centurion Talk>> 
+        Centurion: Estne ille...?
+        <<playSound Centurion Centurion/Centurion_003r01p3>>
+        <<playAnimation Centurion Clap>> 
+        Centurion: PANIS????
+        <<playSound CameraRig Titus/Titus-C_002r02>>
+        Titus: Certe est panis, mi amice!
+        <<playSound Centurion Centurion/Centurion_004r01>>
+        <<playAnimation Centurion Talk>> 
+        Centurion: Possumne panem habēre, amabo te?
+        [[Ita vero amice!|Centurion.GiveBread]]
+        [[Minime! Hic panis est meus.|Centurion.DontGiveBread ]] 
+    <<else>>
+        <<stopSound Centurion>> 
+        << if $player_saw_antonia is true >>
+        Titus: (to self): Maybe I need to get a specific item from the shop.
+        << else>>
+        Titus: (to self): I should go find a shop.
+        << endif>> 
+    <<endif>> 
+<<endif>> 
+<<stopSound Centurion>> 
+===
+title: Centurion.GiveBread
+tags: 
+colorID: 0
+position: -430,1235
+---
+<<playSound CameraRig Titus/Titus-C_005r01>>
+Titus: Hīc is est! Cena bene!
+<<playSound Centurion Centurion/Centurion_005r03p1>>
+<<playAnimation Centurion Clap>> 
+Centurion: Pani gratias tibi ago!
+<<playSound Centurion Centurion/Centurion_005r03p2>>
+<<playAnimation Centurion Talk>> 
+Centurion: Quomodo tibi remunerationem dare umquam poteram?
+<<playSound Centurion Centurion/Centurion_005r03p3>>
+<<playAnimation Centurion Talk>> 
+Centurion: In perpetuum amabo hunc panem!
+<<playSound CameraRig Titus/Titus-C_006r02>>
+Titus: Satis bene? (under breath): Hic centurio est insanus.
+<<stopSound Centurion>> 
+<<gotThePanis Centurion>> 
+===
+title: Centurion.DontGiveBread
+tags: 
+colorID: 0
+position: 234,1243
+---
+<<playSound CameraRig Titus/Titus-C_007r04>>
+Titus: Tibi panem non dabo. Panis mecum in perpetuum remanebit.
+<<playSound Centurion Centurion/Centurion_006r05p1>>
+<<playAnimation Centurion Talk>> 
+Centurion: Quare????
+<<playSound Centurion Centurion/Centurion_006r05p2>>
+<<playAnimation Centurion Talk>> 
+Centurion: Quare mihi hoc facis, Tite? 
+<<playSound Centurion Centurion/Centurion_006r05p3>>
+<<playAnimation Centurion HeadShake>> 
+Centurion: Mihi carus non es. Bellus non es. Nunc fuge! 
+<<stopSound Centurion>> 
+===
