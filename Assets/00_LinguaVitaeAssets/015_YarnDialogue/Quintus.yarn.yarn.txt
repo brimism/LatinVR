@@ -1,7 +1,7 @@
 title: Quintus.Start
 tags: 
 colorID: 0
-position: -277,190
+position: -799,152
 ---
 <<playSound Shopkeeper Antonia/Antonia_001r03p1>> 
 <<playAnimation Shopkeeper Talking1>> 
@@ -56,7 +56,7 @@ Titus: (to self) I should buy something.
 title: Quintus.BuyPanis
 tags: 
 colorID: 0
-position: -544,471
+position: -1066,433
 ---
 <<if visited("Quintus.Start") is true>>
 <<playSound CameraRig Titus/Titus-A_006r01>> 
@@ -79,10 +79,7 @@ Titus: Gratias tibi ago.
 <<playSound Shopkeeper Antonia/Antonia_009r03>> 
 <<playAnimation Shopkeeper Talking1>> 
 Antonia: Gratias tibi, Tite, ago! Vale!
-<<set $player_has_panis to true>>
-<<getPanis CameraRig true>>
-<<getVase CameraRig false>>
-<<getGrapes CameraRig false>> 
+<<set $food_quest to 1>>
 <<stopSound Shopkeeper>> 
 << if $player_saw_centurion is  true >>
 Titus: (to self) Would the Centurion want this?
@@ -105,7 +102,7 @@ Titus: (to self) Maybe I should talk to the shopkeeper first.
 title: Quintus.BuyVase
 tags: 
 colorID: 0
-position: -279,472
+position: -795,426
 ---
 <<if visited("Quintus.Start") is true>>
 <<playSound CameraRig Titus/Titus-A_010r03>> 
@@ -125,10 +122,7 @@ Titus: Gratias tibi ago.
 <<playSound Shopkeeper Antonia/Antonia_009r03>> 
 <<playAnimation Shopkeeper Talking1>> 
 Antonia: Gratias tibi, Tite, ago! Vale!
-<<set $player_has_panis to false>>
-<<getPanis CameraRig false>>
-<<getVase CameraRig true>> 
-<<getGrapes CameraRig false>> 
+<<set $food_quest to 3>>
 <<stopSound Shopkeeper>> 
 << if $player_saw_centurion is  true >>
 Titus: (to self) Would the Centurion want this?
@@ -151,7 +145,7 @@ Titus: (to self) Maybe I should talk to the shopkeeper first.
 title: Quintus.BuyGrapes
 tags: 
 colorID: 0
-position: -19,462
+position: -541,424
 ---
 <<if visited("Quintus.Start") is true>>
 <<playSound CameraRig Titus/Titus-A_013r01>> 
@@ -171,10 +165,7 @@ Titus: Gratias tibi ago.
 <<playSound Shopkeeper Antonia/Antonia_009r03>> 
 <<playAnimation Shopkeeper Talking1>> 
 Antonia: Gratias tibi, Tite, ago! Vale!
-<<set $player_has_panis to false>>
-<<getPanis CameraRig false>>
-<<getVase CameraRig false>> 
-<<getGrapes CameraRig true>> 
+<<set $food_quest to 2>>
 <<stopSound Shopkeeper>> 
 << if $player_saw_centurion is  true >>
 Titus: (to self) Would the Centurion want this?

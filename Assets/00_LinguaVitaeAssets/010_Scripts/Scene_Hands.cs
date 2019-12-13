@@ -8,6 +8,7 @@ public class Scene_Hands : Hand_scr
     public GameObject player;
     public float playerTalkRadius;
     public ButtonInteraction activeButton;
+    public GameObject hmd_cam;
 
     RaycastHit hit;
     bool triggerReleased = true;
@@ -157,11 +158,13 @@ public class Scene_Hands : Hand_scr
         }
     }
 
-    
 
+    
     void Teleport()
     {
         player.transform.position = new Vector3(hit.collider.transform.position.x, hit.collider.transform.position.y + 3.5f, hit.collider.transform.position.z); //keeps player height the same
+        player.transform.rotation = hit.collider.transform.rotation;
+        
     }
 
     void TalkToNPC()

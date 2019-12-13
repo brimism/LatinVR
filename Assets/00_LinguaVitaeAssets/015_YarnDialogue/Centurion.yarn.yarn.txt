@@ -1,7 +1,7 @@
 title: Centurion.Start
 tags: 
 colorID: 0
-position: -147,792
+position: -234,814
 ---
 <<if visited("Centurion.GiveBread") is true>>
 
@@ -9,7 +9,7 @@ position: -147,792
     <<if visited("Centurion.Start") is  true>> 
 
     <<else>> 
-        <<obliterate ExclamationMarkCenturion>> 
+        <<obliterate ExclamationMarkCenturion>>
         << set $player_saw_centurion to true >>
         <<playSound Centurion Centurion/Centurion_001r02>>
         <<playAnimation Centurion Talk>> 
@@ -23,7 +23,7 @@ position: -147,792
         <<playSound Centurion Centurion/Centurion_002r01p2>>
         <<playAnimation Centurion Clap>> 
         Centurion: Mihi opus panis!
-    <<if $player_has_panis is true>>
+    <<if $food_quest is 1>>
         <<playSound Centurion Centurion/Centurion_003r01p1>>
         <<playAnimation Centurion Talk>> 
         Centurion: Ō! Quid nasus meus sentit?
@@ -43,7 +43,11 @@ position: -147,792
     <<else>>
         <<stopSound Centurion>> 
         << if $player_saw_antonia is true >>
-        Titus: (to self): Maybe I need to get a specific item from the shop.
+            << if $food_quest > 0>> 
+            Titus: (to self): Maybe I need to get a different item from the shop.
+            << else >> 
+            Titus: (to self): I need to get something from the shop.
+            << endif>> 
         << else>>
         Titus: (to self): I should go find a shop.
         << endif>> 
@@ -54,7 +58,7 @@ position: -147,792
 title: Centurion.GiveBread
 tags: 
 colorID: 0
-position: -430,1235
+position: -517,1257
 ---
 <<playSound CameraRig Titus/Titus-C_005r01>>
 Titus: Hīc is est! Cena bene!
@@ -70,12 +74,12 @@ Centurion: In perpetuum amabo hunc panem!
 <<playSound CameraRig Titus/Titus-C_006r02>>
 Titus: Satis bene? (under breath): Hic centurio est insanus.
 <<stopSound Centurion>> 
-<<gotThePanis Centurion>> 
+<<set $food_quest to -1>> 
 ===
 title: Centurion.DontGiveBread
 tags: 
 colorID: 0
-position: 234,1243
+position: 147,1265
 ---
 <<playSound CameraRig Titus/Titus-C_007r04>>
 Titus: Tibi panem non dabo. Panis mecum in perpetuum remanebit.
