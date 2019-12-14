@@ -14,7 +14,7 @@ public class Scene_Hands : Hand_scr
     bool triggerReleased = true;
     GameObject dialogueRunner;
     public ObjectSelect activeObject;
-    public NPCSelect activeNPC;
+    public NPC activeNPC;
     GameObject activeTeleporter = null;
 
     Yarn.Unity.DialogueRunner currentDialogue = null;
@@ -139,14 +139,12 @@ public class Scene_Hands : Hand_scr
 
         if (CheckTag("Teleporter"))
         {
-            hit.transform.gameObject.GetComponent<TeleporterSpin>().spin = true;
             activeTeleporter = hit.transform.gameObject;
         }
         else
         {
             if(activeTeleporter != null)
             {
-                activeTeleporter.GetComponent<TeleporterSpin>().spin = false;
                 activeTeleporter = null;
             }
         }
@@ -235,8 +233,8 @@ public class Scene_Hands : Hand_scr
 
     void ActivateNPC()
     {
-        activeNPC = hit.transform.gameObject.GetComponent<NPCSelect>();
-        hit.collider.gameObject.GetComponent<NPCSelect>().hovered = true;
+        activeNPC = hit.transform.gameObject.GetComponent<NPC>();
+        hit.collider.gameObject.GetComponent<NPC>().hovered = true;
     }
 
     void DeactivateNPC()

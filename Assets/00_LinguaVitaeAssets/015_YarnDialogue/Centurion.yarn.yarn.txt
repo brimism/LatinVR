@@ -14,8 +14,10 @@ position: -234,814
         <<playSound Centurion Centurion/Centurion_001r02>>
         <<playAnimation Centurion Talk>> 
         Centurion: Salvē! Sum centurio! Quid tibi nomen est?
+		<<stopSound Centurion>>
         <<playSound CameraRig Titus/Titus-C_001r04>>
         Titus: Nomen mihi est Titus. Quid hodie agis?
+		<<stopSound CameraRig>>
         <<playSound Centurion Centurion/Centurion_002r01p1>>
         <<playAnimation Centurion Talk>> 
         Centurion: Satis bene. Vere esurio...
@@ -33,8 +35,10 @@ position: -234,814
         <<playSound Centurion Centurion/Centurion_003r01p3>>
         <<playAnimation Centurion Clap>> 
         Centurion: PANIS????
+		<<stopSound Centurion>>
         <<playSound CameraRig Titus/Titus-C_002r02>>
         Titus: Certe est panis, mi amice!
+		<<stopSound CameraRig>>
         <<playSound Centurion Centurion/Centurion_004r01>>
         <<playAnimation Centurion Talk>> 
         Centurion: Possumne panem habēre, amabo te?
@@ -60,8 +64,10 @@ tags:
 colorID: 0
 position: -517,1257
 ---
+<<stopSound Centurion>>
 <<playSound CameraRig Titus/Titus-C_005r01>>
 Titus: Hīc is est! Cena bene!
+<<stopSound CameraRig>>
 <<playSound Centurion Centurion/Centurion_005r03p1>>
 <<playAnimation Centurion Clap>> 
 Centurion: Pani gratias tibi ago!
@@ -71,9 +77,10 @@ Centurion: Quomodo tibi remunerationem dare umquam poteram?
 <<playSound Centurion Centurion/Centurion_005r03p3>>
 <<playAnimation Centurion Talk>> 
 Centurion: In perpetuum amabo hunc panem!
+<<stopSound Centurion>>
 <<playSound CameraRig Titus/Titus-C_006r02>>
 Titus: Satis bene? (under breath): Hic centurio est insanus.
-<<stopSound Centurion>> 
+<<stopSound CameraRig>> 
 <<set $food_quest to -1>> 
 ===
 title: Centurion.DontGiveBread
@@ -81,8 +88,10 @@ tags:
 colorID: 0
 position: 147,1265
 ---
+<<stopSound Centurion>>
 <<playSound CameraRig Titus/Titus-C_007r04>>
 Titus: Tibi panem non dabo. Panis mecum in perpetuum remanebit.
+<<stopSound CameraRig>>
 <<playSound Centurion Centurion/Centurion_006r05p1>>
 <<playAnimation Centurion Talk>> 
 Centurion: Quare????

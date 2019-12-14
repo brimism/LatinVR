@@ -3,7 +3,57 @@ guid: 9a3c52ecf7cfc2047af8003f45a2d948
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_0011
+    second: {fileID: 2100000, guid: f85d82f7e410fab4680b14306775f438, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: OrnamentBorder0084_2
+    second: {fileID: 2100000, guid: 78b709f94e8345c479328810284766ac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _Metal_Corrogated_Shiny_3
+    second: {fileID: 2100000, guid: d9ea65dca99bd934f8546f2c2eff9a6c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _Metal_Rough_5
+    second: {fileID: 2100000, guid: 0067016079944864382f52df77bb4bd7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _Stone_Vein_Gray_12
+    second: {fileID: 2100000, guid: 296c6e5667a2da3439a45205790d42d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _Stone_Vein_Gray_13
+    second: {fileID: 2100000, guid: a621499604a25ca41904e4dc198a2d30, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _Stone_Vein_Gray_14
+    second: {fileID: 2100000, guid: f8ad9f8bc64b31648818302e150586b7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: d1a4cf6a61b1a164dbf00041a99cc4f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert29
+    second: {fileID: 2100000, guid: 322863becc314fb498b333b5652d679c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert3
+    second: {fileID: 2100000, guid: baafab1967e2a7a4c97fd563e957b845, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
