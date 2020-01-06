@@ -8,8 +8,14 @@ public class Exclamation : MonoBehaviour
     float startPosY = 0;
     float amplitude = 0.3f;
 
+    public bool visibleOnStart;
+
     void Start()
     {
+        if(!visibleOnStart)
+        {
+            transform.GetChild(0).gameObject.SetActive(false);
+        }
         startPosY = transform.GetChild(0).position.y;
     }
 
@@ -23,10 +29,15 @@ public class Exclamation : MonoBehaviour
         }
     }
 
-    [Yarn.Unity.YarnCommand("obliterate")]
-    public void Obliterate() // Gets rid of exclamation mark
+    [Yarn.Unity.YarnCommand("disappear")]
+    public void Disappear() // Gets rid of exclamation mark
     {
-        //TODO: Change function name. Sorry i was in a rough mood.
         transform.GetChild(0).gameObject.SetActive(false);
+    }
+
+    [Yarn.Unity.YarnCommand("appear")]
+    public void Appear() // Makes exclamation mark appear
+    {
+        transform.GetChild(0).gameObject.SetActive(true);
     }
 }

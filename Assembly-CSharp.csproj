@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\ButtonInteraction.cs" />
+    <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\Character.cs" />
     <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\Dowsing.cs" />
     <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\Exclamation.cs" />
     <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\GameManager.cs" />
@@ -90,8 +91,14 @@
     <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\XRCS\VRCommand.cs" />
     <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\XRCS\XRCommandWizard.cs" />
     <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\XRCS\XRProcessor.cs" />
+    <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\Yarn Extensions\Custom Tags\animation_TMPTag.cs" />
+    <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\Yarn Extensions\Custom Tags\audio_TMPTag.cs" />
+    <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\Yarn Extensions\Custom Tags\shake_TMPTag.cs" />
+    <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\Yarn Extensions\CustomTagHandler\CustomTagRunner.cs" />
+    <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\Yarn Extensions\CustomTagHandler\CustomTMPTag.cs" />
     <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\Yarn Extensions\DialogueTrigger.cs" />
     <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\Yarn Extensions\ObservableVarStorage.cs" />
+    <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\Yarn Extensions\TMPDialogueUI.cs" />
     <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\Yarn Extensions\VRDialogueUI.cs" />
     <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\Yarn Extensions\YarnObserver.cs" />
     <Compile Include="Assets\8K Skybox Pack Free\Example Scenes\Script\RotateCamera.cs" />
@@ -143,7 +150,7 @@
     <Compile Include="Assets\YarnSpinner\Examples\DemoScripts\SpriteSwitcher.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-    <None Include="Assets\00_LinguaVitaeAssets\015_YarnDialogue\Quintus.yarn.yarn.txt" />
+    <None Include="Assets\00_LinguaVitaeAssets\015_YarnDialogue\Antonia.yarn.yarn.txt" />
     <None Include="Assets\YarnSpinner\Examples\DemoAssets\Space\Ship.yarn.txt" />
     <None Include="Assets\YarnSpinner\Examples\DemoAssets\SimpleExampleScript.yarn.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />

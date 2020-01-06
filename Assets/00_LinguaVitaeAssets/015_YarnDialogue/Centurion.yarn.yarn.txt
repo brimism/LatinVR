@@ -9,43 +9,23 @@ position: -234,814
     <<if visited("Centurion.Start") is  true>> 
 
     <<else>> 
-        <<obliterate ExclamationMarkCenturion>>
+        <<disappear ExclamationMarkCenturion>>
         << set $player_saw_centurion to true >>
-        <<playSound Centurion Centurion/Centurion_001r02>>
-        <<playAnimation Centurion Talk>> 
-        Centurion: Salvē! Sum centurio! Quid tibi nomen est?
-		<<stopSound Centurion>>
-        <<playSound CameraRig Titus/Titus-C_001r04>>
-        Titus: Nomen mihi est Titus. Quid hodie agis?
-		<<stopSound CameraRig>>
-        <<playSound Centurion Centurion/Centurion_002r01p1>>
-        <<playAnimation Centurion Talk>> 
-        Centurion: Satis bene. Vere esurio...
-    <<endif>> 
-        <<playSound Centurion Centurion/Centurion_002r01p2>>
-        <<playAnimation Centurion Clap>> 
-        Centurion: Mihi opus panis!
+        Centurion: Salvē! Sum centurio! Quid tibi nomen est? <audio=Centurion_001r02> <animation=Talk>
+        Titus: Nomen mihi est Titus. Quid hodie agis? <audio=Titus-C_001r04>
+        Centurion: Satis bene. Vere esurio... <audio=Centurion_002r01p1> <animation=Talk>
+    <<endif>>
+		<<disappear ExclamationMarkCenturion>>
+        Centurion: Mihi opus <color=00DD00>panis</color>! <audio=Centurion_002r01p2> <animation=Clap>
     <<if $food_quest is 1>>
-        <<playSound Centurion Centurion/Centurion_003r01p1>>
-        <<playAnimation Centurion Talk>> 
-        Centurion: Ō! Quid nasus meus sentit?
-        <<playSound Centurion Centurion/Centurion_003r01p2>>
-        <<playAnimation Centurion Talk>> 
-        Centurion: Estne ille...?
-        <<playSound Centurion Centurion/Centurion_003r01p3>>
-        <<playAnimation Centurion Clap>> 
-        Centurion: PANIS????
-		<<stopSound Centurion>>
-        <<playSound CameraRig Titus/Titus-C_002r02>>
-        Titus: Certe est panis, mi amice!
-		<<stopSound CameraRig>>
-        <<playSound Centurion Centurion/Centurion_004r01>>
-        <<playAnimation Centurion Talk>> 
-        Centurion: Possumne panem habēre, amabo te?
+        Centurion: Ō! Quid nasus meus sentit? <audio=Centurion_003r01p1> <animation=Talk>
+        Centurion: Estne ille...? <audio=Centurion_003r01p2> <animation=Talk>
+        Centurion: <shake=0.3>PANIS????</shake> <audio=Centurion_003r01p3> <animation=Clap>
+        Titus: Certe est panis, mi amice! <audio=Titus-C_002r02>
+        Centurion: Possumne panem habēre, amabo te? <audio=Centurion_004r01> <animation=Talk>
         [[Ita vero amice!|Centurion.GiveBread]]
         [[Minime! Hic panis est meus.|Centurion.DontGiveBread ]] 
     <<else>>
-        <<stopSound Centurion>> 
         << if $player_saw_antonia is true >>
             << if $food_quest > 0>> 
             Titus: (to self): Maybe I need to get a different item from the shop.
@@ -54,33 +34,23 @@ position: -234,814
             << endif>> 
         << else>>
         Titus: (to self): I should go find a shop.
+		<<appear ExclamationMarkAntonia>>
         << endif>> 
     <<endif>> 
-<<endif>> 
-<<stopSound Centurion>> 
+<<endif>>
+<<endDialogue GameManager>> 
 ===
 title: Centurion.GiveBread
 tags: 
 colorID: 0
 position: -517,1257
 ---
-<<stopSound Centurion>>
-<<playSound CameraRig Titus/Titus-C_005r01>>
-Titus: Hīc is est! Cena bene!
-<<stopSound CameraRig>>
-<<playSound Centurion Centurion/Centurion_005r03p1>>
-<<playAnimation Centurion Clap>> 
-Centurion: Pani gratias tibi ago!
-<<playSound Centurion Centurion/Centurion_005r03p2>>
-<<playAnimation Centurion Talk>> 
-Centurion: Quomodo tibi remunerationem dare umquam poteram?
-<<playSound Centurion Centurion/Centurion_005r03p3>>
-<<playAnimation Centurion Talk>> 
-Centurion: In perpetuum amabo hunc panem!
-<<stopSound Centurion>>
-<<playSound CameraRig Titus/Titus-C_006r02>>
-Titus: Satis bene? (under breath): Hic centurio est insanus.
-<<stopSound CameraRig>> 
+Titus: Hīc is est! Cena bene! <audio=Titus-C_005r01>
+Centurion: Pani gratias tibi ago! <audio=Centurion_005r03p1> <animation=Clap>
+Centurion: Quomodo tibi remunerationem dare umquam poteram? <audio=Centurion_005r03p2> <animation=Talk>
+Centurion: In perpetuum amabo hunc panem! <audio=Centurion_005r03p3> <animation=Talk>
+Titus: Satis bene? (under breath): Hic centurio est insanus. <audio=Titus-C_006r02>
+<<endDialogue GameManager>> 
 <<set $food_quest to -1>> 
 ===
 title: Centurion.DontGiveBread
@@ -88,18 +58,9 @@ tags:
 colorID: 0
 position: 147,1265
 ---
-<<stopSound Centurion>>
-<<playSound CameraRig Titus/Titus-C_007r04>>
-Titus: Tibi panem non dabo. Panis mecum in perpetuum remanebit.
-<<stopSound CameraRig>>
-<<playSound Centurion Centurion/Centurion_006r05p1>>
-<<playAnimation Centurion Talk>> 
-Centurion: Quare????
-<<playSound Centurion Centurion/Centurion_006r05p2>>
-<<playAnimation Centurion Talk>> 
-Centurion: Quare mihi hoc facis, Tite? 
-<<playSound Centurion Centurion/Centurion_006r05p3>>
-<<playAnimation Centurion HeadShake>> 
-Centurion: Mihi carus non es. Bellus non es. Nunc fuge! 
-<<stopSound Centurion>> 
+Titus: Tibi panem non dabo. Panis mecum in perpetuum remanebit. <audio=Titus-C_007r04>
+Centurion: Quare???? <audio=Centurion_006r05p1> <animation=Talk>
+Centurion: Quare mihi hoc facis, Tite? <audio=Centurion_006r05p2> <animation=Talk>
+Centurion: Mihi carus non es. Bellus non es. Nunc fuge! <audio=Centurion_006r05p3> <animation=HeadShake>
+<<endDialogue GameManager>> 
 ===

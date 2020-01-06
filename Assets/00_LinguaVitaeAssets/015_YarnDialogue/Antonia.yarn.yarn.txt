@@ -1,0 +1,117 @@
+title: Antonia.Start
+tags: 
+colorID: 0
+position: -799,152
+---
+<<disappear ExclamationMarkAntonia>> 
+Antonia: Venite! Venite, omnes! <audio=Antonia_001r03p1> <animation=Talking1>
+Antonia: Panis, vinum, et uvae! Et ullae! <audio=Antonia_001r03p2> <animation=Talking1>
+<<if visited("Antonia.Start") is true>> 
+<<else>>
+<<set $player_saw_antonia to true>>
+-> Salve, Attica.
+    Titus: Salve, Attica. <audio=Titus-A_001r03>
+    Antonia: Nomen mihi est Antonia. <audio=Antonia_002r02> <animation=AnnoyedHeadShake>
+    Antonia: Potesne non nomen meum in corpore meo vidēre? Nemo nomen meum bene umquam discit. Heu... <audio=Antonia_003r03> <animation=AnnoyedHeadShake>
+    Titus: Mea culpa. <audio=Titus-A_002r03>
+-> Salve, Antonia.
+<<endif>>
+Titus: Salve, Antonia. <audio=Titus-A_003r01>
+Antonia: Salve, Tite. Quid hodie agis? <audio=Antonia_004r03> <animation=HeadNodYes>
+-> Satis Bene.
+    Titus: Satis Bene! <audio=Titus-A_004r06p1>
+    Titus: Hodie est triumphus et ibi nunc venio. Sed esurio. <audio=Titus-A_004r06p2>
+    Antonia: Bene. Quid tibi facere possum? <audio=Antonia_005r04> <animation=ThoughtfulHeadNod>
+-> Non bene.
+    Titus: Non bene... <audio=Titus-A_005r01p1>
+    Titus: Hodie est triumphus et ibi nunc venio. Sed esurio. <audio=Titus-A_005r01p2>
+    Antonia: Heu. Tibi male sentio. <audio=Antonia_006r02p1> <animation=ThoughtfulHeadShake>
+    Antonia: Sed quid tibi facere possum? <audio=Antonia_006r02p2> <animation=Talking1>
+Titus: (to self) I should buy something.
+<<endDialogue GameManager>>
+===
+title: Antonia.BuyPanis
+tags: 
+colorID: 0
+position: -1066,433
+---
+<<if visited("Antonia.Start") is true>>
+Titus: Cupiditatem panis habeo. Da mihi panem, amabo te. <audio=Titus-A_006r01>
+Antonia: Ō, panis! <audio=Antonia_007r02p1> <animation=HeadNodYes>
+Antonia: Optime! Id dabo uno denario ($1). <audio=Antonia_007r02p2> <animation=HeadNodYes>
+Titus: Quinque denarios ($5) solos habeō. <audio=Titus-A_007r02>
+Antonia: Id capiam! Hīc est panis. <audio=Antonia_008r02> <animation=SarcasticHeadNod>
+Titus: Optime? Haec est tua pecunia. <audio=Titus-A_008r02p1>
+Titus: Gratias tibi ago. <audio=Titus-A_008r02p2>
+Antonia: Gratias tibi, Tite, ago! Vale! <audio=Antonia_009r03> <animation=Talking1>
+<<set $food_quest to 1>>
+<< if $player_saw_centurion is  true >>
+Titus: (to self) Would the Centurion want this?
+<<appear ExclamationMarkCenturion>>
+<< else>>
+Titus: (to self) What will I do with this?
+<< endif>> 
+<<else>>
+Antonia: Eho! Debēsne non mihi dicere quoniam cum meis bonis erras? <audio=Antonia_010r01p1> <animation=ShakingHeadNo>
+Antonia: Mehercle! Hoc tempore pueri! <audio=Antonia_010r01p2> <animation=CrazyGesture>
+Titus: Heh heh.. Mea culpa. <audio=Titus-A_009r01>
+Titus: (to self) Maybe I should talk to the shopkeeper first.
+<<endif>> 
+<<endDialogue GameManager>>
+===
+title: Antonia.BuyVase
+tags: 
+colorID: 0
+position: -795,426
+---
+<<if visited("Antonia.Start") is true>>
+Titus: Cupiditatem ullae habeo. Ullam mihi da, amabo te. <audio=Titus-A_010r03>
+Antonia: (under breath) Me terrēs. Quare cupiditatem ullae habēs? Sed pecuniam amo. (to Titus): Certe! Id est duobus denariis. <audio=Antonia_011r04> <animation=ThoughtfulHeadNod>
+Titus: Quinque denarios ($5) solos habeō, non duo. <audio=Titus-A_011r01>
+Antonia: Id capiam! Haec est tibi ulla. <audio=Antonia_012r01> <animation=SarcasticHeadNod>
+Titus: Bene? Haec est tua pecunia. <audio=Titus-A_012r01p1>
+Titus: Gratias tibi ago. <audio=Titus-A_012r01p2>
+Antonia: Gratias tibi, Tite, ago! Vale! <audio=Antonia_009r03> <animation=Talking1>
+<<set $food_quest to 3>>
+<< if $player_saw_centurion is  true >>
+Titus: (to self) Would the Centurion want this?
+<<appear ExclamationMarkCenturion>>
+<< else>>
+Titus: (to self) What will I do with this?
+<< endif>> 
+<<else>>
+Antonia: Eho! Debēsne non mihi dicere quoniam cum meis bonis erras? <audio=Antonia_010r01p1> <animation=ShakingHeadNo>
+Antonia: Mehercle! Hoc tempore pueri! <audio=Antonia_010r01p2> <animation=CrazyGesture>
+Titus: Heh heh.. Mea culpa. <audio=Titus-A_009r01>
+Titus: (to self) Maybe I should talk to the shopkeeper first.
+<<endif>>
+<<endDialogue GameManager>>
+===
+title: Antonia.BuyGrapes
+tags: 
+colorID: 0
+position: -541,424
+---
+<<if visited("Antonia.Start") is true>>
+Titus: Cupiditatem uvarum habeo. Uvas mihi da, amabo te. <audio=Titus-A_013r01>
+Antonia: (under breath) Me terrēs. Quare cupiditatem uvarum habēs? Sed pecuniam amo. Certe! Id est duobus denariis. <audio=Antonia_013r01> <animation=ThoughtfulHeadNod>
+Titus: Quinque denarios ($5) solos habeō, non duo. <audio=Titus-A_011r01>
+Antonia: Id capiam! Hae sunt tibi uvae. <audio=Antonia_014r03> <animation=SarcasticHeadNod>
+Titus: Bene? Haec est tua pecunia. <audio=Titus-A_012r01p1>
+Titus: Gratias tibi ago. <audio=Titus-A_012r01p2>
+Antonia: Gratias tibi, Tite, ago! Vale! <audio=Antonia_009r03> <animation=Talking1>
+<<set $food_quest to 2>>
+<< if $player_saw_centurion is  true >>
+Titus: (to self) Would the Centurion want this?
+<<appear ExclamationMarkCenturion>>
+<< else>>
+Titus: (to self) What will I do with this?
+<< endif>> 
+<<else>>
+Antonia: Eho! Debēsne non mihi dicere quoniam cum meis bonis erras? <audio=Antonia_010r01p1> <animation=ShakingHeadNo>
+Antonia: Mehercle! Hoc tempore pueri! <audio=Antonia_010r01p2> <animation=CrazyGesture>
+Titus: Heh heh.. Mea culpa. <audio=Titus-A_009r01>
+Titus: (to self) Maybe I should talk to the shopkeeper first.
+<<endif>> 
+<<endDialogue GameManager>>
+===
