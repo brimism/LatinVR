@@ -7,6 +7,7 @@ using Yarn;
 public class GameManager : YarnObserver
 {
     public ItemHolder playerItemHolder;
+    public ShopController shopController;
     public Dictionary<string, Character> characters;
 
     public override void Observe(string var_name, Yarn.Value value)
@@ -17,14 +18,23 @@ public class GameManager : YarnObserver
             if (value.AsNumber == 1)
             {
                 playerItemHolder.HoldItem("bread");
+                shopController.ReturnItem("grapes");
+                shopController.ReturnItem("jar");
+                shopController.TakeItem("bread");
             }
             else if (value.AsNumber == 2)
             {
                 playerItemHolder.HoldItem("grapes");
+                shopController.ReturnItem("bread");
+                shopController.ReturnItem("jar");
+                shopController.TakeItem("grapes");
             }
             else if (value.AsNumber == 3)
             {
                 playerItemHolder.HoldItem("jar");
+                shopController.ReturnItem("grapes");
+                shopController.ReturnItem("bread");
+                shopController.TakeItem("jar");
             }
             else if(value.AsNumber == -1)
             {
