@@ -11,8 +11,10 @@ position: -234,814
     <<else>> 
         <<disappear ExclamationMarkCenturion>>
         << set $player_saw_centurion to true >>
-        << set $food_quest to 0 >> 
-        Centurion: Salvē! Sum centurio! Quid tibi nomen est? <audio=Centurion_001r02> <animation=Talk>
+        << if $food_quest < 1 or $food_quest > 3>> 
+            << set $food_quest to 0>>
+        << endif>> 
+        Centurion: <wave=3>Salvē!</wave> Sum centurio! Quid tibi nomen est? <audio=Centurion_001r02> <animation=Talk>
         Titus: Nomen mihi est Titus. Quid hodie agis? <audio=Titus-C_001r04>
         Centurion: Satis bene. Vere esurio... <audio=Centurion_002r01p1> <animation=Talk>
     <<endif>>

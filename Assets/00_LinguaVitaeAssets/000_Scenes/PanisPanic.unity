@@ -3346,7 +3346,7 @@ MonoBehaviour:
   dialogueContainer: {fileID: 958866701}
   lineText: {fileID: 1017890560}
   continuePrompt: {fileID: 972193554}
-  textSpeed: 0.025
+  textSpeed: 0.0001
   optionButtons:
   - {fileID: 1319106105}
   - {fileID: 704021422}
@@ -4029,7 +4029,7 @@ MonoBehaviour:
   dialogueContainer: {fileID: 1814303148}
   lineText: {fileID: 1418611427}
   continuePrompt: {fileID: 371008281}
-  textSpeed: 0.025
+  textSpeed: 0.0001
   optionButtons:
   - {fileID: 297455660}
   - {fileID: 2132205433}
@@ -5285,7 +5285,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -5769,7 +5769,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
