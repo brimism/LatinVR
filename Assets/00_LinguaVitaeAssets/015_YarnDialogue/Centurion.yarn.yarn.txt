@@ -11,6 +11,7 @@ position: -234,814
     <<else>> 
         <<disappear ExclamationMarkCenturion>>
         << set $player_saw_centurion to true >>
+        << set $food_quest to 0 >> 
         Centurion: Salvē! Sum centurio! Quid tibi nomen est? <audio=Centurion_001r02> <animation=Talk>
         Titus: Nomen mihi est Titus. Quid hodie agis? <audio=Titus-C_001r04>
         Centurion: Satis bene. Vere esurio... <audio=Centurion_002r01p1> <animation=Talk>
@@ -20,7 +21,7 @@ position: -234,814
     <<if $food_quest is 1>>
         Centurion: Ō! Quid nasus meus sentit? <audio=Centurion_003r01p1> <animation=Talk>
         Centurion: Estne ille...? <audio=Centurion_003r01p2> <animation=Talk>
-        Centurion: <shake=0.3>PANIS????</shake> <audio=Centurion_003r01p3> <animation=Clap>
+        Centurion: <color=00DD00><shake=0.3>PANIS????</shake></color> <audio=Centurion_003r01p3> <animation=Clap>
         Titus: Certe est panis, mi amice! <audio=Titus-C_002r02>
         Centurion: Possumne panem habēre, amabo te? <audio=Centurion_004r01> <animation=Talk>
         [[Ita vero amice!|Centurion.GiveBread]]
@@ -28,12 +29,13 @@ position: -234,814
     <<else>>
         << if $player_saw_antonia is true >>
             << if $food_quest > 0>> 
-            Titus: (to self): Maybe I need to get a different item from the shop.
+            Centurion: Does <i>that</i> look like <color=00DD00><shake=0.1>panis</shake></color> to you?
             << else >> 
-            Titus: (to self): I need to get something from the shop.
+            Centurion: You just gonna stand there? 
+            Centurion: Go to the shop and get me some <color=00DD00>panis</color>!
             << endif>> 
         << else>>
-        Titus: (to self): I should go find a shop.
+        Centurion: There's a shop behind me.
 		<<appear ExclamationMarkAntonia>>
         << endif>> 
     <<endif>> 

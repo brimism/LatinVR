@@ -95,9 +95,14 @@ public class Scene_Hands : Hand_scr
                         currentDialogue = hit.transform.gameObject.GetComponent<DialogueTrigger>().runnerToTrigger;
                     }
                 }
+                else if(CheckTag("Secret"))
+                {
+                    hit.transform.gameObject.GetComponent<DialogueTrigger>().TriggerDialogue();
+                    currentDialogue = hit.transform.gameObject.GetComponent<DialogueTrigger>().runnerToTrigger;
+                }
             }
         }
-        if (CheckTag("DialogueTrigger"))
+        if (CheckTag("DialogueTrigger") || CheckTag("Secret"))
         {
             if (activeObject == null)
             {

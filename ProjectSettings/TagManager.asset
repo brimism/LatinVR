@@ -12,6 +12,7 @@ TagManager:
   - Grapes
   - Panis
   - DialogueTrigger
+  - Secret
   layers:
   - Default
   - TransparentFX

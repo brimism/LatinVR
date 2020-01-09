@@ -115,3 +115,11 @@ Titus: (to self) Maybe I should talk to the shopkeeper first.
 <<endif>> 
 <<endDialogue GameManager>>
 ===
+title: Antonia.Secret
+tags: 
+colorID: 0
+position: -798,669
+---
+Antonia: You silly goose!
+Antonia: That panis isn't for you. <animation=Backflip>
+===
