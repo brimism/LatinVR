@@ -70,11 +70,20 @@ public class TMPDialogueUI : Yarn.Unity.DialogueUIBehaviour
     /// dialogue is active and to restore them when dialogue ends
     public RectTransform gameControlsContainer;
 
+    // This parses and runs custom text tags on Yarn text
     public CustomTagRunner customTagHandler;
+
+    // This is a list of all the color data of each character's 4 vertices
+    // in the current line. This is necessary to set alphas correctly.
+    private List<Color32> prevColors;
+
+    // This is the component that will allow us to set individual character alphas.
+    private TMPro.TMP_Text m_TextComponent;
 
     void Start()
     {
         customTagHandler = lineText.gameObject.AddComponent<CustomTagRunner>();
+        prevColors = new List<Color32>();
     }
 
     void Awake ()
@@ -101,33 +110,83 @@ public class TMPDialogueUI : Yarn.Unity.DialogueUIBehaviour
     {
         lineText.gameObject.SetActive(false);
         lineText.gameObject.SetActive(true);
-        // Show the text
+        // Reset text
         customTagHandler.StopAllCoroutines();
         customTagHandler.clearClones();
+        prevColors.Clear();
         lineText.SetText(customTagHandler.ParseForCustomTags(YarnRTFToTMP(line.text)));
         lineText.ForceMeshUpdate();
         customTagHandler.ApplyTagEffects();
 
-
-        Debug.Log("Characters in line " + lineText.textInfo.characterCount);
-        // Set the text show nothing
-        lineText.maxVisibleCharacters = 0;
+        // Set up teletype by setting alpha to 0
+        TMPro.TMP_Text m_TextComponent = lineText.GetComponent<TMPro.TMP_Text>();
+        TMPro.TMP_TextInfo textInfo = m_TextComponent.textInfo;
+        while (textInfo.characterCount == 0)
+        {
+            yield return new WaitForSeconds(0.25f);
+        }
+        Color32[] newVertexColors;
+        for (int currentCharacter = 0; currentCharacter < textInfo.characterCount; currentCharacter++)
+        {
+            int materialIndex = textInfo.characterInfo[currentCharacter].materialReferenceIndex;
+            newVertexColors = textInfo.meshInfo[materialIndex].colors32;
+            int vertexIndex = textInfo.characterInfo[currentCharacter].vertexIndex;
+            // Save prev color
+            if (textInfo.characterInfo[currentCharacter].isVisible)
+            {
+                for (int j = 0; j < 4; j++)
+                    prevColors.Add(textInfo.meshInfo[materialIndex].colors32[vertexIndex + j]);
+            }
+            else
+            {
+                for (int j = 0; j < 4; j++)
+                    prevColors.Add(new Color32(0, 0, 0, 0));
+            }
+            // Set color to transparent
+            if (textInfo.characterInfo[currentCharacter].isVisible)
+            {
+                for (int j = 0; j < 4; j++)
+                    newVertexColors[vertexIndex + j] = new Color32(textInfo.meshInfo[materialIndex].colors32[vertexIndex + j].r, textInfo.meshInfo[materialIndex].colors32[vertexIndex + j].g, textInfo.meshInfo[materialIndex].colors32[vertexIndex + j].b, 0);
+                m_TextComponent.UpdateVertexData(TMPro.TMP_VertexDataUpdateFlags.Colors32);
+            }
+        }
 
         if (textSpeed > 0.0f) {
             // Display the line one character at a time
-
-            for(int i = 0; i < lineText.textInfo.characterCount; i++) {
-                lineText.maxVisibleCharacters++;
-                lineText.ForceMeshUpdate();
-                customTagHandler.OnTextChange();
-                yield return new WaitForSeconds (textSpeed);
+            for (int i = 0; i < textInfo.characterCount; i++)
+            {
+                int materialIndex = textInfo.characterInfo[i].materialReferenceIndex;
+                newVertexColors = textInfo.meshInfo[materialIndex].colors32;
+                int vertexIndex = textInfo.characterInfo[i].vertexIndex;
+                if (textInfo.characterInfo[i].isVisible)
+                {
+                    for (int j = 0; j < 4; j++)
+                    {
+                        newVertexColors[vertexIndex + j] = prevColors[4 * i + j];
+                    }
+                    m_TextComponent.UpdateVertexData(TMPro.TMP_VertexDataUpdateFlags.Colors32);
+                }
+                yield return new WaitForSeconds(textSpeed);
             }
         } else {
-            // Display the line immediately if textSpeed == 0
-            lineText.maxVisibleCharacters = lineText.textInfo.characterCount;
-            lineText.ForceMeshUpdate();
+            // Display the entire line immediately if textSpeed <= 0
+            for (int currentCharacter = 0; currentCharacter < textInfo.characterCount; currentCharacter++)
+            {
+                int materialIndex = textInfo.characterInfo[currentCharacter].materialReferenceIndex;
+                newVertexColors = textInfo.meshInfo[materialIndex].colors32;
+                int vertexIndex = textInfo.characterInfo[currentCharacter].vertexIndex;
+                // Set color back to the color it is supposed to be
+                if (textInfo.characterInfo[currentCharacter].isVisible)
+                {
+                    for (int j = 0; j < 4; j++)
+                        newVertexColors[vertexIndex + j] = prevColors[4 * currentCharacter + j];
+                    m_TextComponent.UpdateVertexData(TMPro.TMP_VertexDataUpdateFlags.Colors32);
+                }
+
+            }
         }
 
+        // Reset custom tag runner
         customTagHandler.ClearParsedTags();
 
         // Show the 'press any key' prompt when done, if we have one
