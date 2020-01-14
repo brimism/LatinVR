@@ -1,7 +1,7 @@
 title: Centurion.Start
 tags: 
 colorID: 0
-position: -234,814
+position: -235,813
 ---
 <<if visited("Centurion.GiveBread") is true>>
 
@@ -14,18 +14,18 @@ position: -234,814
         << if $food_quest < 1 or $food_quest > 3>> 
             << set $food_quest to 0>>
         << endif>> 
-        Centurion: <wave=3>Salvē!</wave> Sum centurio! Quid tibi nomen est? <audio=Centurion_001r02> <animation=Talk>
+        Centurion: <wave=3>Salve!</wave> Sum centurio! Quid tibi nomen est? <audio=Centurion_001r02> <animation=Talk>
         Titus: Nomen mihi est Titus. Quid hodie agis? <audio=Titus-C_001r04>
         Centurion: Satis bene. Vere esurio... <audio=Centurion_002r01p1> <animation=Talk>
     <<endif>>
 		<<disappear ExclamationMarkCenturion>>
         Centurion: Mihi opus <color=00DD00>panis</color>! <audio=Centurion_002r01p2> <animation=Clap>
     <<if $food_quest is 1>>
-        Centurion: Ō! Quid nasus meus sentit? <audio=Centurion_003r01p1> <animation=Talk>
+        Centurion: O! Quid nasus meus sentit? <audio=Centurion_003r01p1> <animation=Talk>
         Centurion: Estne ille...? <audio=Centurion_003r01p2> <animation=Talk>
         Centurion: <color=00DD00><shake=0.3>PANIS????</shake></color> <audio=Centurion_003r01p3> <animation=Clap>
         Titus: Certe est panis, mi amice! <audio=Titus-C_002r02>
-        Centurion: Possumne panem habēre, amabo te? <audio=Centurion_004r01> <animation=Talk>
+        Centurion: Possumne panem habere, amabo te? <audio=Centurion_004r01> <animation=Talk>
         [[Ita vero amice!|Centurion.GiveBread]]
         [[Minime! Hic panis est meus.|Centurion.DontGiveBread ]] 
     <<else>>
@@ -49,7 +49,7 @@ tags:
 colorID: 0
 position: -517,1257
 ---
-Titus: Hīc is est! Cena bene! <audio=Titus-C_005r01>
+Titus: Hic is est! Cena bene! <audio=Titus-C_005r01>
 Centurion: Pani gratias tibi ago! <audio=Centurion_005r03p1> <animation=Clap>
 Centurion: Quomodo tibi remunerationem dare umquam poteram? <audio=Centurion_005r03p2> <animation=Talk>
 Centurion: In perpetuum amabo hunc panem! <audio=Centurion_005r03p3> <animation=Talk>
