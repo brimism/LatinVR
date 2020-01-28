@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 [RequireComponent(typeof(Collider))]
-public class DrawSplat : MonoBehaviour {
+public class lw_DrawSplat : MonoBehaviour {
     public Camera cam;
     public Shader drawShader;
     public bool genMap = true;

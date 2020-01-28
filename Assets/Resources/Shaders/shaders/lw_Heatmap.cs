@@ -4,11 +4,11 @@ using System.IO;
 using UnityEditor;
 using UnityEngine;
 
-public class Heatmap : MonoBehaviour {
+public class lw_Heatmap : MonoBehaviour {
 
     private Material visHeatMat;
     private Material[] drawMat;
-    private DrawSplat[] drawObjects;
+    private lw_DrawSplat[] drawObjects;
     private HeatInitData _h;
 
     public bool saveOnQuit = false;
@@ -27,8 +27,8 @@ public class Heatmap : MonoBehaviour {
         //_h.Save();
         _h = getInitData();
         HeatmapInitalize(_h);
-        visHeatMat = Resources.Load<Material>("Shaders/VisHeatMat") as Material;
-        drawObjects = FindObjectsOfType<DrawSplat>();
+        visHeatMat = Resources.Load<Material>("Shaders/mat_lw_visHeat") as Material;
+        drawObjects = FindObjectsOfType<lw_DrawSplat>();
         storeMats();
     }
 
@@ -104,7 +104,7 @@ public class Heatmap : MonoBehaviour {
     }
     void ScaleAll()
     {
-        foreach (DrawSplat d in drawObjects)
+        foreach (lw_DrawSplat d in drawObjects)
         {
             d.setScale(scale);
         }
@@ -123,7 +123,7 @@ public class Heatmap : MonoBehaviour {
         }
 
     }
-    void VisualizeOne(DrawSplat d)
+    void VisualizeOne(lw_DrawSplat d)
     {
         d.gameObject.GetComponent<MeshRenderer>().material = visHeatMat;
     }
@@ -136,7 +136,7 @@ public class Heatmap : MonoBehaviour {
         }
     }
 
-    void VisualizeRealtime(DrawSplat d)
+    void VisualizeRealtime(lw_DrawSplat d)
     {
         VisualizeOne(d);
         d.InitRealtime();
@@ -165,7 +165,7 @@ public class Heatmap : MonoBehaviour {
 
     void SaveAll()
     {
-        foreach (DrawSplat d in drawObjects)
+        foreach (lw_DrawSplat d in drawObjects)
         {
             d.Save(d.gameObject.name);
         }
@@ -179,20 +179,20 @@ public class Heatmap : MonoBehaviour {
         }
     }
 
-    void RevertOne(DrawSplat d, Material mat)
+    void RevertOne(lw_DrawSplat d, Material mat)
     {
         d.gameObject.GetComponent<MeshRenderer>().material = mat;
     }
 
     void ResetAll()
     {
-        foreach (DrawSplat d in drawObjects)
+        foreach (lw_DrawSplat d in drawObjects)
         {
             ResetOne(d);
         }
     }
 
-    void ResetOne(DrawSplat d)
+    void ResetOne(lw_DrawSplat d)
     {
         d.InitSplat();
     }
@@ -225,31 +225,4 @@ public class Heatmap : MonoBehaviour {
             return JsonUtility.FromJson<HeatInitData>(json);
 
         }
-}
-[System.Serializable]
-public class HeatInitData
-{
-    public bool saveOnQuit = false;
-    public bool saveNow = false;
-    public bool visualizeCurrentNow = false;
-    public bool visualizePreviousOnOpen = false;
-    public bool resetAllHeatMaps = false;
-    public bool revertAllMaterials = false;
-
-    public float scale = 0.01f;
-
-    public string SaveToString()
-    {
-        return JsonUtility.ToJson(this);
-    }
-
-    public void Save()
-    {
-        string fileName = System.IO.Path.Combine(Application.streamingAssetsPath, "heat_ini.txt");
-        //Write some text to the test.txt file
-        StreamWriter writer = new StreamWriter(fileName, true);
-        writer.WriteLine(SaveToString());
-        writer.Close();
-    }
-
 }
