@@ -11,6 +11,8 @@ public class lw_DrawSplat : MonoBehaviour {
 
     public bool saveOnQuit = false;
 
+    int layerMask = 1 << 9;
+
 
     public RenderTexture _splatmap;
     Material _mat, _drawMat;
@@ -33,8 +35,9 @@ public class lw_DrawSplat : MonoBehaviour {
 
         if (genMap) //trigger to draw goes here
         {
-            if(Physics.Raycast(pointer.transform.position, pointer.transform.forward, out _hit) && _hit.collider.gameObject == this.gameObject)
+            if(Physics.Raycast(pointer.transform.position, pointer.transform.forward, out _hit, Mathf.Infinity, layerMask) && _hit.collider.gameObject == this.gameObject)
             {
+                print(this.gameObject.name);
                 _drawMat.SetVector("_Coordinate", new Vector4(_hit.textureCoord.x, _hit.textureCoord.y));
                 
                 RenderTexture temp = RenderTexture.GetTemporary(_splatmap.width, _splatmap.height, 0, RenderTextureFormat.ARGBFloat);

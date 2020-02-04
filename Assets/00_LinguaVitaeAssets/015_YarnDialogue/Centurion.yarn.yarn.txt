@@ -1,7 +1,7 @@
 title: Centurion.Start
 tags: 
 colorID: 0
-position: -235,813
+position: -235,812
 ---
 <<if visited("Centurion.GiveBread") is true>>
 
@@ -52,7 +52,7 @@ position: -517,1257
 Titus: Hic is est! Cena bene! <audio=Titus-C_005r01>
 Centurion: Pani gratias tibi ago! <audio=Centurion_005r03p1> <animation=Clap>
 Centurion: Quomodo tibi remunerationem dare umquam poteram? <audio=Centurion_005r03p2> <animation=Talk>
-Centurion: In perpetuum amabo hunc panem! <audio=Centurion_005r03p3> <animation=Talk>
+Centurion: In <wave=4 0.8>perpetuum</wave> amabo hunc panem! <audio=Centurion_005r03p3> <animation=Talk>
 Titus: Satis bene? (under breath): Hic centurio est insanus. <audio=Titus-C_006r02>
 <<endDialogue GameManager>> 
 <<set $food_quest to -1>> 
@@ -63,7 +63,7 @@ colorID: 0
 position: 147,1265
 ---
 Titus: Tibi panem non dabo. Panis mecum in perpetuum remanebit. <audio=Titus-C_007r04>
-Centurion: Quare???? <audio=Centurion_006r05p1> <animation=Talk>
+Centurion: <shake=0.3>Quare????</shake> <audio=Centurion_006r05p1> <animation=Talk>
 Centurion: Quare mihi hoc facis, Tite? <audio=Centurion_006r05p2> <animation=Talk>
 Centurion: Mihi carus non es. Bellus non es. Nunc fuge! <audio=Centurion_006r05p3> <animation=HeadShake>
 <<endDialogue GameManager>> 
