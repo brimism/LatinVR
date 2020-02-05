@@ -145,11 +145,13 @@ public class Scene_Hands : Hand_scr
         if (CheckTag("Teleporter"))
         {
             activeTeleporter = hit.transform.gameObject;
+            activeTeleporter.GetComponent<Teleporter>().selected = true;
         }
         else
         {
             if(activeTeleporter != null)
             {
+                activeTeleporter.GetComponent<Teleporter>().selected = false;
                 activeTeleporter = null;
             }
         }
