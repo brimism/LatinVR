@@ -12,7 +12,7 @@ Antonia: Panis, vinum, et uvae! Et ullae! <audio=Antonia_001r03p2> <animation=Ta
 -> Salve, Attica.
     Titus: Salve, Attica. <audio=Titus-A_001r03>
     Antonia: Nomen mihi est Antonia. <audio=Antonia_002r02> <animation=AnnoyedHeadShake>
-    Antonia: Potesne non nomen meum in corpore meo videre? Nemo nomen meum bene umquam discit. Heu... <audio=Antonia_003r03> <animation=AnnoyedHeadShake>
+    Antonia: Potesne non nomen meum in corpore meo vidēre? Nemo nomen meum bene umquam discit. Heu... <audio=Antonia_003r03> <animation=AnnoyedHeadShake>
     Titus: Mea culpa. <audio=Titus-A_002r03>
 -> Salve, Antonia.
 <<endif>>
@@ -37,7 +37,7 @@ position: -1066,433
 ---
 <<if visited("Antonia.Start") is true>>
 Titus: Cupiditatem panis habeo. Da mihi panem, amabo te. <audio=Titus-A_006r01>
-Antonia: O, panis! <audio=Antonia_007r02p1> <animation=HeadNodYes>
+Antonia: Ō, panis! <audio=Antonia_007r02p1> <animation=HeadNodYes>
 Antonia: Optime! Id dabo uno denario ($1). <audio=Antonia_007r02p2> <animation=HeadNodYes>
 Titus: Quinque denarios ($5) solos habeo. <audio=Titus-A_007r02>
 Antonia: Id capiam! Hic est panis. <audio=Antonia_008r02> <animation=SarcasticHeadNod>
@@ -52,7 +52,7 @@ Titus: (to self) Would the Centurion want this?
 Titus: (to self) What will I do with this?
 << endif>> 
 <<else>>
-Antonia: Eho! Debesne non mihi dicere quoniam cum meis bonis erras? <audio=Antonia_010r01p1> <animation=ShakingHeadNo>
+Antonia: Eho! Debēsne non mihi dicere quoniam cum meis bonis erras? <audio=Antonia_010r01p1> <animation=ShakingHeadNo>
 Antonia: Mehercle! Hoc tempore pueri! <audio=Antonia_010r01p2> <animation=CrazyGesture>
 Titus: Heh heh.. Mea culpa. <audio=Titus-A_009r01>
 Titus: (to self) Maybe I should talk to the shopkeeper first.
@@ -66,8 +66,8 @@ position: -795,426
 ---
 <<if visited("Antonia.Start") is true>>
 Titus: Cupiditatem ullae habeo. Ullam mihi da, amabo te. <audio=Titus-A_010r03>
-Antonia: (under breath) Me terres. Quare cupiditatem ullae habes? Sed pecuniam amo. (to Titus): Certe! Id est duobus denariis. <audio=Antonia_011r04> <animation=ThoughtfulHeadNod>
-Titus: Quinque denarios ($5) solos habeo, non duo. <audio=Titus-A_011r01>
+Antonia: (under breath) Me terrēs. Quare cupiditatem ullae habēs? Sed pecuniam amo. (to Titus): Certe! Id est duobus denariis. <audio=Antonia_011r04> <animation=ThoughtfulHeadNod>
+Titus: Quinque denarios ($5) solos habeō, non duo. <audio=Titus-A_011r01>
 Antonia: Id capiam! Haec est tibi ulla. <audio=Antonia_012r01> <animation=SarcasticHeadNod>
 Titus: Bene? Haec est tua pecunia. <audio=Titus-A_012r01p1>
 Titus: Gratias tibi ago. <audio=Titus-A_012r01p2>
@@ -80,7 +80,7 @@ Titus: (to self) Would the Centurion want this?
 Titus: (to self) What will I do with this?
 << endif>> 
 <<else>>
-Antonia: Eho! Debesne non mihi dicere quoniam cum meis bonis erras? <audio=Antonia_010r01p1> <animation=ShakingHeadNo>
+Antonia: Eho! Debēsne non mihi dicere quoniam cum meis bonis erras? <audio=Antonia_010r01p1> <animation=ShakingHeadNo>
 Antonia: Mehercle! Hoc tempore pueri! <audio=Antonia_010r01p2> <animation=CrazyGesture>
 Titus: Heh heh.. Mea culpa. <audio=Titus-A_009r01>
 Titus: (to self) Maybe I should talk to the shopkeeper first.
@@ -94,8 +94,8 @@ position: -541,424
 ---
 <<if visited("Antonia.Start") is true>>
 Titus: Cupiditatem uvarum habeo. Uvas mihi da, amabo te. <audio=Titus-A_013r01>
-Antonia: (under breath) Me terres. Quare cupiditatem uvarum habes? Sed pecuniam amo. Certe! Id est duobus denariis. <audio=Antonia_013r01> <animation=ThoughtfulHeadNod>
-Titus: Quinque denarios ($5) solos habeo, non duo. <audio=Titus-A_011r01>
+Antonia: (under breath) Me terrēs. Quare cupiditatem uvarum habēs? Sed pecuniam amo. Certe! Id est duobus denariis. <audio=Antonia_013r01> <animation=ThoughtfulHeadNod>
+Titus: Quinque denarios ($5) solos habeō, non duo. <audio=Titus-A_011r01>
 Antonia: Id capiam! Hae sunt tibi uvae. <audio=Antonia_014r03> <animation=SarcasticHeadNod>
 Titus: Bene? Haec est tua pecunia. <audio=Titus-A_012r01p1>
 Titus: Gratias tibi ago. <audio=Titus-A_012r01p2>
@@ -108,7 +108,7 @@ Titus: (to self) Would the Centurion want this?
 Titus: (to self) What will I do with this?
 << endif>> 
 <<else>>
-Antonia: Eho! Debesne non mihi dicere quoniam cum meis bonis erras? <audio=Antonia_010r01p1> <animation=ShakingHeadNo>
+Antonia: Eho! Debēsne non mihi dicere quoniam cum meis bonis erras? <audio=Antonia_010r01p1> <animation=ShakingHeadNo>
 Antonia: Mehercle! Hoc tempore pueri! <audio=Antonia_010r01p2> <animation=CrazyGesture>
 Titus: Heh heh.. Mea culpa. <audio=Titus-A_009r01>
 Titus: (to self) Maybe I should talk to the shopkeeper first.
