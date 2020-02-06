@@ -573,6 +573,29 @@ Transform:
   m_Father: {fileID: 1170304160}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &98468074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f16485fc1cc87448b5b7a53b507436b, type: 3}
+  m_Name: LHTrig->GameManager
+  m_EditorClassIdentifier: 
+  commandName: LHTrig->GameManager
+  node: 4
+  test: 3
+  feature: 54
+  commandToRun: {fileID: 1834175232}
+  float_value: 0.3
+  bool_value: 0
+  vector3_value: {x: 0, y: 0, z: 0}
+  vector2_value: {x: 0, y: 0}
+  inputTrackingState_value: 0
+  quaternion_value: {x: 0, y: 0, z: 0, w: 0}
 --- !u!4 &104287142 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8996431522699916546, guid: 207e0726abc70334cac9447d8e902517,
@@ -1001,29 +1024,6 @@ MonoBehaviour:
   vector2_value: {x: 0, y: 0}
   inputTrackingState_value: 0
   quaternion_value: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &381633699
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f16485fc1cc87448b5b7a53b507436b, type: 3}
-  m_Name: RHTrigger->Centurion.Dialogue
-  m_EditorClassIdentifier: 
-  commandName: RHTrigger->Centurion.Dialogue
-  node: 5
-  test: 5
-  feature: 54
-  commandToRun: {fileID: 1050031010}
-  float_value: 0.95
-  bool_value: 0
-  vector3_value: {x: 0, y: 0, z: 0}
-  vector2_value: {x: 0, y: 0}
-  inputTrackingState_value: 0
-  quaternion_value: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &387677558 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 9eba8e9c2094a4a40800c9d5be406722,
@@ -1115,10 +1115,8 @@ MonoBehaviour:
   - {fileID: 1490174089}
   - {fileID: 314094683}
   - {fileID: 1012180109}
-  - {fileID: 381633699}
-  - {fileID: 1101197251}
-  - {fileID: 948820020}
-  - {fileID: 2029496989}
+  - {fileID: 98468074}
+  - {fileID: 1042335949}
 --- !u!4 &441746260
 Transform:
   m_ObjectHideFlags: 0
@@ -3740,29 +3738,6 @@ Transform:
   m_Father: {fileID: 1535039621}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: -16.992, z: 0}
---- !u!114 &948820020
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f16485fc1cc87448b5b7a53b507436b, type: 3}
-  m_Name: LHTrigger->Shopkeeper.Dialogue
-  m_EditorClassIdentifier: 
-  commandName: LHTrigger->Shopkeeper.Dialogue
-  node: 4
-  test: 5
-  feature: 54
-  commandToRun: {fileID: 1223286519}
-  float_value: 0.95
-  bool_value: 0
-  vector3_value: {x: 0, y: 0, z: 0}
-  vector2_value: {x: 0, y: 0}
-  inputTrackingState_value: 0
-  quaternion_value: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &954626006
 GameObject:
   m_ObjectHideFlags: 0
@@ -4485,7 +4460,7 @@ MonoBehaviour:
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
   m_hasFontAssetChanged: 0
-  m_renderer: {fileID: 19090473}
+  m_renderer: {fileID: 1017890559}
   m_subTextObjects:
   - {fileID: 0}
   - {fileID: 0}
@@ -4496,6 +4471,29 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   m_maskType: 0
+--- !u!114 &1042335949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f16485fc1cc87448b5b7a53b507436b, type: 3}
+  m_Name: RHTrig->GameManager
+  m_EditorClassIdentifier: 
+  commandName: RHTrig->GameManager
+  node: 5
+  test: 3
+  feature: 54
+  commandToRun: {fileID: 1834175231}
+  float_value: 0.3
+  bool_value: 0
+  vector3_value: {x: 0, y: 0, z: 0}
+  vector2_value: {x: 0, y: 0}
+  inputTrackingState_value: 0
+  quaternion_value: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1050031004
 GameObject:
   m_ObjectHideFlags: 0
@@ -4564,7 +4562,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e206a31eb8e02643bb66fe5a3877b6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ui: {fileID: 1050031008}
 --- !u!114 &1050031008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4600,7 +4597,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f166715011c590c45a967697554e897b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ui: {fileID: 1050031008}
 --- !u!1 &1051466126
 GameObject:
   m_ObjectHideFlags: 0
@@ -4960,29 +4956,6 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 061b02ee9bd71da4589a16df189ff1e5, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5738108a929837447aadc5cc8de6f7fc, type: 3}
---- !u!114 &1101197251
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f16485fc1cc87448b5b7a53b507436b, type: 3}
-  m_Name: LHTrigger->Centurion.Dialogue
-  m_EditorClassIdentifier: 
-  commandName: LHTrigger->Centurion.Dialogue
-  node: 4
-  test: 5
-  feature: 54
-  commandToRun: {fileID: 1050031007}
-  float_value: 0.95
-  bool_value: 0
-  vector3_value: {x: 0, y: 0, z: 0}
-  vector2_value: {x: 0, y: 0}
-  inputTrackingState_value: 0
-  quaternion_value: {x: 0, y: 0, z: 0, w: 0}
 --- !u!4 &1109137274 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 5738108a929837447aadc5cc8de6f7fc,
@@ -5424,7 +5397,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e206a31eb8e02643bb66fe5a3877b6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ui: {fileID: 1223286520}
 --- !u!114 &1223286519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5437,7 +5409,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f166715011c590c45a967697554e897b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ui: {fileID: 1223286520}
 --- !u!114 &1223286520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7536,6 +7507,8 @@ GameObject:
   - component: {fileID: 1834175229}
   - component: {fileID: 1834175228}
   - component: {fileID: 1834175230}
+  - component: {fileID: 1834175232}
+  - component: {fileID: 1834175231}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -7585,8 +7558,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0200f305a1d623945be49a8dc431e002, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LH_Trigger: 0
+  RH_Trigger: 0
   playerItemHolder: {fileID: 311862955}
   shopController: {fileID: 1170304161}
+--- !u!114 &1834175231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1834175227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e206a31eb8e02643bb66fe5a3877b6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1834175232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1834175227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f166715011c590c45a967697554e897b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1839929029
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10225,29 +10224,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 207e0726abc70334cac9447d8e902517, type: 3}
---- !u!114 &2029496989
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f16485fc1cc87448b5b7a53b507436b, type: 3}
-  m_Name: RHTrigger->Shopkeeper.Dialogue
-  m_EditorClassIdentifier: 
-  commandName: RHTrigger->Shopkeeper.Dialogue
-  node: 5
-  test: 5
-  feature: 54
-  commandToRun: {fileID: 1223286518}
-  float_value: 0.95
-  bool_value: 0
-  vector3_value: {x: 0, y: 0, z: 0}
-  vector2_value: {x: 0, y: 0}
-  inputTrackingState_value: 0
-  quaternion_value: {x: 0, y: 0, z: 0, w: 0}
 --- !u!95 &2058822694 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: -6057140222963153312, guid: a0b7834a8be06004c8291359e0b57cb2,

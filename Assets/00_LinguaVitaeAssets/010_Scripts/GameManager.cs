@@ -4,8 +4,12 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using Yarn;
 
+[RequireComponent(typeof(NextDialogue_CMD))]
+[RequireComponent(typeof(NextDialogue2_CMD))]
 public class GameManager : YarnObserver
 {
+    public bool LH_Trigger = false;
+    public bool RH_Trigger = false;
     public ItemHolder playerItemHolder;
     public ShopController shopController;
     public Dictionary<string, Character> characters;

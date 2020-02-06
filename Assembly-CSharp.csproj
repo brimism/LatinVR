@@ -55,7 +55,6 @@
      <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\Dialogue Extensions\DialogueTrigger.cs" />
      <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\Dialogue Extensions\ObservableVarStorage.cs" />
      <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\Dialogue Extensions\TMPDialogueUI.cs" />
-     <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\Dialogue Extensions\VRDialogueUI.cs" />
      <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\Dialogue Extensions\YarnObserver.cs" />
      <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\GameManager.cs" />
      <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\MainMenu.cs" />

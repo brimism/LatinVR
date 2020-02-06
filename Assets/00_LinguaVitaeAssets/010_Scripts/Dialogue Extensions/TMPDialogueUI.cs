@@ -38,10 +38,6 @@ using System.Collections.Generic;
     */
 public class TMPDialogueUI : Yarn.Unity.DialogueUIBehaviour
 {
-
-    public bool VRInputDetected;
-    public bool VRInputDetected2;
-
     /// The object that contains the dialogue and the options.
     /** This object will be enabled when conversation starts, and 
         * disabled when it ends.
@@ -80,16 +76,17 @@ public class TMPDialogueUI : Yarn.Unity.DialogueUIBehaviour
     // This is the component that will allow us to set individual character alphas.
     private TMPro.TMP_Text m_TextComponent;
 
+    private GameManager gameManager;
+
     void Start()
     {
         customTagHandler = lineText.gameObject.AddComponent<CustomTagRunner>();
         prevColors = new List<Color32>();
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     void Awake ()
     {
-        VRInputDetected = false;
-        VRInputDetected2 = false;
         // Start by hiding the container, line and option buttons
         if (dialogueContainer != null)
             dialogueContainer.SetActive(false);
@@ -194,7 +191,7 @@ public class TMPDialogueUI : Yarn.Unity.DialogueUIBehaviour
             continuePrompt.SetActive (true);
 
         // Wait for trigger press
-        while (VRInputDetected == false && VRInputDetected2 == false)
+        while (gameManager.LH_Trigger == false && gameManager.RH_Trigger == false)
         {
             yield return null;
         }
