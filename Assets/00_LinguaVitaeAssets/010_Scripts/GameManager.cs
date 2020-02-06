@@ -4,12 +4,17 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using Yarn;
 
+[RequireComponent(typeof(DictionaryController))]
 [RequireComponent(typeof(NextDialogue_CMD))]
 [RequireComponent(typeof(NextDialogue2_CMD))]
+[RequireComponent(typeof(LHGrip_CMD))]
+[RequireComponent(typeof(RHGrip_CMD))]
 public class GameManager : YarnObserver
 {
     public bool LH_Trigger = false;
     public bool RH_Trigger = false;
+    public bool LH_Grip = false;
+    public bool RH_Grip = false;
     public ItemHolder playerItemHolder;
     public ShopController shopController;
     public Dictionary<string, Character> characters;

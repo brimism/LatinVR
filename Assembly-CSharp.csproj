@@ -56,6 +56,7 @@
      <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\Dialogue Extensions\ObservableVarStorage.cs" />
      <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\Dialogue Extensions\TMPDialogueUI.cs" />
      <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\Dialogue Extensions\YarnObserver.cs" />
+     <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\DictionaryController.cs" />
      <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\GameManager.cs" />
      <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\MainMenu.cs" />
      <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\NPC\Exclamation.cs" />
@@ -76,10 +77,12 @@
      <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\VRCommands\HandRot_CMD.cs" />
      <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\VRCommands\HMDPos_CMD.cs" />
      <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\VRCommands\HMDRot_CMD.cs" />
+     <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\VRCommands\LHGrip_CMD.cs" />
      <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\VRCommands\MouseClick_CMD.cs" />
      <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\VRCommands\NextDialogue_CMD.cs" />
      <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\VRCommands\NextDialogue2_CMD.cs" />
      <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\VRCommands\PushTrigger_CMD.cs" />
+     <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\VRCommands\RHGrip_CMD.cs" />
      <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\XRCS\Command.cs" />
      <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\XRCS\VRCommand.cs" />
      <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\XRCS\XRCommandWizard.cs" />
