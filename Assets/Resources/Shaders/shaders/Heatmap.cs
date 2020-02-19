@@ -17,6 +17,7 @@ public class Heatmap : MonoBehaviour {
     public bool visualizePreviousOnOpen = false;
     public bool resetAllHeatMaps = false;
     public bool revertAllMaterials = false;
+    public bool visualizeMesh = false;
 
     public float scale = .01f;
 
@@ -231,10 +232,16 @@ public class HeatInitData
 {
     public bool saveOnQuit = false;
     public bool saveNow = false;
+    
+    public bool visualizeMesh = false;
     public bool visualizeCurrentNow = false;
     public bool visualizePreviousOnOpen = false;
     public bool resetAllHeatMaps = false;
     public bool revertAllMaterials = false;
+    public uint studentID = 0000;
+    public string studentName = "student";
+    public string date = "01_01_2020";
+    
 
     public float scale = 0.01f;
 

@@ -18,6 +18,7 @@ public class lw_DrawSplat : MonoBehaviour {
     Material _mat, _drawMat;
     RaycastHit _hit;
 
+
     
 	void Awake () {
         _drawMat = new Material(drawShader);
@@ -37,7 +38,7 @@ public class lw_DrawSplat : MonoBehaviour {
         {
             if(Physics.Raycast(pointer.transform.position, pointer.transform.forward, out _hit, Mathf.Infinity, layerMask) && _hit.collider.gameObject == this.gameObject)
             {
-                print(this.gameObject.name);
+                //print(this.gameObject.name);
                 _drawMat.SetVector("_Coordinate", new Vector4(_hit.textureCoord.x, _hit.textureCoord.y));
                 
                 RenderTexture temp = RenderTexture.GetTemporary(_splatmap.width, _splatmap.height, 0, RenderTextureFormat.ARGBFloat);

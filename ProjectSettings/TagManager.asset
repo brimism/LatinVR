@@ -13,6 +13,7 @@ TagManager:
   - Panis
   - DialogueTrigger
   - Secret
+  - vocab
   layers:
   - Default
   - TransparentFX

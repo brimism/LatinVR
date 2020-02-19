@@ -11,6 +11,7 @@ using Yarn;
 [RequireComponent(typeof(RHGrip_CMD))]
 public class GameManager : YarnObserver
 {
+    public bool rightHanded = true;
     public bool LH_Trigger = false;
     public bool RH_Trigger = false;
     public bool LH_Grip = false;

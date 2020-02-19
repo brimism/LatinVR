@@ -14,11 +14,16 @@ public class lw_Heatmap : MonoBehaviour {
     public bool saveOnQuit = false;
     public bool saveNow = false;
     public bool visualizeCurrentNow = false;
-    public bool visualizePreviousOnOpen = false;
+    public bool visualizePreviousOnOpen = true;
     public bool resetAllHeatMaps = false;
     public bool revertAllMaterials = false;
 
+    public bool visualizeMesh = false;
+
     public float scale = .01f;
+
+    public string sessionID;
+
 
 
     private void Awake()
@@ -27,6 +32,7 @@ public class lw_Heatmap : MonoBehaviour {
         //_h.Save();
         _h = getInitData();
         HeatmapInitalize(_h);
+        sessionID = _h.studentID + "_" + _h.date;
         visHeatMat = Resources.Load<Material>("Shaders/mat_lw_visHeat") as Material;
         drawObjects = FindObjectsOfType<lw_DrawSplat>();
         storeMats();
@@ -37,8 +43,13 @@ public class lw_Heatmap : MonoBehaviour {
     void Start () {
         ScaleAll();
 
+        if(visualizeMesh){
+            VisualizeAllMesh();
+        }
+            //Debug.Log("starting ");
         if (visualizePreviousOnOpen)
         {
+            //Debug.Log("starting vis");
             VisualizeAll();
         }
         if (saveOnQuit)
@@ -118,6 +129,7 @@ public class lw_Heatmap : MonoBehaviour {
         {
             drawObjects[i].genMap = false;
             VisualizeOne(drawObjects[i]);
+            //Debug.Log("visualizing "+drawObjects[i].gameObject.name);
             InitOne(drawObjects[i].gameObject.GetComponent<MeshRenderer>().material, drawObjects[i].gameObject.name);
             drawObjects[i].enabled = false;
         }
@@ -126,6 +138,18 @@ public class lw_Heatmap : MonoBehaviour {
     void VisualizeOne(lw_DrawSplat d)
     {
         d.gameObject.GetComponent<MeshRenderer>().material = visHeatMat;
+    }
+
+    void VisualizeAllMesh()
+    {
+        for (int i = 0; i < drawObjects.Length; i++)
+        {
+            VisualizeOneMesh(drawObjects[i]);
+        }
+
+    }
+    void VisualizeOneMesh(lw_DrawSplat d){
+        d.gameObject.GetComponent<MeshRenderer>().enabled = true;
     }
 
     void VisualizeAllRealtime()
@@ -153,8 +177,8 @@ public class lw_Heatmap : MonoBehaviour {
         mat.SetTexture("_Splat", tex); */
         string finalPath;
         WWW localFile;
-
-        finalPath = "file://" + Path.Combine(Application.streamingAssetsPath, uniqueName + ".png");
+        Debug.Log("file is "+ sessionID + uniqueName + ".png");
+        finalPath = "file://" + Path.Combine(Application.streamingAssetsPath, sessionID + uniqueName + ".png");
         Debug.Log(finalPath);
         localFile = new WWW(finalPath);
         
@@ -167,7 +191,7 @@ public class lw_Heatmap : MonoBehaviour {
     {
         foreach (lw_DrawSplat d in drawObjects)
         {
-            d.Save(d.gameObject.name);
+            d.Save(sessionID + d.gameObject.name);
         }
     }
 
@@ -217,7 +241,7 @@ public class lw_Heatmap : MonoBehaviour {
         visualizePreviousOnOpen = data.visualizePreviousOnOpen;
         //resetAllHeatMaps = data.resetAllHeatMaps;
         //revertAllMaterials = data.revertAllMaterials;
-
+        visualizeMesh = data.visualizeMesh;
     }
 
     public HeatInitData createData(string json)

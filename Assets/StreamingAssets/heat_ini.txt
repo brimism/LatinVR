@@ -1,1 +1,1 @@
-{"saveOnQuit":false,"saveNow":false,"visualizeCurrentNow":true,"visualizePreviousOnOpen":false,"resetAllHeatMaps":false,"revertAllMaterials":false,"scale":0.009999999776482582}
+{"saveOnQuit":false,"saveNow":false,"visualizeMesh":true,"visualizeCurrentNow":true,"visualizePreviousOnOpen":false,"resetAllHeatMaps":false,"revertAllMaterials":false,"studentID":0,"studentName":"student","date":"01_01_2020","scale":0.009999999776482582}

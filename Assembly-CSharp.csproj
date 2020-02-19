@@ -49,6 +49,7 @@
      <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\Dialogue Extensions\Custom Tags\animation_TMPTag.cs" />
      <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\Dialogue Extensions\Custom Tags\audio_TMPTag.cs" />
      <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\Dialogue Extensions\Custom Tags\shake_TMPTag.cs" />
+     <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\Dialogue Extensions\Custom Tags\vocab_TMPTag.cs" />
      <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\Dialogue Extensions\Custom Tags\wave_TMPTag.cs" />
      <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\Dialogue Extensions\CustomTagHandler\CustomTagRunner.cs" />
      <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\Dialogue Extensions\CustomTagHandler\CustomTMPTag.cs" />
@@ -90,6 +91,7 @@
      <Compile Include="Assets\8K Skybox Pack Free\Example Scenes\Script\RotateCamera.cs" />
      <Compile Include="Assets\Resources\Shaders\shaders\DrawSplat.cs" />
      <Compile Include="Assets\Resources\Shaders\shaders\Heatmap.cs" />
+     <Compile Include="Assets\Resources\Shaders\shaders\HeatProfile.cs" />
      <Compile Include="Assets\Resources\Shaders\shaders\lw_DrawSplat.cs" />
      <Compile Include="Assets\Resources\Shaders\shaders\lw_Heatmap.cs" />
      <Compile Include="Assets\Resources\Shaders\shaders\MeshCollision.cs" />
