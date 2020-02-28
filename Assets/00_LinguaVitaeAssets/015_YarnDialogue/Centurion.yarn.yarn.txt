@@ -19,7 +19,7 @@ position: -235,812
         Centurion: Satis bene. Vere esurio... <audio=Centurion_002r01p1> <animation=Talk>
     <<endif>>
 		<<disappear ExclamationMarkCenturion>>
-        Centurion: Mihi opus <vocab>panis</vocab>! <audio=Centurion_002r01p2> <animation=Clap>
+        Centurion: Mihi opus <color=00DD00>panis!</color> <audio=Centurion_002r01p2> <animation=Clap>
     <<if $food_quest is 1>>
         Centurion: Ō! Quid nasus meus sentit? <audio=Centurion_003r01p1> <animation=Talk>
         Centurion: Estne ille...? <audio=Centurion_003r01p2> <animation=Talk>
