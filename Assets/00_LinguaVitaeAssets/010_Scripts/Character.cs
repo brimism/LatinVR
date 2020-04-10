@@ -12,10 +12,6 @@ public class Character : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(GameObject.Find("GameManager").GetComponent<GameManager>().characters == null)
-        {
-            GameObject.Find("GameManager").GetComponent<GameManager>().characters = new Dictionary<string, Character>();
-        }
         GameObject.Find("GameManager").GetComponent<GameManager>().characters.Add(name, this);
     }
 
@@ -25,7 +21,6 @@ public class Character : MonoBehaviour
         
     }
 
-    [Yarn.Unity.YarnCommand("playSound")]
     public void PlaySound(string audioFile)
     {
         //Play audio file with this string name
@@ -35,7 +30,6 @@ public class Character : MonoBehaviour
         _audio.PlayOneShot(_clip);
     }
 
-    [Yarn.Unity.YarnCommand("stopSound")]
     public void StopSound()
     {
         _audio.Stop();

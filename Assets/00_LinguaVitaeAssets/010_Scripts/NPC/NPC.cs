@@ -20,7 +20,6 @@ public class NPC : Character
         }
     }
 
-    [Yarn.Unity.YarnCommand("playAnimation")]
     public void PlayAnimation(string animationName)
     {
         npcAnimator.Rebind();

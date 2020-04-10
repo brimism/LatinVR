@@ -78,12 +78,9 @@ public class GameManager : YarnObserver
     }
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        if (characters == null)
-        {
-            characters = new Dictionary<string, Character>();
-        }
+        characters = new Dictionary<string, Character>();
     }
 
     // Update is called once per frame
