@@ -20,6 +20,8 @@ public class GameManager : YarnObserver
     public ShopController shopController;
     public Dictionary<string, Character> characters;
 
+    public GameObject DebugPanel;
+
     public override void Observe(string var_name, Yarn.Value value)
     {
         // Set food quest item
@@ -60,6 +62,7 @@ public class GameManager : YarnObserver
         // Plays sound on the corresponding character
         StopAllSounds();
         characters[character_name].PlaySound(character_name + '/' + sound_file);
+        DebugPanel.transform.GetChild(0).GetComponent<UnityEngine.UI.Text>().text = "Character: " + character_name + "; Sound: " + sound_file;
     }
 
     public void StopAllSounds()
@@ -68,6 +71,7 @@ public class GameManager : YarnObserver
         {
             c.Value.StopSound();
         }
+        DebugPanel.transform.GetChild(0).GetComponent<UnityEngine.UI.Text>().text = "No Sound";
     }
 
 

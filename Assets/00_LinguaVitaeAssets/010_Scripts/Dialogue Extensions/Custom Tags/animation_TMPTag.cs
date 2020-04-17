@@ -34,6 +34,7 @@ public class animation_TMPTag : CustomTMPTag
         }
         string char_name = text.text.Substring(0, i);
         Debug.Log(char_name);
+        GameObject.Find("GameManager").GetComponent<GameManager>().DebugPanel.transform.GetChild(1).GetComponent<UnityEngine.UI.Text>().text = "Character: " + char_name + "; Animation: " + param;
         GameObject.Find(char_name).GetComponent<NPC>().PlayAnimation(param);
         yield return new WaitForSeconds(0.0f);
     }
