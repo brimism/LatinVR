@@ -4,30 +4,30 @@ colorID: 0
 position: -799,152
 ---
 <<disappear ExclamationMarkAntonia>> 
-Antonia: Venite! Venite, omnes! <audio=Antonia_001r03p1> <animation=Talking1>
-Antonia: Panis, vinum, et uvae! Et ullae! <audio=Antonia_001r03p2> <animation=Talking1>
+Antonia: Venite! Venite, omnes! <audio=Antonia_001r03p1> <animation=Talking1> <portrait=Antonia_Happy>
+Antonia: Panis, vinum, et uvae! Et ullae! <audio=Antonia_001r03p2> <animation=Talking1> <portrait=Antonia_Happy>
 <<if visited("Antonia.Start") is true>> 
 <<else>>
 <<set $player_saw_antonia to true>>
 -> Salve, Attica.
-    Titus: Salve, Attica. <audio=Titus-A_001r03>
-    Antonia: Nomen mihi est Antonia. <audio=Antonia_002r02> <animation=AnnoyedHeadShake>
-    Antonia: Potesne non nomen meum in corpore meo vidēre? Nemo nomen meum bene umquam discit. Heu... <audio=Antonia_003r03> <animation=AnnoyedHeadShake>
-    Titus: Mea culpa. <audio=Titus-A_002r03>
+    Titus: Salve, Attica. <audio=Titus-A_001r03> <portrait=Titus_Normal>
+    Antonia: Nomen mihi est Antonia. <audio=Antonia_002r02> <animation=AnnoyedHeadShake> <portrait=Antonia_Tired>
+    Antonia: Potesne non nomen meum in corpore meo vidēre? Nemo nomen meum bene umquam discit. Heu... <audio=Antonia_003r03> <animation=AnnoyedHeadShake> <portrait=Antonia_Tired>
+    Titus: Mea culpa. <audio=Titus-A_002r03> <portrait=Titus_Sad>
 -> Salve, Antonia.
 <<endif>>
-Titus: Salve, Antonia. <audio=Titus-A_003r01>
-Antonia: Salve, Tite. Quid hodie agis? <audio=Antonia_004r03> <animation=HeadNodYes>
+Titus: Salve, Antonia. <audio=Titus-A_003r01> <portrait=Titus_Normal>
+Antonia: Salve, Tite. Quid hodie agis? <audio=Antonia_004r03> <animation=HeadNodYes> <portrait=Antonia_Normal>
 -> Satis Bene.
-    Titus: Satis Bene! <audio=Titus-A_004r06p1>
-    Titus: Hodie est triumphus et ibi nunc venio. Sed esurio. <audio=Titus-A_004r06p2>
-    Antonia: Bene. Quid tibi facere possum? <audio=Antonia_005r04> <animation=ThoughtfulHeadNod>
+    Titus: Satis Bene! <audio=Titus-A_004r06p1> <portrait=Titus_Happy>
+    Titus: Hodie est triumphus et ibi nunc venio. Sed esurio. <audio=Titus-A_004r06p2> <portrait=Titus_Happy>
+    Antonia: Bene. Quid tibi facere possum? <audio=Antonia_005r04> <animation=ThoughtfulHeadNod> <portrait=Antonia_Normal>
 -> Non bene.
-    Titus: Non bene... <audio=Titus-A_005r01p1>
-    Titus: Hodie est triumphus et ibi nunc venio. Sed esurio. <audio=Titus-A_005r01p2>
-    Antonia: Heu. Tibi male sentio. <audio=Antonia_006r02p1> <animation=ThoughtfulHeadShake>
-    Antonia: Sed quid tibi facere possum? <audio=Antonia_006r02p2> <animation=Talking1>
-Titus: (to self) I should buy something.
+    Titus: Non bene... <audio=Titus-A_005r01p1> <portrait=Titus_Sad>
+    Titus: Hodie est triumphus et ibi nunc venio. Sed esurio. <audio=Titus-A_005r01p2> <portrait=Titus_Sad>
+    Antonia: Heu. Tibi male sentio. <audio=Antonia_006r02p1> <animation=ThoughtfulHeadShake> <portrait=Antonia_Tired>
+    Antonia: Sed quid tibi facere possum? <audio=Antonia_006r02p2> <animation=Talking1> <portrait=Antonia_Tired>
+Titus: (to self) I should buy something. <portrait=Titus_Normal>
 <<endDialogue GameManager>>
 ===
 title: Antonia.BuyPanis
@@ -36,26 +36,26 @@ colorID: 0
 position: -1066,433
 ---
 <<if visited("Antonia.Start") is true>>
-Titus: Cupiditatem panis habeo. Da mihi panem, amabo te. <audio=Titus-A_006r01>
-Antonia: Ō, panis! <audio=Antonia_007r02p1> <animation=HeadNodYes>
-Antonia: Optime! Id dabo uno denario ($1). <audio=Antonia_007r02p2> <animation=HeadNodYes>
-Titus: Quinque denarios ($5) solos habeo. <audio=Titus-A_007r02>
-Antonia: Id capiam! Hic est panis. <audio=Antonia_008r02> <animation=SarcasticHeadNod>
-Titus: Optime? Haec est tua pecunia. <audio=Titus-A_008r02p1>
-Titus: Gratias tibi ago. <audio=Titus-A_008r02p2>
-Antonia: Gratias tibi, Tite, ago! Vale! <audio=Antonia_009r03> <animation=Talking1>
+Titus: Cupiditatem panis habeo. Da mihi panem, amabo te. <audio=Titus-A_006r01> <portrait=Titus_Normal>
+Antonia: Ō, panis! <audio=Antonia_007r02p1> <animation=HeadNodYes> <portrait=Antonia_Happy>
+Antonia: Optime! Id dabo uno denario ($1). <audio=Antonia_007r02p2> <animation=HeadNodYes> <portrait=Antonia_Happy>
+Titus: Quinque denarios ($5) solos habeo. <audio=Titus-A_007r02> <portrait=Titus_Normal>
+Antonia: Id capiam! Hic est panis. <audio=Antonia_008r02> <animation=SarcasticHeadNod> <portrait=Antonia_Happy>
+Titus: Optime? Haec est tua pecunia. <audio=Titus-A_008r02p1> <portrait=Titus_Sad>
+Titus: Gratias tibi ago. <audio=Titus-A_008r02p2> <portrait=Titus_Normal>
+Antonia: Gratias tibi, Tite, ago! Vale! <audio=Antonia_009r03> <animation=Talking1> <portrait=Antonia_Happy>
 <<set $food_quest to 1>>
 << if $player_saw_centurion is  true >>
-Titus: (to self) Would the Centurion want this?
+Titus: (to self) Would the Centurion want this? <portrait=Titus_Normal>
 <<appear ExclamationMarkCenturion>>
 << else>>
-Titus: (to self) What will I do with this?
+Titus: (to self) What will I do with this? <portrait=Titus_Normal>
 << endif>> 
 <<else>>
-Antonia: Eho! Debēsne non mihi dicere quoniam cum meis bonis erras? <audio=Antonia_010r01p1> <animation=ShakingHeadNo>
-Antonia: Mehercle! Hoc tempore pueri! <audio=Antonia_010r01p2> <animation=CrazyGesture>
-Titus: Heh heh.. Mea culpa. <audio=Titus-A_009r01>
-Titus: (to self) Maybe I should talk to the shopkeeper first.
+Antonia: Eho! Debēsne non mihi dicere quoniam cum meis bonis erras? <audio=Antonia_010r01p1> <animation=ShakingHeadNo> <portrait=Antonia_Angry>
+Antonia: Mehercle! Hoc tempore pueri! <audio=Antonia_010r01p2> <animation=CrazyGesture> <portrait=Antonia_Angry>
+Titus: Heh heh.. Mea culpa. <audio=Titus-A_009r01> <portrait=Titus_Sad>
+Titus: (to self) Maybe I should talk to the shopkeeper first. <portrait=Titus_Normal>
 <<endif>> 
 <<endDialogue GameManager>>
 ===
@@ -65,25 +65,25 @@ colorID: 0
 position: -795,426
 ---
 <<if visited("Antonia.Start") is true>>
-Titus: Cupiditatem ullae habeo. Ullam mihi da, amabo te. <audio=Titus-A_010r03>
-Antonia: (under breath) Me terrēs. Quare cupiditatem ullae habēs? Sed pecuniam amo. (to Titus): Certe! Id est duobus denariis. <audio=Antonia_011r04> <animation=ThoughtfulHeadNod>
-Titus: Quinque denarios ($5) solos habeō, non duo. <audio=Titus-A_011r01>
-Antonia: Id capiam! Haec est tibi ulla. <audio=Antonia_012r01> <animation=SarcasticHeadNod>
-Titus: Bene? Haec est tua pecunia. <audio=Titus-A_012r01p1>
-Titus: Gratias tibi ago. <audio=Titus-A_012r01p2>
-Antonia: Gratias tibi, Tite, ago! Vale! <audio=Antonia_009r03> <animation=Talking1>
+Titus: Cupiditatem ullae habeo. Ullam mihi da, amabo te. <audio=Titus-A_010r03> <portrait=Titus_Normal>
+Antonia: (under breath) Me terrēs. Quare cupiditatem ullae habēs? Sed pecuniam amo. (to Titus): Certe! Id est duobus denariis. <audio=Antonia_011r04> <animation=ThoughtfulHeadNod> <portrait=Antonia_Tired>
+Titus: Quinque denarios ($5) solos habeō, non duo. <audio=Titus-A_011r01> <portrait=Titus_Normal>
+Antonia: Id capiam! Haec est tibi ulla. <audio=Antonia_012r01> <animation=SarcasticHeadNod> <portrait=Antonia_Happy>
+Titus: Bene? Haec est tua pecunia. <audio=Titus-A_012r01p1> <portrait=Titus_Sad>
+Titus: Gratias tibi ago. <audio=Titus-A_012r01p2> <portrait=Titus_Normal>
+Antonia: Gratias tibi, Tite, ago! Vale! <audio=Antonia_009r03> <animation=Talking1> <portrait=Antonia_Happy>
 <<set $food_quest to 3>>
 << if $player_saw_centurion is  true >>
-Titus: (to self) Would the Centurion want this?
+Titus: (to self) Would the Centurion want this? <portrait=Titus_Normal>
 <<appear ExclamationMarkCenturion>>
 << else>>
-Titus: (to self) What will I do with this?
+Titus: (to self) What will I do with this? <portrait=Titus_Normal>
 << endif>> 
 <<else>>
-Antonia: Eho! Debēsne non mihi dicere quoniam cum meis bonis erras? <audio=Antonia_010r01p1> <animation=ShakingHeadNo>
-Antonia: Mehercle! Hoc tempore pueri! <audio=Antonia_010r01p2> <animation=CrazyGesture>
-Titus: Heh heh.. Mea culpa. <audio=Titus-A_009r01>
-Titus: (to self) Maybe I should talk to the shopkeeper first.
+Antonia: Eho! Debēsne non mihi dicere quoniam cum meis bonis erras? <audio=Antonia_010r01p1> <animation=ShakingHeadNo> <portrait=Antonia_Angry>
+Antonia: Mehercle! Hoc tempore pueri! <audio=Antonia_010r01p2> <animation=CrazyGesture> <portrait=Antonia_Angry>
+Titus: Heh heh.. Mea culpa. <audio=Titus-A_009r01> <portrait=Titus_Sad>
+Titus: (to self) Maybe I should talk to the shopkeeper first. <portrait=Titus_Normal>
 <<endif>>
 <<endDialogue GameManager>>
 ===
@@ -93,25 +93,25 @@ colorID: 0
 position: -541,424
 ---
 <<if visited("Antonia.Start") is true>>
-Titus: Cupiditatem uvarum habeo. Uvas mihi da, amabo te. <audio=Titus-A_013r01>
-Antonia: (under breath) Me terrēs. Quare cupiditatem uvarum habēs? Sed pecuniam amo. Certe! Id est duobus denariis. <audio=Antonia_013r01> <animation=ThoughtfulHeadNod>
-Titus: Quinque denarios ($5) solos habeō, non duo. <audio=Titus-A_011r01>
-Antonia: Id capiam! Hae sunt tibi uvae. <audio=Antonia_014r03> <animation=SarcasticHeadNod>
-Titus: Bene? Haec est tua pecunia. <audio=Titus-A_012r01p1>
-Titus: Gratias tibi ago. <audio=Titus-A_012r01p2>
-Antonia: Gratias tibi, Tite, ago! Vale! <audio=Antonia_009r03> <animation=Talking1>
+Titus: Cupiditatem uvarum habeo. Uvas mihi da, amabo te. <audio=Titus-A_013r01> <portrait=Titus_Normal>
+Antonia: (under breath) Me terrēs. Quare cupiditatem uvarum habēs? Sed pecuniam amo. Certe! Id est duobus denariis. <audio=Antonia_013r01> <animation=ThoughtfulHeadNod> <portrait=Antonia_Tired>
+Titus: Quinque denarios ($5) solos habeō, non duo. <audio=Titus-A_011r01> <portrait=Titus_Normal> 
+Antonia: Id capiam! Hae sunt tibi uvae. <audio=Antonia_014r03> <animation=SarcasticHeadNod> <portrait=Antonia_Happy>
+Titus: Bene? Haec est tua pecunia. <audio=Titus-A_012r01p1> <portrait=Titus_Sad>
+Titus: Gratias tibi ago. <audio=Titus-A_012r01p2> <portrait=Titus_Normal>
+Antonia: Gratias tibi, Tite, ago! Vale! <audio=Antonia_009r03> <animation=Talking1> <portrait=Antonia_Happy>
 <<set $food_quest to 2>>
 << if $player_saw_centurion is  true >>
-Titus: (to self) Would the Centurion want this?
+Titus: (to self) Would the Centurion want this? <portrait=Titus_Normal>
 <<appear ExclamationMarkCenturion>>
 << else>>
-Titus: (to self) What will I do with this?
+Titus: (to self) What will I do with this? <portrait=Titus_Normal>
 << endif>> 
 <<else>>
-Antonia: Eho! Debēsne non mihi dicere quoniam cum meis bonis erras? <audio=Antonia_010r01p1> <animation=ShakingHeadNo>
-Antonia: Mehercle! Hoc tempore pueri! <audio=Antonia_010r01p2> <animation=CrazyGesture>
-Titus: Heh heh.. Mea culpa. <audio=Titus-A_009r01>
-Titus: (to self) Maybe I should talk to the shopkeeper first.
+Antonia: Eho! Debēsne non mihi dicere quoniam cum meis bonis erras? <audio=Antonia_010r01p1> <animation=ShakingHeadNo> <portrait=Antonia_Angry>
+Antonia: Mehercle! Hoc tempore pueri! <audio=Antonia_010r01p2> <animation=CrazyGesture> <portrait=Antonia_Angry>
+Titus: Heh heh.. Mea culpa. <audio=Titus-A_009r01> <portrait=Titus_Sad>
+Titus: (to self) Maybe I should talk to the shopkeeper first. <portrait=Titus_Normal>
 <<endif>> 
 <<endDialogue GameManager>>
 ===
@@ -120,6 +120,6 @@ tags:
 colorID: 0
 position: -798,669
 ---
-Antonia: You silly goose!
-Antonia: That panis isn't for you. <animation=Backflip>
+Antonia: You silly goose! <portrait=Antonia_Angry>
+Antonia: That panis isn't for you. <animation=Backflip> <portrait=Antonia_Angry>
 ===

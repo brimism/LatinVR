@@ -66,6 +66,7 @@
     <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\Character.cs" />
     <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\Dialogue Extensions\Custom Tags\animation_TMPTag.cs" />
     <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\Dialogue Extensions\Custom Tags\audio_TMPTag.cs" />
+    <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\Dialogue Extensions\Custom Tags\portrait_TMPTag.cs" />
     <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\Dialogue Extensions\Custom Tags\shake_TMPTag.cs" />
     <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\Dialogue Extensions\Custom Tags\vocab_TMPTag.cs" />
     <Compile Include="Assets\00_LinguaVitaeAssets\010_Scripts\Dialogue Extensions\Custom Tags\wave_TMPTag.cs" />

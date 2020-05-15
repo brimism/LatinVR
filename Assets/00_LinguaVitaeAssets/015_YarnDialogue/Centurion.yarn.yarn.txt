@@ -14,30 +14,30 @@ position: -235,812
         << if $food_quest < 1 or $food_quest > 3>> 
             << set $food_quest to 0>>
         << endif>> 
-        Centurion: <wave=3>Salvē!</wave> Sum centurio! Quid tibi nomen est? <audio=Centurion_001r02> <animation=Talk>
-        Titus: Nomen mihi est Titus. Quid hodie agis? <audio=Titus-C_001r04>
-        Centurion: Satis bene. Vere esurio... <audio=Centurion_002r01p1> <animation=Talk>
+        Centurion: <wave=3>Salvē!</wave> Sum centurio! Quid tibi nomen est? <audio=Centurion_001r02> <animation=Talk> <portrait=Centurion_Happy>
+        Titus: Nomen mihi est Titus. Quid hodie agis? <audio=Titus-C_001r04> <portrait=Titus_Normal>
+        Centurion: Satis bene. Vere esurio... <audio=Centurion_002r01p1> <animation=Talk> <portrait=Centurion_Normal>
     <<endif>>
 		<<disappear ExclamationMarkCenturion>>
-        Centurion: Mihi opus <color=00DD00>panis!</color> <audio=Centurion_002r01p2> <animation=Clap>
+        Centurion: Mihi opus <color=00DD00>panis!</color> <audio=Centurion_002r01p2> <animation=Clap> <portrait=Centurion_Hungry>
     <<if $food_quest is 1>>
-        Centurion: Ō! Quid nasus meus sentit? <audio=Centurion_003r01p1> <animation=Talk>
-        Centurion: Estne ille...? <audio=Centurion_003r01p2> <animation=Talk>
-        Centurion: <color=00DD00><shake=0.3>PANIS????</shake></color> <audio=Centurion_003r01p3> <animation=Clap>
-        Titus: Certe est panis, mi amice! <audio=Titus-C_002r02>
-        Centurion: Possumne panem habere, amabo te? <audio=Centurion_004r01> <animation=Talk>
+        Centurion: Ō! Quid nasus meus sentit? <audio=Centurion_003r01p1> <animation=Talk> <portrait=Centurion_Hungry>
+        Centurion: Estne ille...? <audio=Centurion_003r01p2> <animation=Talk> <portrait=Centurion_Hungry>
+        Centurion: <color=00DD00><shake=0.3>PANIS????</shake></color> <audio=Centurion_003r01p3> <animation=Clap> <portrait=Centurion_Happy>
+        Titus: Certe est panis, mi amice! <audio=Titus-C_002r02> <portrait=Titus_Happy>
+        Centurion: Possumne panem habere, amabo te? <audio=Centurion_004r01> <animation=Talk> <portrait=Centurion_Hungry>
         [[Ita vero amice!|Centurion.GiveBread]]
         [[Minime! Hic panis est meus.|Centurion.DontGiveBread ]] 
     <<else>>
         << if $player_saw_antonia is true >>
             << if $food_quest > 0>> 
-            Centurion: Does <i>that</i> look like <color=00DD00><shake=0.1>panis</shake></color> to you?
+            Centurion: Does <i>that</i> look like <color=00DD00><shake=0.1>panis</shake></color> to you? <portrait=Centurion_Angry>
             << else >> 
-            Centurion: You just gonna stand there? 
-            Centurion: Go to the shop and get me some <color=00DD00>panis</color>!
+            Centurion: You just gonna stand there?  <portrait=Centurion_Angry>
+            Centurion: Go to the shop and get me some <color=00DD00>panis</color>! <portrait=Centurion_Hungry>
             << endif>> 
         << else>>
-        Centurion: There's a shop behind me.
+        Centurion: There's a shop behind me. <portrait=Centurion_Normal>
 		<<appear ExclamationMarkAntonia>>
         << endif>> 
     <<endif>> 
@@ -49,11 +49,11 @@ tags:
 colorID: 0
 position: -517,1257
 ---
-Titus: Hīc is est! Cena bene! <audio=Titus-C_005r01>
-Centurion: Pani gratias tibi ago! <audio=Centurion_005r03p1> <animation=Clap>
-Centurion: Quomodo tibi remunerationem dare umquam poteram? <audio=Centurion_005r03p2> <animation=Talk>
-Centurion: In <wave=4 0.8>perpetuum</wave> amabo hunc panem! <audio=Centurion_005r03p3> <animation=Talk>
-Titus: Satis bene? (under breath): Hic centurio est insanus. <audio=Titus-C_006r02>
+Titus: Hīc is est! Cena bene! <audio=Titus-C_005r01> <portrait=Titus_Happy>
+Centurion: Pani gratias tibi ago! <audio=Centurion_005r03p1> <animation=Clap> <portrait=Centurion_Happy>
+Centurion: Quomodo tibi remunerationem dare umquam poteram? <audio=Centurion_005r03p2> <animation=Talk> <portrait=Centurion_Happy>
+Centurion: In <wave=4 0.8>perpetuum</wave> amabo hunc panem! <audio=Centurion_005r03p3> <animation=Talk> <portrait=Centurion_Happy>
+Titus: Satis bene? (under breath): Hic centurio est insanus. <audio=Titus-C_006r02> <portrait=Titus_Sad>
 <<endDialogue GameManager>> 
 <<set $food_quest to -1>> 
 ===
@@ -62,9 +62,9 @@ tags:
 colorID: 0
 position: 147,1265
 ---
-Titus: Tibi panem non dabo. Panis mecum in perpetuum remanebit. <audio=Titus-C_007r04>
-Centurion: <shake=0.3>Quare????</shake> <audio=Centurion_006r05p1> <animation=Talk>
-Centurion: Quare mihi hoc facis, Tite? <audio=Centurion_006r05p2> <animation=Talk>
-Centurion: Mihi carus non es. Bellus non es. Nunc fuge! <audio=Centurion_006r05p3> <animation=HeadShake>
+Titus: Tibi panem non dabo. Panis mecum in perpetuum remanebit. <audio=Titus-C_007r04> <portrait=Titus_Normal>
+Centurion: <shake=0.3>Quare????</shake> <audio=Centurion_006r05p1> <animation=Talk> <portrait=Centurion_Angry>
+Centurion: Quare mihi hoc facis, Tite? <audio=Centurion_006r05p2> <animation=Talk> <portrait=Centurion_Angry>
+Centurion: Mihi carus non es. Bellus non es. Nunc fuge! <audio=Centurion_006r05p3> <animation=HeadShake> <portrait=Centurion_Angry>
 <<endDialogue GameManager>> 
 ===

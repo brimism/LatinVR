@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class NPC : Character
 {
     public Animator npcAnimator;
+    public Image portrait;
     public bool hovered = false;
 
     void Update()
@@ -24,6 +26,10 @@ public class NPC : Character
     {
         npcAnimator.Rebind();
         npcAnimator.Play(animationName);
+    }
+
+    public void SwapSprite(string fileName) {
+        portrait.sprite = Resources.Load<Sprite>("Portraits/" + fileName);
     }
 
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Yarn;
+using Yarn.Unity;
 
 [RequireComponent(typeof(DictionaryController))]
 [RequireComponent(typeof(NextDialogue_CMD))]
@@ -19,6 +20,7 @@ public class GameManager : YarnObserver
     public ItemHolder playerItemHolder;
     public ShopController shopController;
     public Dictionary<string, Character> characters;
+    public DialogueRunner[] dialogueRunners;
 
     public GameObject DebugPanel;
 
@@ -65,6 +67,19 @@ public class GameManager : YarnObserver
         DebugPanel.transform.GetChild(0).GetComponent<UnityEngine.UI.Text>().text = "Character: " + character_name + "; Sound: " + sound_file;
     }
 
+    public void SwapCharPortrait(string character_name, string portrait_file)
+    {
+        Debug.Log("Swapping portrait");
+        foreach(var dialogueRunner in dialogueRunners)
+        {
+            if(dialogueRunner.isDialogueRunning)
+            {
+                dialogueRunner.transform.parent.gameObject.GetComponent<NPC>().SwapSprite(character_name + '/' + portrait_file);
+                break;
+            }
+        }
+    }
+
     public void StopAllSounds()
     {
         foreach (var c in characters)
@@ -79,6 +94,7 @@ public class GameManager : YarnObserver
     public void EndOfDialogue()
     {
         StopAllSounds();
+        SwapCharPortrait("None", "None");
     }
 
     // Start is called before the first frame update
