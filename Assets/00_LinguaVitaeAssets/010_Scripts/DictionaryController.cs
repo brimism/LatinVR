@@ -41,6 +41,7 @@ public class DictionaryController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /* No dictionary for this build
         if(gameManager.LH_Grip && visible != VisibleState.LEFT) {
             // Left grip pressed and dictionary invisible -> Put dictionary in left hand.
             Open(0, VisibleState.LEFT);
@@ -66,6 +67,7 @@ public class DictionaryController : MonoBehaviour
             dictionary.transform.localEulerAngles = Vector3.zero;
             dictionary.SetActive(false);
         }
+        */
     }
 
     public void AddFound(string latinWord) {
