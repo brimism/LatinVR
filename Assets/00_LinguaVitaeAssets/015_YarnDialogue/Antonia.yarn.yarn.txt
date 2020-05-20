@@ -120,6 +120,6 @@ tags:
 colorID: 0
 position: -798,669
 ---
-Antonia: You silly goose! <portrait=Antonia_Angry>
-Antonia: That panis isn't for you. <animation=Backflip> <portrait=Antonia_Angry>
+Antonia: You silly goose! <portrait=Antonia_Secret>
+Antonia: That panis isn't for you. <animation=Backflip> <portrait=Antonia_Secret>
 ===
