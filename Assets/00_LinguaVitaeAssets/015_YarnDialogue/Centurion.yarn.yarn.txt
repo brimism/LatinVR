@@ -53,7 +53,7 @@ Titus: Hīc is est! Cena bene! <audio=Titus-C_005r01> <portrait=Titus_Happy>
 Centurion: Pani gratias tibi ago! <audio=Centurion_005r03p1> <animation=Clap> <portrait=Centurion_Happy>
 Centurion: Quomodo tibi remunerationem dare umquam poteram? <audio=Centurion_005r03p2> <animation=Talk> <portrait=Centurion_Happy>
 Centurion: In <wave=4 0.8>perpetuum</wave> amabo hunc panem! <audio=Centurion_005r03p3> <animation=Talk> <portrait=Centurion_Happy>
-Titus: Satis bene? (under breath): Hic centurio est insanus. <audio=Titus-C_006r02> <portrait=Titus_Sad>
+Titus: Satis bene? (under breath): Hic centurio est insanus. <audio=Titus-C_006r02> <portrait=Titus_Confused>
 <<endDialogue GameManager>> 
 <<set $food_quest to -1>> 
 ===
@@ -62,7 +62,7 @@ tags:
 colorID: 0
 position: 147,1265
 ---
-Titus: Tibi panem non dabo. Panis mecum in perpetuum remanebit. <audio=Titus-C_007r04> <portrait=Titus_Normal>
+Titus: Tibi panem non dabo. Panis mecum in perpetuum remanebit. <audio=Titus-C_007r04> <portrait=Titus_Sad>
 Centurion: <shake=0.3>Quare????</shake> <audio=Centurion_006r05p1> <animation=Talk> <portrait=Centurion_Angry>
 Centurion: Quare mihi hoc facis, Tite? <audio=Centurion_006r05p2> <animation=Talk> <portrait=Centurion_Angry>
 Centurion: Mihi carus non es. Bellus non es. Nunc fuge! <audio=Centurion_006r05p3> <animation=HeadShake> <portrait=Centurion_Angry>
