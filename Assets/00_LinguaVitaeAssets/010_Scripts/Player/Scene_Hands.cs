@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Scene_Hands : Hand_scr
+public class Scene_Hands : MonoBehaviour
 {
     public GameObject player;
     public float playerTalkRadius;
     public ButtonInteraction activeButton;
-    public GameObject hmd_cam;
 
     RaycastHit hit;
     bool triggerReleased = true;
@@ -17,16 +16,20 @@ public class Scene_Hands : Hand_scr
     public NPC activeNPC;
     GameObject activeTeleporter = null;
 
+    public GameObject pointer_sphere;
+
     Yarn.Unity.DialogueRunner currentDialogue = null;
+
+    
+    public bool leftHand;
+    public XRPlayerController playerController;
 
     // Update is called once per frame
     void Update()
     {
-        hand_obj.transform.localPosition = pos;
-        hand_obj.transform.localRotation = rot;
-
         FireRay();
 
+        
         if (currentDialogue != null) // If you are currently talking, you will be unable to teleport or engage in another conversation.
         {
             
@@ -51,7 +54,7 @@ public class Scene_Hands : Hand_scr
                 }
             }
 
-            if (triggerReleased && pressed)
+            if (triggerReleased && (leftHand ? (playerController.controlValues.leftHandTrigger > playerController.triggerSensitivity) : (playerController.controlValues.rightHandTrigger > playerController.triggerSensitivity)))
             {
                 triggerReleased = false;
                 if (CheckTag("Button")) //if its a button, click it
@@ -59,24 +62,15 @@ public class Scene_Hands : Hand_scr
                     ClickButton();
                     
                 }
-                /*
-                else if (CheckTag("Teleporter")) //if its a tp then go there and end the conversation
-                {
-                    //activeCanvas.SetActive(false);
-                    isTalking = false;
-                    Teleport();
-                }
-                */
-
             }
-            if(currentDialogue.isDialogueRunning == false) // Set currentDialogue to null if dialogue is over so player can teleport and talk again.
+            if(!currentDialogue.isDialogueRunning) // Set currentDialogue to null if dialogue is over so player can teleport and talk again.
             {
                 currentDialogue = null;
             }
         }
         else
         {
-            if(triggerReleased && pressed) //fire once per trigger pull
+            if(triggerReleased && (leftHand ? (playerController.controlValues.leftHandTrigger > playerController.triggerSensitivity) : (playerController.controlValues.rightHandTrigger > playerController.triggerSensitivity))) //fire once per trigger pull
             {
                 triggerReleased = false; //toggle to perform on trigger press functionality (the fire once part)
                 if (CheckTag("NPC"))
@@ -157,7 +151,7 @@ public class Scene_Hands : Hand_scr
         }
 
 
-        if (!pressed)
+        if (!(leftHand ? (playerController.controlValues.leftHandTrigger > playerController.triggerSensitivity) : (playerController.controlValues.rightHandTrigger > playerController.triggerSensitivity)))
         {
             triggerReleased = true; // if the player released the trigger, update the variable (fire once functionality)
         }
@@ -188,7 +182,7 @@ public class Scene_Hands : Hand_scr
     
     void FireRay()
     {
-        if (Physics.Raycast(hand_obj.transform.position, hand_obj.transform.forward, out hit, 2000.0F)) //perform raycast
+        if (Physics.Raycast(transform.position, transform.forward, out hit, 2000.0F)) //perform raycast
         {
             pointer_sphere.transform.position = hit.point; //if hit something move a target sphere
 

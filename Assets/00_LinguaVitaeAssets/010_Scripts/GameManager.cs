@@ -6,21 +6,22 @@ using Yarn;
 using Yarn.Unity;
 
 [RequireComponent(typeof(DictionaryController))]
-[RequireComponent(typeof(NextDialogue_CMD))]
-[RequireComponent(typeof(NextDialogue2_CMD))]
-[RequireComponent(typeof(LHGrip_CMD))]
-[RequireComponent(typeof(RHGrip_CMD))]
 public class GameManager : YarnObserver
 {
     public bool rightHanded = true;
+    [HideInInspector]
     public bool LH_Trigger = false;
+    [HideInInspector]
     public bool RH_Trigger = false;
+    [HideInInspector]
     public bool LH_Grip = false;
+    [HideInInspector]
     public bool RH_Grip = false;
     public ItemHolder playerItemHolder;
     public ShopController shopController;
     public Dictionary<string, Character> characters;
     public DialogueRunner[] dialogueRunners;
+    public XRPlayerController playerController;
 
     public GameObject DebugPanel;
 
@@ -106,6 +107,9 @@ public class GameManager : YarnObserver
     // Update is called once per frame
     void Update()
     {
-        
+        LH_Grip = playerController.controlValues.leftHandGrip > playerController.gripSensitivity;
+        RH_Grip = playerController.controlValues.rightHandGrip > playerController.gripSensitivity;
+        LH_Trigger = playerController.controlValues.leftHandTrigger > playerController.triggerSensitivity;
+        RH_Trigger = playerController.controlValues.rightHandTrigger > playerController.triggerSensitivity;
     }
 }
