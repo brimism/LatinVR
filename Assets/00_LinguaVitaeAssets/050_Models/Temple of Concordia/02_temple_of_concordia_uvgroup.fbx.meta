@@ -1,59 +1,9 @@
 fileFormatVersion: 2
-guid: ad70c7ebdcb6a5444b1e011620fe9787
+guid: 97dd5f534f3f8bd448c25629bdff2a89
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: bottom_material
-    second: {fileID: 2100000, guid: c1ecbc0ff04fb4d4693e81c40a3318ac, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: chalice_material
-    second: {fileID: 2100000, guid: 5f1bcf7df9049b44b8957841578d1dda, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: columns_material
-    second: {fileID: 2100000, guid: 2b2656f7be04c7440a8ad9e1a11c65f0, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: door_material
-    second: {fileID: 2100000, guid: 8a6beb693fdc1f7448b4584e82a19594, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: halfcolumns_material
-    second: {fileID: 2100000, guid: ea35c17249931004ab9058d9cfdd02dc, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: lambert1
-    second: {fileID: 2100000, guid: 488c97b98ab82c148a35b216f288cac8, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: middle_material
-    second: {fileID: 2100000, guid: 5760ffe59bf930a4c86dd6f27d8422aa, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: roofshingles_material
-    second: {fileID: 2100000, guid: 10ffb6e66367bbb4e871d4bb381f2a00, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: statue_material
-    second: {fileID: 2100000, guid: 15ec90e1a27ee5247adb0a4ef3eb4537, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: top_material
-    second: {fileID: 2100000, guid: 8d9bcbdda6bd4ff4b93ee709254fa90c, type: 2}
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
